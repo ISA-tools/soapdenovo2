@@ -145,6 +145,12 @@
     
 
 
+    <!-- http://purl.org/isaterms/has_member -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_member"/>
+    
+
+
     <!-- http://purl.org/isaterms/has_part -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_part"/>
@@ -518,6 +524,12 @@
     <!-- http://purl.org/isaterms/study_file -->
 
     <owl:Class rdf:about="http://purl.org/isaterms/study_file"/>
+    
+
+
+    <!-- http://purl.org/isaterms/study_group_population -->
+
+    <owl:Class rdf:about="http://purl.org/isaterms/study_group_population"/>
     
 
 
@@ -17199,6 +17211,15 @@
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <isaterms:declares rdf:resource="http://w3id.org/isa/soapdenovo2/study_factor/1"/>
         <isaterms:declares rdf:resource="http://w3id.org/isa/soapdenovo2/study_factor/2"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/1"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/2"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/3"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/4"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/5"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/6"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/7"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/8"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/9"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/1"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/10"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/2"/>
@@ -17280,6 +17301,120 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s_SOAPdenovo2.txt</rdfs:label>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_file/1"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/1 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/1">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| large size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/2 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/2">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| large size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/3 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/3">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| small size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/4 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/4">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| small size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/5 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/5">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| large size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/6 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/6">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| medium size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/7 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/7">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| small size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/8 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/8">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| medium size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/9 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/9">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| medium size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+    </prov:Entity>
     
 
 
