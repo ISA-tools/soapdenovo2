@@ -145,6 +145,12 @@
     
 
 
+    <!-- http://purl.org/isaterms/has_member -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_member"/>
+    
+
+
     <!-- http://purl.org/isaterms/has_part -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_part"/>
@@ -521,6 +527,12 @@
     
 
 
+    <!-- http://purl.org/isaterms/study_group_population -->
+
+    <owl:Class rdf:about="http://purl.org/isaterms/study_group_population"/>
+    
+
+
     <!-- http://purl.org/isaterms/technology -->
 
     <owl:Class rdf:about="http://purl.org/isaterms/technology"/>
@@ -569,6 +581,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scott Edmunds scott@gigasciencejournal.com</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0001-6444-1436</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <obo:OBI_0000846 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_affiliation/1"/>
+        <obo:BFO_0000087 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_roles/1"/>
     </prov:Person>
     
 
@@ -580,6 +595,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Li peter@gigasciencejournal.com</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0001-9602-9550</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <obo:BFO_0000087 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_roles/4"/>
     </prov:Person>
     
 
@@ -591,6 +608,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruibang Luo </rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0001-9711-6533</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <obo:OBI_0000846 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_affiliation/2"/>
+        <obo:BFO_0000087 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_roles/2"/>
     </prov:Person>
     
 
@@ -602,6 +622,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra philippe.rocca-serra@oerc.ox.ac.uk</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0001-9853-5668</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <obo:BFO_0000087 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_roles/6"/>
     </prov:Person>
     
 
@@ -613,6 +635,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran alejandra.gonzalezbeltran@oerc.ox.ac.uk</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0003-3499-8262</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <obo:OBI_0000846 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_affiliation/4"/>
+        <obo:BFO_0000087 rdf:resource="http://w3id.org/isa/soapdenovo2/study_person_roles/5"/>
     </prov:Person>
     
 
@@ -17199,6 +17224,15 @@
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <isaterms:declares rdf:resource="http://w3id.org/isa/soapdenovo2/study_factor/1"/>
         <isaterms:declares rdf:resource="http://w3id.org/isa/soapdenovo2/study_factor/2"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/1"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/2"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/3"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/4"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/5"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/6"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/7"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/8"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/9"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/1"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/10"/>
         <obo:BFO_0000051 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/2"/>
@@ -17283,6 +17317,120 @@
     
 
 
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/1 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/1">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| large size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/2 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/2">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| large size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/3 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/3">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| small size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/4 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/4">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| small size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/5 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/5">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| large size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/6 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/6">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| medium size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/7 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/7">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| small size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/8 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/8">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| medium size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_group/9 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_group/9">
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| medium size</rdfs:label>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+    </prov:Entity>
+    
+
+
     <!-- http://w3id.org/isa/soapdenovo2/study_identifier/1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_identifier/1">
@@ -17311,6 +17459,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_address/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shenzhen,China</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-6444-1436"/>
     </owl:NamedIndividual>
     
 
@@ -17320,6 +17469,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_address/2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shenzhen, China</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9711-6533"/>
     </owl:NamedIndividual>
     
 
@@ -17339,6 +17489,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_address/4">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shenzhen,China</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9602-9550"/>
     </owl:NamedIndividual>
     
 
@@ -17348,6 +17499,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_address/5">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Oxford</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0003-3499-8262"/>
     </owl:NamedIndividual>
     
 
@@ -17357,6 +17509,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_address/6">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Oxford</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9853-5668"/>
     </owl:NamedIndividual>
     
 
@@ -17402,6 +17555,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_email/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scott@gigasciencejournal.com</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-6444-1436"/>
     </owl:NamedIndividual>
     
 
@@ -17421,6 +17575,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_email/3">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peter@gigasciencejournal.com</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9602-9550"/>
     </owl:NamedIndividual>
     
 
@@ -17430,6 +17585,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_email/4">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alejandra.gonzalezbeltran@oerc.ox.ac.uk</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0003-3499-8262"/>
     </owl:NamedIndividual>
     
 
@@ -17439,6 +17595,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_email/5">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">philippe.rocca-serra@oerc.ox.ac.uk</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9853-5668"/>
     </owl:NamedIndividual>
     
 
@@ -17449,6 +17606,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/first_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scott</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-6444-1436"/>
     </owl:NamedIndividual>
     
 
@@ -17459,6 +17617,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/first_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruibang</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9711-6533"/>
     </owl:NamedIndividual>
     
 
@@ -17480,6 +17639,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/first_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9602-9550"/>
     </owl:NamedIndividual>
     
 
@@ -17490,6 +17650,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/first_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alejandra</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0003-3499-8262"/>
     </owl:NamedIndividual>
     
 
@@ -17500,6 +17661,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/first_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9853-5668"/>
     </owl:NamedIndividual>
     
 
@@ -17510,6 +17672,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/last_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edmunds</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-6444-1436"/>
     </owl:NamedIndividual>
     
 
@@ -17520,6 +17683,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/last_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luo</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9711-6533"/>
     </owl:NamedIndividual>
     
 
@@ -17541,6 +17705,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/last_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Li</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9602-9550"/>
     </owl:NamedIndividual>
     
 
@@ -17551,6 +17716,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/last_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gonzalez-Beltran</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0003-3499-8262"/>
     </owl:NamedIndividual>
     
 
@@ -17561,6 +17727,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/last_name"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocca-Serra</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9853-5668"/>
     </owl:NamedIndividual>
     
 
@@ -17570,6 +17737,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_roles/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">journal editor</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-6444-1436"/>
     </owl:NamedIndividual>
     
 
@@ -17579,6 +17747,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_roles/2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data producer</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9711-6533"/>
     </owl:NamedIndividual>
     
 
@@ -17598,6 +17767,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_roles/4">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">responsible for Galaxy workflows</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9602-9550"/>
     </owl:NamedIndividual>
     
 
@@ -17607,6 +17777,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_roles/5">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software architect responsible for ISA-TAB creation, conversion to RDF and nanopublication</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0003-3499-8262"/>
     </owl:NamedIndividual>
     
 
@@ -17616,6 +17787,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_person_roles/6">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data manager responsible for ISA-TAB creation, conversion to RDF and nanopublication</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://orcid.org/0000-0001-9853-5668"/>
     </owl:NamedIndividual>
     
 
