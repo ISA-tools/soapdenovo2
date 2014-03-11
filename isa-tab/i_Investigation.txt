@@ -42,7 +42,7 @@ Comment[Study Funding Agency]	"State Key Development Program for Basic Research 
 Study Submission Date	""
 Study Public Release Date	""
 Study File Name	"s_SOAPdenovo2.txt"
-Comment[Experimental Metadata Licence]	"CC0"
+Comment[Experimental Metadata Licence]	"http://creativecommons.org/publicdomain/zero/1.0/"
 STUDY DESIGN DESCRIPTORS
 Study Design Type	"software testing objective"	"factorial design"
 Study Design Type Term Accession Number	"http://purl.obolibrary.org/obo/OBI_0000242"	"http://purl.obolibrary.org/obo/OBI_0500014"
