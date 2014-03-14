@@ -121,9 +121,33 @@
     
 
 
+    <!-- http://purl.org/isaterms/declares -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/declares"/>
+    
+
+
     <!-- http://purl.org/isaterms/describes -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isaterms/describes"/>
+    
+
+
+    <!-- http://purl.org/isaterms/executes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/executes"/>
+    
+
+
+    <!-- http://purl.org/isaterms/has_factor_level -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_factor_level"/>
+    
+
+
+    <!-- http://purl.org/isaterms/has_factor_value -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_factor_value"/>
     
 
 
@@ -154,6 +178,12 @@
     <!-- http://purl.org/isaterms/has_technology -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/isaterms/has_technology"/>
+    
+
+
+    <!-- http://purl.org/isaterms/is_defined_by -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/isaterms/is_defined_by"/>
     
 
 
@@ -218,6 +248,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- OBI -->
+
+    <owl:Class rdf:about="OBI"/>
+    
+
+
+    <!-- PATO -->
+
+    <owl:Class rdf:about="PATO"/>
     
 
 
@@ -485,6 +527,18 @@
     
 
 
+    <!-- http://purl.org/isaterms/factor -->
+
+    <owl:Class rdf:about="http://purl.org/isaterms/factor"/>
+    
+
+
+    <!-- http://purl.org/isaterms/factor_value -->
+
+    <owl:Class rdf:about="http://purl.org/isaterms/factor_value"/>
+    
+
+
     <!-- http://purl.org/isaterms/first_name -->
 
     <owl:Class rdf:about="http://purl.org/isaterms/first_name"/>
@@ -530,6 +584,12 @@
     <!-- http://purl.org/isaterms/study -->
 
     <owl:Class rdf:about="http://purl.org/isaterms/study"/>
+    
+
+
+    <!-- http://purl.org/isaterms/study_design -->
+
+    <owl:Class rdf:about="http://purl.org/isaterms/study_design"/>
     
 
 
@@ -5018,8 +5078,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/13"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/25"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/25"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
     </prov:Entity>
     
 
@@ -5038,8 +5098,8 @@
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/22"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/34"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/34"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
     </prov:Entity>
     
 
@@ -5058,8 +5118,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/23"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/35"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/35"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
     </prov:Entity>
     
 
@@ -5078,8 +5138,8 @@
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/24"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/36"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/36"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
     </prov:Entity>
     
 
@@ -5098,8 +5158,8 @@
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/2"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/26"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/26"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
     </prov:Entity>
     
 
@@ -5119,8 +5179,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/27"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/3"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/3"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
     </prov:Entity>
     
 
@@ -5139,8 +5199,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/28"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/4"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/4"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
     </prov:Entity>
     
 
@@ -5159,8 +5219,8 @@
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/29"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
     </prov:Entity>
     
 
@@ -5179,8 +5239,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/30"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/6"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/6"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
     </prov:Entity>
     
 
@@ -5199,8 +5259,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/31"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/7"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/7"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
     </prov:Entity>
     
 
@@ -5219,8 +5279,8 @@
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/32"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/8"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/8"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
     </prov:Entity>
     
 
@@ -5239,9 +5299,63 @@
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/33"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/9"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/9"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
     </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/factor_value/1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/factor_value/1">
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/factor_value/2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/factor_value/2">
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small size</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/factor_value/3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/factor_value/3">
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/factor_value/4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/factor_value/4">
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/factor_value/5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/factor_value/5">
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">large size</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/factor_value/6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/factor_value/6">
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium size</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -5263,6 +5377,7 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/description"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.39E+12 description</rdfs:label>
         <isaterms:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></isaterms:has_value>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
     </owl:NamedIndividual>
     
 
@@ -5284,6 +5399,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/investigation_identifier/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.39E+12</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
     </owl:NamedIndividual>
     
 
@@ -5306,6 +5422,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.39E+12 title</rdfs:label>
         <isaterms:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Investigation</isaterms:has_value>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Investigation</rdfs:comment>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
     </owl:NamedIndividual>
     
 
@@ -6633,16 +6750,19 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S.aureus reference genome Sample</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YH Sample</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/4"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/4"/>
-        <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/10"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/6"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/6"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/3"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/5"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
         <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/6"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/6"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/1"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/1"/>
     </prov:Entity>
     
 
@@ -6653,16 +6773,21 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R.spaeroides reference genome Sample</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhodobacter_sphaeroides Sample</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/7"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/7"/>
-        <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/11"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/7"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/7"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/8"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/8"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/9"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/9"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
         <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/7"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/7"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/2"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/2"/>
     </prov:Entity>
     
 
@@ -6673,16 +6798,143 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Staphylococcus_aureus Sample</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/6"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/6"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/3"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/3"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/sample/4 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/sample/4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bombus_impatiens Sample</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/11"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/11"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/12"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/12"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/6"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/4"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/4"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/sample/5 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/sample/5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assemblathon-bacteria Sample</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/1"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/5"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/5"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/sample/6 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/sample/6">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S.aureus reference genome Sample</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/4"/>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/4"/>
+        <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/10"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/6"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/6"/>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/6"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/6"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/sample/7 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/sample/7">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R.spaeroides reference genome Sample</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
+        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/7"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/7"/>
+        <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/11"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/7"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/7"/>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/7"/>
+        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/7"/>
+    </prov:Entity>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/sample/8 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/sample/8">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens reference genome Sample</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</rdfs:comment>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/2"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/2"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/12"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/8"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <isaterms:has_factor_value rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/5"/>
         <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/8"/>
+        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/8"/>
         <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/8"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/8"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/8"/>
     </prov:Entity>
     
 
@@ -6694,19 +6946,12 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YH Source</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:comment>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/3"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/3"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/1"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/2"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/3"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/1"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/1"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/1"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/1"/>
     </prov:Entity>
     
 
@@ -6718,19 +6963,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhodobacter_sphaeroides Source</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:comment>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/8"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/8"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/9"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/9"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/4"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/2"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/2"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/2"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/2"/>
     </prov:Entity>
     
 
@@ -6742,19 +6978,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Staphylococcus_aureus Source</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:comment>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/6"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/6"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/5"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/3"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/3"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/3"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/3"/>
     </prov:Entity>
     
 
@@ -6766,21 +6993,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bombus_impatiens Source</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:comment>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/11"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/11"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/12"/>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/12"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/6"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/4"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/4"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/4"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/4"/>
     </prov:Entity>
     
 
@@ -6792,17 +7008,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assemblathon-bacteria Source</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:comment>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/1"/>
-        <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/1"/>
         <obo:BFO_0000053 rdf:resource="http://w3id.org/isa/soapdenovo2/characteristics/7"/>
-        <obo:RO_0001000 rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
-        <prov:wasDerivedFrom rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
-        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
-        <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/5"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/5"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/5"/>
-        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol_ref/5"/>
     </prov:Entity>
     
 
@@ -8022,6 +8231,7 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2</rdfs:label>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
     </prov:Activity>
     
 
@@ -8636,6 +8846,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2 description</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background: There is a rapidly increasing amount of de novo genome assembly using next-generation sequencing (NGS) short reads; however, several big challenges remain to be overcome in order for this to be efficient and accurate. SOAPdenovo has been successfully applied to assemble many published genomes, but it still needs improvement in continuity, accuracy and coverage, especially in repeat regions. Findings: To overcome these challenges, we have developed its successor, SOAPdenovo2, which has the advantage of a new algorithm design that reduces memory consumption in graph construction, resolves more repeat regions in contig assembly, increases coverage and length in scaffold construction, improves gap closing, and optimizes for large genome. Conclusions: Benchmark using the Assemblathon1 and GAGE datasets showed that SOAPdenovo2 greatly surpasses its predecessor SOAPdenovo and is competitive to other assemblers on both assembly length and accuracy. We also provide an updated assembly version of the 2008 Asian (YH) genome using SOAPdenovo2. Here, the contig and scaffold N50 of the YH genome were ~20.9 kbp and ~22 Mbp, respectively, which is 3-fold and 50-fold longer than the first published version. The genome coverage increased from 81.16% to 93.91%, and memory consumption was ~2/3 lower during the point of largest memory consumption.</rdfs:comment>
         <isaterms:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background: There is a rapidly increasing amount of de novo genome assembly using next-generation sequencing (NGS) short reads; however, several big challenges remain to be overcome in order for this to be efficient and accurate. SOAPdenovo has been successfully applied to assemble many published genomes, but it still needs improvement in continuity, accuracy and coverage, especially in repeat regions. Findings: To overcome these challenges, we have developed its successor, SOAPdenovo2, which has the advantage of a new algorithm design that reduces memory consumption in graph construction, resolves more repeat regions in contig assembly, increases coverage and length in scaffold construction, improves gap closing, and optimizes for large genome. Conclusions: Benchmark using the Assemblathon1 and GAGE datasets showed that SOAPdenovo2 greatly surpasses its predecessor SOAPdenovo and is competitive to other assemblers on both assembly length and accuracy. We also provide an updated assembly version of the 2008 Asian (YH) genome using SOAPdenovo2. Here, the contig and scaffold N50 of the YH genome were ~20.9 kbp and ~22 Mbp, respectively, which is 3-fold and 50-fold longer than the first published version. The genome coverage increased from 81.16% to 93.91%, and memory consumption was ~2/3 lower during the point of largest memory consumption.</isaterms:has_value>
+        <isaterms:describes rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
     </owl:NamedIndividual>
     
 
@@ -8645,6 +8857,8 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_design_execution/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2 study design execution</rdfs:label>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_design_type/1"/>
     </owl:NamedIndividual>
     
 
@@ -8655,9 +8869,12 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000242"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0500014"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/study_design"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2 study design</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:factorial design</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:software testing objective</rdfs:comment>
+        <isaterms:declares rdf:resource="http://w3id.org/isa/soapdenovo2/study_factor/1"/>
+        <isaterms:declares rdf:resource="http://w3id.org/isa/soapdenovo2/study_factor/2"/>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/1"/>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/2"/>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_group/3"/>
@@ -8674,10 +8891,15 @@
     <!-- http://w3id.org/isa/soapdenovo2/study_factor/1 -->
 
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_factor/1">
+        <rdf:type rdf:resource="OBI"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000750"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001522"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence assembly algorithm</rdfs:label>
+        <isaterms:has_factor_level rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:has_factor_level rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:has_factor_level rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
     </prov:Entity>
     
 
@@ -8685,10 +8907,15 @@
     <!-- http://w3id.org/isa/soapdenovo2/study_factor/2 -->
 
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/study_factor/2">
+        <rdf:type rdf:resource="PATO"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000750"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/factor"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome size</rdfs:label>
+        <isaterms:has_factor_level rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:has_factor_level rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/5"/>
+        <isaterms:has_factor_level rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/6"/>
     </prov:Entity>
     
 
@@ -8718,6 +8945,8 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_file"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s_SOAPdenovo2.txt</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <isaterms:describes rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
         <isaterms:points_to rdf:resource="http://w3id.org/isa/soapdenovo2/study_assay_file/1"/>
     </prov:Entity>
     
@@ -8728,6 +8957,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_file_name/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s_SOAPdenovo2.txt</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_file/1"/>
     </owl:NamedIndividual>
     
 
@@ -8738,8 +8968,10 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| large size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
     </prov:Entity>
     
 
@@ -8750,8 +8982,10 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| large size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
     </prov:Entity>
     
 
@@ -8762,11 +8996,13 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| small size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
         <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
     </prov:Entity>
     
 
@@ -8777,11 +9013,13 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| small size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
         <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
     </prov:Entity>
     
 
@@ -8792,8 +9030,10 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| large size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/8"/>
     </prov:Entity>
     
 
@@ -8804,7 +9044,9 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALLPATH-LG| medium size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/4"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
     </prov:Entity>
     
 
@@ -8815,11 +9057,13 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| small size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/2"/>
         <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/2"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/2"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/3"/>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/3"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/5"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/7"/>
     </prov:Entity>
     
 
@@ -8830,7 +9074,9 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 1| medium size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/3"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
     </prov:Entity>
     
 
@@ -8841,7 +9087,9 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study_group_population"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo version 2| medium size</rdfs:label>
-        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/source/4"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/1"/>
+        <isaterms:is_defined_by rdf:resource="http://w3id.org/isa/soapdenovo2/factor_value/6"/>
+        <isaterms:has_member rdf:resource="http://w3id.org/isa/soapdenovo2/sample/4"/>
     </prov:Entity>
     
 
@@ -8851,6 +9099,7 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_identifier/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2</rdfs:label>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
     </owl:NamedIndividual>
     
 
@@ -9428,6 +9677,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software location</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9437,6 +9687,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/10">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality scorer</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9446,6 +9697,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/11">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequencing instrument</rdfs:label>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/5"/>
     </owl:NamedIndividual>
@@ -9456,6 +9708,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/12">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software script</rdfs:label>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/10"/>
     </owl:NamedIndividual>
@@ -9466,6 +9719,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence assembly algorithm</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9475,6 +9729,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/3">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software script</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9484,6 +9739,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/4">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">workflow url</rdfs:label>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/2"/>
     </owl:NamedIndividual>
@@ -9494,6 +9750,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/5">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">library selection</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9503,6 +9760,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/6">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">library layout</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9512,6 +9770,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/7">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">library strategy</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9521,6 +9780,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/8">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">library source</rdfs:label>
         <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/4"/>
     </owl:NamedIndividual>
@@ -9531,6 +9791,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_protocol_parameter/9">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000785"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/measurement"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base caller</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9797,6 +10058,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2 title</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler</rdfs:comment>
         <isaterms:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler</isaterms:has_value>
+        <isaterms:describes rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
