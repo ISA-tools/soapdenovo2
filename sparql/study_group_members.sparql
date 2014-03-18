@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obi: <http://purl.obolibrary.org/obo/OBI_>
+PREFIX isa: <http://purl.org/isaterms/>
+
+SELECT 
+?study_group_iri ?study_group  ?member 
+WHERE
+{
+?study_group_iri rdf:type isa:study_group_population.
+?study_group_iri isa:has_member ?member_iri.
+?member_iri rdfs:label ?member.
+?study_group_iri rdfs:label ?study_group.
+}
+ORDER BY DESC(?study_group_iri)
+
