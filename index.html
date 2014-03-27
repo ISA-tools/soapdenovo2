@@ -4,13 +4,28 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+
+
     <![endif]-->
-    <title>SOAPdenovo2 Case Study</title>
+      <script src=" https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+     <script src="javascripts/codemirror/codemirror.js"></script>
+     <script src="javascripts/codemirror/addon/edit/matchbrackets.js"></script>
+     <script src="javascripts/codemirror/mode/sparql/sparql.js"></script>
+     <link rel="stylesheet" href="stylesheets/codemirror/codemirror.css">
+      <link rel="stylesheet" href="stylesheets/codemirror/docs.css">
+      <script src="javascripts/github-files/github-files.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+
+      <title>SOAPdenovo2 Case Study</title>
   </head>
 
   <body>
@@ -46,7 +61,7 @@ $ git checkout gh-pages
 -->
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Data Models</h3>
+<a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Data Models</h3>
 
 <!--
 <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
@@ -59,12 +74,25 @@ $ git checkout gh-pages
 -->
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
+<a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
 
 
-<iframe src="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/study_group_count.sparql" height="200" width="200">
-  Your Browser doesn't support Frames.
-</iframe>
+<form><textarea id="code" name="code" rows="40" cols="100" >
+</textarea></form>
+<script>
+    $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function(contents) {
+        console.log(contents);
+        $("textarea#code").text(contents);
+    });
+
+   var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+</script>
+
 
 
 <h3>
