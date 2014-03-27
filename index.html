@@ -77,20 +77,21 @@ $ git checkout gh-pages
 <a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
 
 
-<form><textarea id="code" name="code" rows="40" cols="100" >
-</textarea></form>
+<form><textarea id="code" name="code" rows="40" cols="100" ></textarea></form>
 <script>
     $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function(contents) {
         console.log(contents);
         $("textarea#code").text(contents);
+
+        CodeMirror.fromTextArea(document.getElementById("code"), {
+            mode: "application/x-sparql-query",
+            matchBrackets: true,
+            readOnly: true,
+            lineNumbers: true
+        });
     });
 
-   var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-                    mode: "application/x-sparql-query",
-                    matchBrackets: true,
-                    readOnly: true,
-                    lineNumbers: true
-                });
+
 </script>
 
 
