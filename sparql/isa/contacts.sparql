@@ -1,0 +1,24 @@
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  ro:   <http://purl.obolibrary.org/obo/RO_>
+PREFIX  tax:  <http://purl.obolibrary.org/obo/NCBITaxon_>
+PREFIX  iao:  <http://purl.obolibrary.org/obo/IAO_>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  isa:  <http://purl.org/isaterms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  obi:  <http://purl.obolibrary.org/obo/OBI_>
+PREFIX  bfo:  <http://purl.obolibrary.org/obo/BFO_>
+
+SELECT DISTINCT  ?person_name ?person_iri ?role
+WHERE
+  { ?person_iri rdf:type tax:9606 .
+    ?person_iri rdfs:label ?person_name .
+    ?person_iri bfo:0000056 ?study .
+    ?study rdf:type isa:study
+    OPTIONAL
+      { ?role_iri rdf:type obi:0000202 .
+        ?person_iri bfo:0000087 ?role_iri .
+        ?role_iri rdfs:label ?role
+      }
+  }
+
