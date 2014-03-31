@@ -1,0 +1,16 @@
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  ro:   <http://purl.obolibrary.org/obo/RO_>
+PREFIX  tax:  <http://purl.obolibrary.org/obo/NCBITaxon_>
+PREFIX  iao:  <http://purl.obolibrary.org/obo/IAO_>
+PREFIX  isa:  <http://purl.org/isaterms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  obi:  <http://purl.obolibrary.org/obo/OBI_>
+
+SELECT DISTINCT  ?factor ?factor_level
+WHERE
+  { ?study_design rdf:type isa:study_design .
+    ?study_design isa:declares ?factor_iri .
+    ?factor_iri rdfs:label ?factor .
+    ?factor_iri isa:has_factor_level ?factor_level_iri .
+    ?factor_level_iri rdfs:label ?factor_level
+  }
