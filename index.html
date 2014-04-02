@@ -73,8 +73,13 @@ $ git checkout gh-pages
 
 -->
 
+The nanopublications for the SOAPdenovo2 use case were built using a template for <a href="http://bioinformatics.oxfordjournals.org/content/29/4/525">OntoMaton</a>, which combines Google Spreadsheets with services for ontology lookup and annotation relying
+on <a href="http://data.bioontology.org/documentation">NCBO Bioportal</a> and <a href="http://lov.okfn.org/">Linked Open Vocabularies</a> (this last one was added in the recent version of OntoMaton). The spreadsheet with the Nanopublications is <a href="https://docs.google.com/spreadsheet/ccc?key=0AmtKthYRS0f5dHFldVQ5cVRHT3lxU3FWUUlhNEZ5YkE&usp=drive_web#gid=0">here</a>.
+
 <h3>
 <a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
+
+We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results.
 
 
 <form><textarea id="code" name="code" rows="40" cols="100" ></textarea></form>
@@ -91,13 +96,53 @@ $ git checkout gh-pages
         });
     });
 
-
 </script>
+
+Execute SPARQL query
+
+
+<h3>
+<a name="software" class="anchor" href="#software"><span class="octicon octicon-link"></span></a>Software</h3>
+
+The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. Table 2 from the original paper, can be found at the GigaGalaxy server, and these are the specific links:
+
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>SOAPdenovo2</th>
+                    <th>SOAPdenovo1</th>
+                    <th>AllPathsLG</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">S. Aureus</td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-3-soapdenovo1-saureus">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-5-allpaths-lg-saureus">Workflow</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-1-soapdenovo2-saureus">History</a></td>
+                    <td><a href=" http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-3-soapdenovo1-saureus">History</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-5-allpaths-lg-saureus">History</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">R. Sphaeroides</td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-2-soapdenovo2-rsphaeroides">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-4-soapdenovo1-rsphaeroides">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-6-allpaths-lg-rsphaeroides">Workflow</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-2-soapdenovo2-rsphaeroides">History</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-4-soapdenovo1-rsphaeroides">History</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-6-allpaths-lg-rsphaeroides">History</a></td>
+                </tr>
+            </table>
+
 
 
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h3>
 
 <!---
 <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
