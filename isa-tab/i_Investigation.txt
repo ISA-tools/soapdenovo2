@@ -4,7 +4,7 @@ Term Source File	"http://data.bioontology.org/ontologies/EFO"	"http://data.bioon
 Term Source Version	"110"	"21"	"2"	"160"	"13"	
 Term Source Description	"Experimental Factor Ontology"	"Ontology for Biomedical Investigations"	"National Center for Biotechnology Information (NCBI) Organismal Classification"	"Phenotypic Quality Ontology"	"Eagle-I Research Resource Ontology"	
 INVESTIGATION
-Investigation Identifier	"1.39E+12"
+Investigation Identifier	"SOAPdenovo2"
 Investigation Title	"Investigation"
 Investigation Description	""
 Investigation Submission Date	""
