@@ -1,0 +1,13 @@
+### TODO: update RO URI
+
+PREFIX ore: <http://www.openarchives.org/ore/terms/>
+PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+
+select distinct ?input
+where {
+      <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> ore:aggregates ?result .
+      ?workflow rdf:type roterms:Result ; prov:wasDerivedFrom ?input.}
+
