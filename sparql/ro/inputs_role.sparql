@@ -1,0 +1,10 @@
+### This query is final
+
+PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?role
+where {
+      ?workflow roterms:inputValue [roterms:resource ?data ; roterms:portName ?role] .
+      ?data rdfs:seeAlso <http://w3id.org/isa/soapdenovo2/raw_data_file/17> .}

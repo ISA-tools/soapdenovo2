@@ -1,0 +1,12 @@
+## The query is final
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX wfprov: <http://purl.org/wf4ever/wfprov#>
+
+select distinct ?workflow
+where{ 
+       ?data rdfs:seeAlso <http://w3id.org/isa/soapdenovo2/derived_data_file/3>; 
+       	     prov:wasGeneratedBy ?workflowrun .
+       ?workflowrun wfprov:describedByWorkflow [rdfs:seeAlso ?workflow]
+}

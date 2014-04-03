@@ -1,0 +1,12 @@
+TODO: update RO URI
+TODO: to be tested
+
+PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+select distinct ?study ?studyname
+where { 
+      <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> ore:aggregates ?workflow .
+      ?workflow rdf:type wfdesc:Workflow; rdfs:seeAlso ?soap .
+      #?soap a ono:data_transformation; obo:part_of ?study
+      ?soap owl:sameAs [a <http://purl.obolibrary.org/obo/OBI_0200000> ; <http://purl.obolibrary.org/obo/BFO_0000050> ?study] .
+      ?study rdfs:label ?studyname .
+}

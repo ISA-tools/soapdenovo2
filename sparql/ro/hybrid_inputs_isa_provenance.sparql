@@ -1,0 +1,11 @@
+### TODO: update RO URI
+
+### TODO: to be tested
+
+PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+select ?input ?sourceData ?sourceActivities
+where { 
+      <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> ore:aggregates ?workflow .
+      ?workflow rdf:type wfdesc:Workflow; roterms:inputSelected ?input .
+      ?input prov:wasDerivedFrom ?sourceData ; prov:wasGeneratedBy ?sourceActivities .
+}
