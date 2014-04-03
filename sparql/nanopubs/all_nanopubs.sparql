@@ -1,0 +1,7 @@
+prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/>
+
+SELECT ?g 
+WHERE
+{
+?g rdfg:subGraphOf <http://w3id.org/isa/soapdenovo2/nanopubs>.
+}
