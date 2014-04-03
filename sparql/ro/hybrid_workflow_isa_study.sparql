@@ -1,7 +1,8 @@
 TODO: update RO URI
-TODO: to be tested
 
 PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
+PREFIX ore: <http://www.openarchives.org/ore/terms/>
 select distinct ?study ?studyname
 where { 
       <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> ore:aggregates ?workflow .
