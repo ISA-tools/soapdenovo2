@@ -1,0 +1,712 @@
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/wfdesc#Workflow>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://www.w3.org/2000/01/rdf-schema#comment> "Galaxy workflow for reproducing Table 2 of SOAPdenovo paper"  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://www.w3.org/2000/01/rdf-schema#label> "Galaxy workflow for reproducing Table 2 of SOAPdenovo paper"  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  <http://purl.org/dc/terms/description>  "\n      Galaxy workflow for reproducing Table 2 of SOAPdenovo paper\n    " .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/dc/terms/title> "Galaxy workflow for reproducing Table 2 of SOAPdenovo paper" .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/roterms#inputValue> [ a       <http://purl.org/wf4ever/roterms#inputValue> ;
+                  <http://purl.org/wf4ever/roterms#portName>
+                          "SOAPdenovo2/Library2/Forward FASTQ file" ;
+                  <http://purl.org/wf4ever/roterms#resource>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_B_L3_37bp3500IS45X_1.fq>
+                ] ;
+        <http://purl.org/wf4ever/roterms#inputValue>
+                [ a       <http://purl.org/wf4ever/roterms#inputValue> ;
+                  <http://purl.org/wf4ever/roterms#portName>
+                          "GAGE/Reference genome file in FASTA format" ;
+                  <http://purl.org/wf4ever/roterms#resource>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus.fasta>
+                ] ;
+        <http://purl.org/wf4ever/roterms#inputValue>
+                [ a       <http://purl.org/wf4ever/roterms#inputValue> ;
+                  <http://purl.org/wf4ever/roterms#portName>
+                          "KmerFreq AR/Library1/Reverse FASTQ file" ;
+                  <http://purl.org/wf4ever/roterms#resource>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_A_L1_101bp180IS45X_2.fq>
+                ] ;
+        <http://purl.org/wf4ever/roterms#inputValue>
+                [ a       <http://purl.org/wf4ever/roterms#inputValue> ;
+                  <http://purl.org/wf4ever/roterms#portName>
+                          "SOAPdenovo2/Library2/Reverse FASTQ file" ;
+                  <http://purl.org/wf4ever/roterms#resource>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_B_L3_37bp3500IS45X_2.fq>
+                ] ;
+        <http://purl.org/wf4ever/roterms#inputValue>
+                [ a       <http://purl.org/wf4ever/roterms#inputValue> ;
+                  <http://purl.org/wf4ever/roterms#portName>
+                          "KmerFreq AR/Library1/Forward FASTQ file" ;
+                  <http://purl.org/wf4ever/roterms#resource>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_A_L1_101bp180IS45X_1.fq>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasInput>
+                [ a       <http://purl.org/wf4ever/wfdesc#Input> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Workflow input file for GAGE/Reference genome file in FASTA format" ;
+                  <http://purl.org/wf4ever/wfdesc#hasArtifact>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus.fasta>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasInput>
+                [ a       <http://purl.org/wf4ever/wfdesc#Input> ;
+                  <http://www.w3.org/2000/01/rdf-schema#comment>
+                          "TODO:Upload and share the data" ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Workflow input file for SOAPdenovo2" ;
+                  <http://purl.org/wf4ever/wfdesc#hasArtifact>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_B_L3_37bp3500IS45X_2.fq>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasInput>
+                [ a       <http://purl.org/wf4ever/wfdesc#Input> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Workflow input file for KmerFreq AR" ;
+                  <http://purl.org/wf4ever/wfdesc#hasArtifact>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_A_L1_101bp180IS45X_2.fq>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasInput>
+                [ a       <http://purl.org/wf4ever/wfdesc#Input> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Workflow input file for KmerFreq AR" ;
+                  <http://purl.org/wf4ever/wfdesc#hasArtifact>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_A_L1_101bp180IS45X_1.fq>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasInput>
+                [ a       <http://purl.org/wf4ever/wfdesc#Input> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Workflow input file for SOAPdenovo2" ;
+                  <http://purl.org/wf4ever/wfdesc#hasArtifact>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_B_L3_37bp3500IS45X_1.fq>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasOutput>
+                [ a       <http://purl.org/wf4ever/wfdesc#Output> ;
+                  <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Workflow output file" ;
+                  <http://purl.org/wf4ever/wfdesc#hasArtifact>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular>
+                ] ;
+        <http://purl.org/wf4ever/wfdesc#hasWorkflowDefinition>
+                <http://www.myexperiment.org/workflows/4078.html> .
+                
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_B_L3_37bp3500IS45X_2.fq>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://purl.org/wf4ever/wfprov#Artifact> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://w3id.org/isa/soapdenovo2/raw_data_file/21> .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus.fasta>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://purl.org/wf4ever/wfprov#Artifact> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://w3id.org/isa/soapdenovo2/raw_data_file/17> .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_A_L1_101bp180IS45X_2.fq>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://purl.org/wf4ever/wfprov#Artifact> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://w3id.org/isa/soapdenovo2/raw_data_file/19> .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_A_L1_101bp180IS45X_1.fq>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://purl.org/wf4ever/wfprov#Artifact> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://w3id.org/isa/soapdenovo2/raw_data_file/18> .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Inputs/saureus_B_L3_37bp3500IS45X_1.fq>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>       <http://purl.org/wf4ever/wfprov#Artifact> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://w3id.org/isa/soapdenovo2/raw_data_file/20> .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>      <http://purl.org/wf4ever/roterms#Result> , <http://purl.org/wf4ever/ro#Resource> , <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Results calculating the N50 and corrected N50 scores" ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                <http://w3id.org/isa/soapdenovo2/derived_data_file/3> ;
+        <http://purl.org/dc/terms/created>
+                "2014-04-01T15:35:17.149Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://purl.org/dc/terms/creator>
+                <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U> ;
+        <http://purl.org/dc/terms/title>
+                "Results calculating the N50 and corrected N50 scores" ;
+        <http://purl.org/wf4ever/ro#checksum>
+                <urn:MD5:9608c778a0553053c39d726986d14beb> ;
+        <http://purl.org/wf4ever/ro#filesize>
+                31 ;
+        <http://purl.org/wf4ever/ro#name>
+                "gage.out.Tabular"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/ns/prov#wasDerivedFrom>
+                <http://w3id.org/isa/soapdenovo2/raw_data_file/17> , <http://w3id.org/isa/soapdenovo2/raw_data_file/21> , <http://w3id.org/isa/soapdenovo2/raw_data_file/19> , <http://w3id.org/isa/soapdenovo2/raw_data_file/18> , <http://w3id.org/isa/soapdenovo2/raw_data_file/20> ;
+        <http://www.w3.org/ns/prov#wasGeneratedBy>
+                [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>      <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
+                  <http://purl.org/wf4ever/wfprov#describedByWorkflow>
+                          <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>
+                ] .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/roterms#inputSelected> <http://w3id.org/isa/soapdenovo2/raw_data_file/17>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/roterms#inputSelected> <http://w3id.org/isa/soapdenovo2/raw_data_file/18>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/roterms#inputSelected> <http://w3id.org/isa/soapdenovo2/raw_data_file/19>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/roterms#inputSelected> <http://w3id.org/isa/soapdenovo2/raw_data_file/20>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/roterms#inputSelected> <http://w3id.org/isa/soapdenovo2/raw_data_file/21>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/dc/terms/created> "2014-04-01T15:34:13.816Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/ro#name> "Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/ro#filesize> "15681"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:8531c7e48d120b29725eb11f010e86ea>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://purl.org/dc/terms/descriptions> "RO that aggregates the ISA documents, the nanopublication statements as well as information about the workflow used to produce the results."  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/raw_data_file/17>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/raw_data_file/18>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/isa-tab>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/raw_data_file/19>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/isa-owl>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/raw_data_file/20>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/nanopublication>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/raw_data_file/21>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://w3id.org/isa/soapdenovo2/derived_data_file/3>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/evo_info.ttl>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/aggregates> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#ResearchObject>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Aggregation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://purl.org/dc/terms/created> "2014-04-01T15:34:09.852Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> <http://www.openarchives.org/ore/terms/isDescribedBy> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/17e55f13-e099-4593-a799-595552016520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/17e55f13-e099-4593-a799-595552016520> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/17e55f13-e099-4593-a799-595552016520> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://purl.org/dc/terms/created> "2014-04-01T15:35:30.984Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/41a99b7b-fa20-445d-abab-8c6e63b94840> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:33.513Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0001-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "413"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:d11b41a5817879e2282206e47fd86b1f>  .
+<http://www.openarchives.org/ore/terms/AggregatedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.openarchives.org/ore/terms/AggregatedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent>  .
+<https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U> <http://xmlns.com/foaf/0.1/name> "Jun Zhao"  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:48.872Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#filesize> "420"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:2212659896017cc3a36c02d22e63a084>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://purl.org/dc/terms/created> "2014-04-01T15:36:42.548Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular>  .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://purl.org/ao/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://purl.org/ao/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:35:14.375Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf> <http://purl.org/wf4ever/ro#name> "output.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf> <http://purl.org/wf4ever/ro#filesize> "2507"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:c102d5989bc6bbb95c8d10e8f44239a7>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://purl.org/dc/terms/created> "2014-04-01T15:35:17.149Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://purl.org/wf4ever/ro#name> "gage.out.Tabular"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://purl.org/wf4ever/ro#filesize> "31"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:9608c778a0553053c39d726986d14beb>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://purl.org/dc/terms/created> "2014-04-01T15:34:11.578Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/evo_info.ttl>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/evo_info.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/evo_info.ttl> <http://purl.org/dc/terms/created> "2014-04-01T15:34:10.884Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/evo_info.ttl> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://purl.org/dc/terms/created> "2014-04-01T15:35:46.342Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:35:08.035Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0002-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "322"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:a53911a8e84c7de860fd49f0950b2890>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://purl.org/dc/terms/created> "2014-04-01T15:36:57.356Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:36.31Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0009-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "331"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:10ae52289e4d9a8f13b7f8142e27ee46>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://purl.org/dc/terms/created> "2014-04-01T15:35:23.173Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d241f0a1-2ca7-461d-bdab-59d6a1f66c49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d241f0a1-2ca7-461d-bdab-59d6a1f66c49> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d241f0a1-2ca7-461d-bdab-59d6a1f66c49> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/output.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:16.604Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0007-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "331"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:bc7313f1f0d74a40c88563cb0b06a01a>  .
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Literal>  .
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>  .
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/650689c2-ce52-47d9-aac0-c7ee345643a4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/650689c2-ce52-47d9-aac0-c7ee345643a4> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/650689c2-ce52-47d9-aac0-c7ee345643a4> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://purl.org/dc/terms/created> "2014-04-01T15:36:59.765Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/8bd3567b-5dc8-4eb9-ba84-4cdfc121c0aa> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:27.052Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0003-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "322"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:2e90b769bb718c9543359909dbc17c11>  .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Datatype>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:35:04.572Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf> <http://purl.org/wf4ever/ro#name> "Galaxy-wfdesc.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf> <http://purl.org/wf4ever/ro#filesize> "5901"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:75c309f43d969ac92f513764cea70054>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>  .
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>  .
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>  .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso>  .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:23.374Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#filesize> "420"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:50666f2c3ce8ab3824e16aa06b9879c7>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/40e7190b-796d-4114-89e7-28353a8b70c9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/40e7190b-796d-4114-89e7-28353a8b70c9> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/40e7190b-796d-4114-89e7-28353a8b70c9> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://purl.org/dc/terms/created> "2014-04-01T15:36:51.166Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/f8e55458-117e-45c0-ab5e-872df41534da> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:20.292Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0008-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "331"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:cf1c6e840c642694e2a5f4bbc4bd4ad9>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/2387fe38-7d8c-4876-b4ae-429705a8be6a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/2387fe38-7d8c-4876-b4ae-429705a8be6a> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/2387fe38-7d8c-4876-b4ae-429705a8be6a> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:30.282Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#filesize> "420"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:9cc1678956dfeae07dd4823b7d303413>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/053b9f37-bbcf-48f5-b9d2-bca4ae2a3321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/053b9f37-bbcf-48f5-b9d2-bca4ae2a3321> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/053b9f37-bbcf-48f5-b9d2-bca4ae2a3321> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/20a9c47a-6b6a-4723-89a0-c3ca12eafb05>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://purl.org/dc/terms/created> "2014-04-01T15:35:40.22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://purl.org/dc/terms/created> "2014-04-01T15:35:28.426Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://purl.org/dc/terms/created> "2014-04-01T15:35:37.724Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:54.404Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0005-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "334"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:27d8eb323bc1e33494a034cc92eadb80>  .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Manifest>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/ResourceMap>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:09.852Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf> <http://www.openarchives.org/ore/terms/describes> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:35:10.89Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#filesize> "420"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:9580187cfcf0db73e554a3e6ad80ac66>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://purl.org/dc/terms/created> "2014-04-01T15:34:45.491Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://purl.org/wf4ever/ro#name> "make.sh"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://purl.org/wf4ever/ro#filesize> "3573"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:79d30b75be64626d092235aa51e534c9>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://purl.org/dc/terms/created> "2014-04-01T15:35:25.472Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/manifest.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://purl.org/dc/terms/created> "2014-04-01T15:35:42.855Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://purl.org/dc/terms/created> "2014-04-01T15:36:30.272Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:51.639Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#filesize> "420"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:15f0a17dde9c2e463375d4d2031e16c9>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:35:00.853Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0010-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "331"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:fefecdddd6864290ab308812c7cc85a3>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://purl.org/dc/terms/created> "2014-04-01T15:35:33.751Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:42.087Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0006-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "331"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:4cc19329ba45eb1d14c5c2268bf87df2>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf> <http://purl.org/dc/terms/created> "2014-04-01T15:34:39.036Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#name> "Ann-20140401-0004-soapdenovo-v1.rdf"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#filesize> "330"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:efdc2f837d8a30605b817b40aa9e5084>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://purl.org/dc/terms/created> "2014-04-01T15:34:58.091Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://purl.org/wf4ever/ro#name> "nanopub1.trig"^^<http://www.w3.org/2001/XMLSchema#string>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://purl.org/wf4ever/ro#filesize> "4918"^^<http://www.w3.org/2001/XMLSchema#integer>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig> <http://purl.org/wf4ever/ro#checksum> <urn:MD5:21be2db5c6d1fc1d8bd8e25dc76677e2>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://purl.org/dc/terms/created> "2014-04-01T15:36:48.549Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://purl.org/dc/terms/created> "2014-04-01T15:36:45.012Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://purl.org/dc/terms/created> "2014-04-01T15:36:53.465Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/AggregatedResource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#AggregatedAnnotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ao/Annotation>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://purl.org/dc/terms/created> "2014-04-01T15:36:04.442Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://purl.org/dc/terms/creator> <https://www.google.com/accounts/o8/id?id=AItOawmGzFbpvR7oq2cmsSwxXVwxWZQHkh6Y-_U>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://purl.org/ao/body> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb> <http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/da26fdc0-98c4-4ffd-9078-f166895c7e90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/da26fdc0-98c4-4ffd-9078-f166895c7e90> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/da26fdc0-98c4-4ffd-9078-f166895c7e90> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/make.sh>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/2754f2ba-274f-41a7-b7dd-672b7fe95584> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/2754f2ba-274f-41a7-b7dd-672b7fe95584> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/2754f2ba-274f-41a7-b7dd-672b7fe95584> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/41118cc1-004d-462f-95dd-0bb45eb03184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/41118cc1-004d-462f-95dd-0bb45eb03184> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/41118cc1-004d-462f-95dd-0bb45eb03184> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9194e8f1-a87d-4d90-8ed3-b13b63b6aa6b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9194e8f1-a87d-4d90-8ed3-b13b63b6aa6b> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9194e8f1-a87d-4d90-8ed3-b13b63b6aa6b> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0003-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d670c383-828e-4178-b32d-6069585ae352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d670c383-828e-4178-b32d-6069585ae352> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d670c383-828e-4178-b32d-6069585ae352> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0008-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/39732ef6-3fea-4a8b-876d-dd516637c4df> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/39732ef6-3fea-4a8b-876d-dd516637c4df> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/39732ef6-3fea-4a8b-876d-dd516637c4df> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d4a570b2-8b1b-456d-bdc2-71a97f9228b1>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/a71fc229-9ca7-4e55-a40e-99841486125a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/a71fc229-9ca7-4e55-a40e-99841486125a> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/a71fc229-9ca7-4e55-a40e-99841486125a> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0002-soapdenovo-v1.rdf>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b8e8006a-4277-4e90-8ee0-c5803fe3677b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b8e8006a-4277-4e90-8ee0-c5803fe3677b> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b8e8006a-4277-4e90-8ee0-c5803fe3677b> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5861baea-7ba6-4be9-879f-04e1e89e6229>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1cdfeb54-c540-47e5-b1c9-49ea7e74db83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1cdfeb54-c540-47e5-b1c9-49ea7e74db83> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1cdfeb54-c540-47e5-b1c9-49ea7e74db83> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/35230839-8d82-40c9-a2c5-bbdef3311483> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/35230839-8d82-40c9-a2c5-bbdef3311483> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/35230839-8d82-40c9-a2c5-bbdef3311483> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/94b64fbf-7138-4a10-a23c-a9fcf7f1899c>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/66dec397-547b-4f26-9fa3-8b6298028540> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/66dec397-547b-4f26-9fa3-8b6298028540> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/66dec397-547b-4f26-9fa3-8b6298028540> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/c7e5a0f1-e795-4812-a475-ed84e4a1991b>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b2734a1a-57ab-4e49-8084-a2c57eaedcff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b2734a1a-57ab-4e49-8084-a2c57eaedcff> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b2734a1a-57ab-4e49-8084-a2c57eaedcff> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/09488ff9-d567-4aad-9146-1720ab3347ab>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d4b981d7-c76a-4907-8703-468f8070db67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d4b981d7-c76a-4907-8703-468f8070db67> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/d4b981d7-c76a-4907-8703-468f8070db67> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/60e1a000-ec8a-42c2-ab17-fd787674bddb>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/ab6a14ea-d228-46ab-ba5b-967b937c7e86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/ab6a14ea-d228-46ab-ba5b-967b937c7e86> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/ab6a14ea-d228-46ab-ba5b-967b937c7e86> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/NanoStm/nanopub1.trig>  .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9a416a55-96a8-430f-aec9-53f9a0c261af> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9a416a55-96a8-430f-aec9-53f9a0c261af> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9a416a55-96a8-430f-aec9-53f9a0c261af> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/4bac4d57-d1e7-44b6-95e5-5aaf0da24922>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>  .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/6e5a3262-7dfd-48a7-9585-def25e8d1ba6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/6e5a3262-7dfd-48a7-9585-def25e8d1ba6> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/6e5a3262-7dfd-48a7-9585-def25e8d1ba6> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Galaxy-wfdesc.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9955c5a5-69c5-49a6-a1f9-e41718d899dc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9955c5a5-69c5-49a6-a1f9-e41718d899dc> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/9955c5a5-69c5-49a6-a1f9-e41718d899dc> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0010-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b61083d2-97bb-4c69-8265-269664a0f77a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b61083d2-97bb-4c69-8265-269664a0f77a> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b61083d2-97bb-4c69-8265-269664a0f77a> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga.rdf>  .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Container>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/3df07499-47d5-4bf5-9a1e-73deb5426c71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/3df07499-47d5-4bf5-9a1e-73deb5426c71> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/3df07499-47d5-4bf5-9a1e-73deb5426c71> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/5d2c154c-872f-45d4-b7b2-83b07c98e76c>  .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/f6c52d08-01c7-4165-b5e9-a5f1e2abc89e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/f6c52d08-01c7-4165-b5e9-a5f1e2abc89e> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/f6c52d08-01c7-4165-b5e9-a5f1e2abc89e> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d864194e-f910-4364-958e-a2c459eea88a>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#object>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/a690b857-6d3e-4993-b9e0-e11b04a50356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/a690b857-6d3e-4993-b9e0-e11b04a50356> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/a690b857-6d3e-4993-b9e0-e11b04a50356> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0009-soapdenovo-v1.rdf>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Container>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/36e0cdd3-df05-499b-9cee-9c23ca882c1f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/36e0cdd3-df05-499b-9cee-9c23ca882c1f> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/36e0cdd3-df05-499b-9cee-9c23ca882c1f> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/79beb18d-e384-42b9-813a-c3f30d1424c2>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/5fb7d580-a263-4184-8f6c-5c9cfb6c8cc2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/5fb7d580-a263-4184-8f6c-5c9cfb6c8cc2> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/5fb7d580-a263-4184-8f6c-5c9cfb6c8cc2> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/bff34396-e6e3-4fba-8a10-fc03ee83af84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/bff34396-e6e3-4fba-8a10-fc03ee83af84> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/bff34396-e6e3-4fba-8a10-fc03ee83af84> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/ceb2c3ac-eed7-4db6-902d-2b347780179e>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/bd987434-8fc9-40e1-829a-01961a4c399c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/bd987434-8fc9-40e1-829a-01961a4c399c> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/bd987434-8fc9-40e1-829a-01961a4c399c> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0001-soapdenovo-v1.rdf>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Container>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/0119f43c-4e0c-45cf-8960-8af431d5dd3f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/0119f43c-4e0c-45cf-8960-8af431d5dd3f> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/0119f43c-4e0c-45cf-8960-8af431d5dd3f> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0004-soapdenovo-v1.rdf>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/503aa7df-3b1c-49dd-aa53-60feca942489> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/503aa7df-3b1c-49dd-aa53-60feca942489> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/503aa7df-3b1c-49dd-aa53-60feca942489> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d9b8bac0-3966-4612-a154-5cefb5d4d981>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/39d68b76-be4f-4e93-9300-9e9eb46cb4b3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/39d68b76-be4f-4e93-9300-9e9eb46cb4b3> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/39d68b76-be4f-4e93-9300-9e9eb46cb4b3> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/d940c0a4-d569-444a-b223-050da6396360>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/928bd84b-a89e-402a-ae5b-7b9c4f8c4fc8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/928bd84b-a89e-402a-ae5b-7b9c4f8c4fc8> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/928bd84b-a89e-402a-ae5b-7b9c4f8c4fc8> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Outputs/gage.out.Tabular>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Container>  .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b0e4f2e3-d60b-4631-a365-7d9330badfb3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b0e4f2e3-d60b-4631-a365-7d9330badfb3> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/b0e4f2e3-d60b-4631-a365-7d9330badfb3> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0005-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1ea8f962-3267-4154-8530-0701f6bb0f12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1ea8f962-3267-4154-8530-0701f6bb0f12> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1ea8f962-3267-4154-8530-0701f6bb0f12> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/46b2f16b-ce08-4564-bc53-7210f19ca9c0>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/f34cef73-4a78-43ad-ac7c-8ffb557446a7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/f34cef73-4a78-43ad-ac7c-8ffb557446a7> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/f34cef73-4a78-43ad-ac7c-8ffb557446a7> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0006-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/650abe2e-8b6b-4e9b-a26a-1bf9e8c82f47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/650abe2e-8b6b-4e9b-a26a-1bf9e8c82f47> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/650abe2e-8b6b-4e9b-a26a-1bf9e8c82f47> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/Ann-20140401-0007-soapdenovo-v1.rdf>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1e51b2c9-adb7-4ef9-9962-e80384e53597> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1e51b2c9-adb7-4ef9-9962-e80384e53597> <http://www.openarchives.org/ore/terms/proxyIn> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/>  .
+<http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/proxies/1e51b2c9-adb7-4ef9-9962-e80384e53597> <http://www.openarchives.org/ore/terms/proxyFor> <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/.ro/annotations/73dfd9bf-ffb0-41c5-9a35-6268f814fd9f>  .
