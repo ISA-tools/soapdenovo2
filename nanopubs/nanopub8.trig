@@ -1,0 +1,76 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix provenance: <http://w3id.org/isa/soapdenovo2/nanopub/8/provenance> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sio: <http://semanticscience.org/resource/SIO_> .
+@prefix isa: <http://purl.org/isaterms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix assertion: <http://w3id.org/isa/soapdenovo2/nanopub/8/assertion> .
+@prefix pubInfo: <http://w3id.org/isa/soapdenovo2/nanopub/8/pubInfo> .
+@prefix this: <http://w3id.org/isa/soapdenovo2/nanopub/8/> .
+
+this: {
+	this: np:hasPublicationInfo pubInfo: ;
+		np:hasAssertion assertion: ;
+		np:hasProvenance provenance: ;
+		a np:Nanopublication .
+}
+
+assertion: {
+	this:scaffoldN50_fold_change obo:STATO_0000259 this:scaffoldN50_v1 .
+	
+	this:genome_assembly1 obo:IAO_0000136 <http://w3id.org/isa/soapdenovo2/sample/2> .
+	
+	this:scaffoldN50_v1 obo:BFO_0000050 <http://w3id.org/isa/soapdenovo2/derived_data_file/6> .
+	
+	this:genome_assembly2 obo:IAO_0000136 <http://w3id.org/isa/soapdenovo2/sample/2> .
+	
+	this:scaffoldN50_fold_change obo:STATO_0000101 this:scaffoldN50_v2 .
+	
+	this:scaffoldN50_v2 obo:OBI_0000312 <http://w3id.org/isa/soapdenovo2/assay_protocol_ref/17> .
+	
+	this:scaffoldN50_v1 obo:IAO_0000004 this:105 .
+	
+	this:scaffoldN50_v2 obo:BFO_0000050 <http://w3id.org/isa/soapdenovo2/derived_data_file/7> .
+	
+	this:scaffoldN50_v1 rdf: obo:OBI_0001945 .
+	
+	this:scaffoldN50_v2 obo:IAO_0000136 obo:SO_0000148 .
+	
+	this:scaffoldN50_v1 obo:IAO_0000039 obo:UO_0000329 .
+	
+	this:scaffoldN50_v2 rdf: obo:OBI_0001945 ;
+		obo:IAO_0000136 this:genome_assembly2 .
+	
+	this:genome_assembly2 rdf: obo:SO_0000353 .
+	
+	this:scaffoldN50_v1 obo:IAO_0000136 this:genome_assembly1 , obo:SO_0000148 .
+	
+	this:genome_assembly1 rdf: obo:SO_0000353 .
+	
+	this:scaffoldN50_fold_change obo:IAO_0000004 <http://w3id.org/isa/soapdenovo2/nanopub/8/24.2761904761905> ;
+		rdf: obo:STATO_0000169 .
+	
+	this:scaffoldN50_v2 obo:IAO_0000004 this:2549 ;
+		obo:IAO_0000039 obo:UO_0000329 .
+	
+	this:scaffoldN50_v1 obo:OBI_0000312 <http://w3id.org/isa/soapdenovo2/assay_protocol_ref/16> .
+}
+
+provenance: {
+	assertion: prov:wasDerivedFrom <http://w3id.org/isa/soapdenovo2/study/1> ;
+		prov:wasAttributedTo <http://orcid.org/0000-0003-4676-8587> ;
+		dct:bibliographicCitation <http://dx.doi.org/10.1186/2047-217X-1-18> ;
+		prov:generatedAtTime "\"2014-03-31T14:38:00Z\"" ;
+		prov:wasAttributedTo <http://orcid.org/0000-0001-9711-6533> .
+}
+
+pubInfo: {
+	this:this dct:creator <http://orcid.org/0000-0001-9853-5668> ;
+		dct:created <http://w3id.org/isa/soapdenovo2/nanopub/8/<date\>> ;
+		dct:creator <http://orcid.org/0000-0003-3499-8262> ;
+		dct:hasVersion "\"1\"" ;
+		dct:rightsHolder "\"http://isa-tools.org\"" ;
+		dct:bibliographicCitation <http://dx.doi.org/10.1186/2047-217X-1-18> .
+}
