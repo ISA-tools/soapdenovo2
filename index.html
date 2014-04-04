@@ -28,7 +28,7 @@
       <title>SOAPdenovo2 Case Study</title>
   </head>
 
-  <body>
+<body>
     <div id="container">
       <div class="inner">
 
@@ -45,36 +45,106 @@
 
         <hr>
 
-        <section id="main_content">
-          <h3>
+<section id="main_content">
+
+<h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Overview</h3>
 
-<!--
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+The SOAPdenovo2 case study is a reproducibility study aimed at exploring how existing data models and workflow enactment engines can help assess, record and preserve scientific workflows and associated findings by reviewing a
+comparison between sequence assembly algorithm performance in the light of development of the <a href="http://www.gigasciencejournal.com/content/1/1/18">SOAPdenovo2 de novo genome assembler</a>. The case study was a joint effort by the <a href="http://www.gigasciencejournal.com">GigaScience journal</a>, the <a href="http://isacommons.org/">Investigation/Study/Assay</a> (ISA),
+<a href="http://nanopub.org/">Nanopublication</a> (Nanopub) and <a href="http://researchobject.org/">Research Object</a> (RO) communities and SOAPdenovo2 de novo genome assembler developers.
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
--->
+<br>
 
 <h3>
-<a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Data Models</h3>
+<a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Galaxy Workflows</h3>
 
-<!--
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. Table 2 from the original paper, can be found at the GigaGalaxy server, and these are the specific links:
+
+            <table>
+                <tr>
+                    <td></td>
+                    <td>SOAPdenovo2</td>
+                    <td>SOAPdenovo1</td>
+                    <td>AllPathsLG</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">S. Aureus</td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-3-soapdenovo1-saureus">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-5-allpaths-lg-saureus">Workflow</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-1-soapdenovo2-saureus">History</a></td>
+                    <td><a href=" http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-3-soapdenovo1-saureus">History</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-5-allpaths-lg-saureus">History</a></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">R. Sphaeroides</td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-2-soapdenovo2-rsphaeroides">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-4-soapdenovo1-rsphaeroides">Workflow</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-6-allpaths-lg-rsphaeroides">Workflow</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-2-soapdenovo2-rsphaeroides">History</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-4-soapdenovo1-rsphaeroides">History</a></td>
+                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-6-allpaths-lg-rsphaeroides">History</a></td>
+                </tr>
+            </table>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Data Models: ISA, RO and Nanopublication</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+The ISA model, with its focus on experimental design, insists on the declaration of study plans (e.g., experimental factors considered) and provides cues for reviewers to assess content and suitability of the plans. Furthermore, the underlying model ensures that inputs and outputs of processes, or workflows, are declared and identified, referring to existing database identifiers when relevant. Initially intended to draw the graph of sample processing through to coarse data processing, the ISA grammar is generic enough to cover computational processing while allowing referencing to more granular forms such as Galaxy files.
 
--->
+ISA and RO both provide means to track experimental and computational workflows respectively, with some level of acknowledged overlap which is handled by deferring to the domain specific resources, with Research Object project recommending ISA for the biological domain.  Finally, since describing how data are acquired, generated and analyzed is only part of the story, the description of the findings requires attention. The Nanopublication model tackles what used to represent the blind side of data reporting: capturing experimental conclusion.
 
-The nanopublications for the SOAPdenovo2 use case were built using a template for <a href="http://bioinformatics.oxfordjournals.org/content/29/4/525">OntoMaton</a>, which combines Google Spreadsheets with services for ontology lookup and annotation relying
-on <a href="http://data.bioontology.org/documentation">NCBO Bioportal</a> and <a href="http://lov.okfn.org/">Linked Open Vocabularies</a> (this last one was added in the recent version of OntoMaton). The spreadsheet with the Nanopublications is <a href="https://docs.google.com/spreadsheet/ccc?key=0AmtKthYRS0f5dHFldVQ5cVRHT3lxU3FWUUlhNEZ5YkE&usp=drive_web#gid=0">here</a>.
+
+<h4>Investigation-Study-Assay</h4>
+
+<dl>
+<dt>Scope:</dt>
+<dd>Experimental Design, Variable, Material Processing, Data Processing workflows.</dd>
+<dt>Outcomes:</dt>
+<dd>
+    <ul>
+    <li>an <a href="https://github.com/agbeltran/soapdenovo2/tree/master/isa-tab">tab-delimited archive</a> presenting an overview of the SOAPdenovo2 experiment following the ISA-TAB specification: it includes a description of the experimental design (e.g. independent and response variables), the genomes and data used in SOAPdenovo2 together with stable identifiers, a description of the experimental and computational workflows for evaluation of SOAPdenovo2 with its predecessors SOAPdenovo1 and ALLPATHSLG, including their inputs and outputs, provenance and attribution information</li>
+    <li>an <a href="https://github.com/agbeltran/soapdenovo2/tree/master/isa-owl">explicit OWL/RDF semantic representation</a> generated using ISA2OWL software component and relying on mappings between the ISA syntax and ontological resources such as the Ontology for Biomedical Investigations (OBI) and the Provenance ontology (PROV-O).</li>
+    </ul>
+</dd>
+</dl>
+
+
+<h4>Nanopublication</h4>
+
+<dl>
+    <dt>Scope:</dt>
+    <dd>Key findings, supporting evidence</dd>
+    <dt>Outcome:</dt>
+    <dd>
+    <ul>
+    <li>NanoMaton template: an OntoMaton Google spreadsheet Nanopublication Template, where <a href="http://bioinformatics.oxfordjournals.org/content/29/4/525">OntoMaton</a> is a Google Spreadsheets widget relying on services for ontology lookup and annotation from <a href="http://data.bioontology.org/documentation">NCBO Bioportal</a> and <a href="http://lov.okfn.org/">Linked Open Vocabularies</a> .</li>
+    <li><a href="https://docs.google.com/spreadsheet/ccc?key=0AmtKthYRS0f5dHFldVQ5cVRHT3lxU3FWUUlhNEZ5YkE&usp=drive_web#gid=7">a completed NanoMaton template</a> holding all nanopublication as structured tables</li>
+    <li><a href="https://github.com/ISA-tools/NanoMaton">the NanoMaton code</a> to convert from the Google Spreadsheet template to RDF serializations of the nanopublications, relying on the <a href="">NanoPub-Java library</a></li>
+    <li><a href="https://github.com/agbeltran/soapdenovo2/tree/master/nanopubs">RDF serializations</a> according to the <a href="http://www.nanopub.org/2013/WD-guidelines-20131215/">Nanopub guidelines</a></li>
+    </ul>
+    </dd>
+</dl>
+
+
+<h4>Research Object</h4>
+
+<dl>
+    <dt>Scope:</dt>
+    <dd>Scientific workflow artifacts</dd>
+    <dt>Outcome:</dt>
+    <ul>
+    <li>a scientific workflow specific RO preservation of one application of SOAP2denovo2  to the S. Aureus genome assembly</li>
+    <li>an aggregator document encapsulating the ISA-TAB, ISA-OWL and Nanopublications</li>
+    </ul>
+</dl>
+
+
 
 <h3>
 <a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
@@ -101,52 +171,12 @@ We provide a set of queries demonstrating how the data models can be used to ins
 Execute SPARQL query
 
 
-<h3>
-<a name="software" class="anchor" href="#software"><span class="octicon octicon-link"></span></a>Software</h3>
-
-The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. Table 2 from the original paper, can be found at the GigaGalaxy server, and these are the specific links:
-
-
-            <table>
-                <tr>
-                    <th></th>
-                    <th>SOAPdenovo2</th>
-                    <th>SOAPdenovo1</th>
-                    <th>AllPathsLG</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">S. Aureus</td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-3-soapdenovo1-saureus">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-5-allpaths-lg-saureus">Workflow</a></td>
-                </tr>
-                <tr>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-1-soapdenovo2-saureus">History</a></td>
-                    <td><a href=" http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-3-soapdenovo1-saureus">History</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-5-allpaths-lg-saureus">History</a></td>
-                </tr>
-                <tr>
-                    <td rowspan="2">R. Sphaeroides</td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-2-soapdenovo2-rsphaeroides">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-4-soapdenovo1-rsphaeroides">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-6-allpaths-lg-rsphaeroides">Workflow</a></td>
-                </tr>
-                <tr>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-2-soapdenovo2-rsphaeroides">History</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-4-soapdenovo1-rsphaeroides">History</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-6-allpaths-lg-rsphaeroides">History</a></td>
-                </tr>
-            </table>
-
-
-
 
 <h3>
 <a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h3>
 
-<!---
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
--->
+<a href="https://github.com/agbeltran" class="user-mention">@agbeltran</a>
+
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact">
