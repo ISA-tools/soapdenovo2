@@ -57,7 +57,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 <br>
 
 <h3>
-<a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Galaxy Workflows</h3>
+<a name="galaxy-workflows" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Galaxy Workflows</h3>
 
 The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. Table 2 from the original paper, can be found at the GigaGalaxy server, and these are the specific links:
 
@@ -151,7 +151,76 @@ ISA and RO both provide means to track experimental and computational workflows 
 
 We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results.
 
+    <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/contacts.sparql">contacts.sparql</a></p>
+<!-- contacts.sparql c522c6d030d2507111971b49a53879f704846385 -->
+    <form><textarea id="code1" name="code1" rows="24" cols="100" ></textarea></form>
+    <script>
+        $.getGithubFile("ISA-tools", "soapdenovo2", "c522c6d030d2507111971b49a53879f704846385", function(contents) {
+            console.log(contents);
+            $("textarea#code1").text(contents);
 
+            CodeMirror.fromTextArea(document.getElementById("code1"), {
+                mode: "application/x-sparql-query",
+                matchBrackets: true,
+                readOnly: true,
+                lineNumbers: true
+            });
+        });
+
+    </script>
+    <p align="center">
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++owl%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX++xsd%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++bfo%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Fperson_name+%3Fperson_iri+%3Frole%0D%0AWHERE%0D%0A++{+%3Fperson_iri+rdf%3Atype+tax%3A9606+.%0D%0A++++%3Fperson_iri+rdfs%3Alabel+%3Fperson_name+.%0D%0A++++%3Fperson_iri+bfo%3A0000056+%3Fstudy+.%0D%0A++++%3Fstudy+rdf%3Atype+isa%3Astudy%0D%0A++++OPTIONAL%0D%0A++++++{+%3Frole_iri+rdf%3Atype+obi%3A0000202+.%0D%0A++++++++%3Fperson_iri+bfo%3A0000087+%3Frole_iri+.%0D%0A++++++++%3Frole_iri+rdfs%3Alabel+%3Frole%0D%0A++++++}%0D%0A++}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>
+    </p>
+
+
+
+    <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/data_transf_inputs_outputs.sparql">data_transf_inputs_outputs.sparql</a></p>
+<!-- sparql/isa/data_transf_inputs_outputs.sparql  a99a64d1aa99e17f73509925375f665f68a95a18-->
+    <form><textarea id="code2" name="code2" rows="21" cols="100" ></textarea></form>
+    <script>
+        $.getGithubFile("ISA-tools", "soapdenovo2", "a99a64d1aa99e17f73509925375f665f68a95a18", function(contents) {
+            console.log(contents);
+            $("textarea#code2").text(contents);
+
+            CodeMirror.fromTextArea(document.getElementById("code2"), {
+                mode: "application/x-sparql-query",
+                matchBrackets: true,
+                readOnly: true,
+                lineNumbers: true
+            });
+        });
+
+    </script>
+    <p align="center">
+        <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisa-tools%2FISA_%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fdt%2C+%3Finputfile%2C+%3Foutputfile%0D%0AWHERE%0D%0A{%0D%0A++++%23%3Fdt_iri+rdf%3Atype+obi%3Adata_transformation%0D%0A++++%3Fdt_iri+rdf%3Atype+obi%3A0200000.%0D%0A%0D%0A++++%3Fdt_iri+rdfs%3Alabel+%3Fdt.%0D%0A++++%3Fdt_iri+obi%3A0000293+%3Finputfile_iri.%0D%0A++++%3Fdt_iri+obi%3A0000299+%3Foutputfile_iri.%0D%0A++++%3Finputfile_iri+rdfs%3Alabel+%3Finputfile.%0D%0A++++%3Foutputfile_iri+rdfs%3Alabel+%3Foutputfile.%0D%0A}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>
+    </p>
+
+
+
+<p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/factors_and_levels.sparql">factors_and_levels.sparql</a></p>
+<!-- sparql/isa/factors_and_levels.sparql  2d05f6c62dbb24eb69ce53a7bdf978587d920ba0-->
+<form><textarea id="code3" name="code3" rows="15" cols="100" ></textarea></form>
+<script>
+    $.getGithubFile("ISA-tools", "soapdenovo2", "2d05f6c62dbb24eb69ce53a7bdf978587d920ba0", function(contents) {
+        console.log(contents);
+        $("textarea#code3").text(contents);
+
+        CodeMirror.fromTextArea(document.getElementById("code3"), {
+            mode: "application/x-sparql-query",
+            matchBrackets: true,
+            readOnly: true,
+            lineNumbers: true
+        });
+    });
+
+</script>
+<p align="center">
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Ffactor+%3Ffactor_level%0D%0AWHERE%0D%0A++{+%3Fstudy_design+rdf%3Atype+isa%3Astudy_design+.%0D%0A++++%3Fstudy_design+isa%3Adeclares+%3Ffactor_iri+.%0D%0A++++%3Ffactor_iri+rdfs%3Alabel+%3Ffactor+.%0D%0A++++%3Ffactor_iri+isa%3Ahas_factor_level+%3Ffactor_level_iri+.%0D%0A++++%3Ffactor_level_iri+rdfs%3Alabel+%3Ffactor_level%0D%0A++}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>
+</p>
+
+
+
+<!--
 <form><textarea id="code" name="code" rows="40" cols="100" ></textarea></form>
 <script>
     $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function(contents) {
@@ -167,8 +236,11 @@ We provide a set of queries demonstrating how the data models can be used to ins
     });
 
 </script>
+-->
 
-Execute SPARQL query
+
+
+
 
 
 
