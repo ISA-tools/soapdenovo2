@@ -1,0 +1,21 @@
+PREFIX  isa:  <http://purl.org/isaterms/>
+PREFIX  obi:  <http://purl.obolibrary.org/obo/OBI_>
+PREFIX  iao:  <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT DISTINCT ?study ?publication_iri ?pubmedid
+WHERE
+{
+?study rdf:type isa:study.
+
+#publication_iri iao:denotes ?study.
+?publication_iri iao:0000219 ?study.
+
+#?publication_iri rdf:type iao:publication
+?publication_iri rdf:type iao:0000311.
+
+?pubmedid_iri iao:0000219 ?publication_iri. 
+?pubmedid_iri rdf:type obi:0001617.
+
+?pubmedid_iri rdfs:label ?pubmedid.
+
+}

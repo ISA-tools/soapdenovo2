@@ -299,6 +299,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000311"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000321 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000321"/>
@@ -440,6 +446,12 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0001615 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001615"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001617"/>
     
 
 
@@ -2494,6 +2506,20 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/9</rdfs:comment>
         <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/13"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/publication/1 -->
+
+    <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/publication/1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23587118</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23587118</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/publication/1</rdfs:comment>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+        <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/study/1"/>
+    </prov:Entity>
     
 
 
@@ -4736,6 +4762,9 @@
         <rdf:type rdf:resource="http://purl.org/isaterms/study"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental Metadata Licence: http://creativecommons.org/publicdomain/zero/1.0/</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Funding Agency: State Key Development Program for Basic Research of China-973 Program</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Grant Number: 2011CB809203</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/study/1</rdfs:comment>
         <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/investigation/1"/>
     </prov:Activity>
@@ -8267,6 +8296,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000321"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruibang Luo et al.</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/study_publication_author_list/1</rdfs:comment>
+        <obo:BFO_0000050 rdf:resource="http://w3id.org/isa/soapdenovo2/publication/1"/>
     </owl:NamedIndividual>
     
 
@@ -8277,6 +8307,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.1186/2047-217X-1-18</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/study_publication_doi/1</rdfs:comment>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/publication/1"/>
     </owl:NamedIndividual>
     
 
@@ -8287,6 +8318,18 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000305"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOAPdenovo2: an empirically improved memory-efficient short-read de novo assembler</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/study_publication_title/1</rdfs:comment>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/publication/1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/study_pubmed_id/1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/study_pubmed_id/1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001617"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23587118</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/study_pubmed_id/1</rdfs:comment>
+        <obo:IAO_0000219 rdf:resource="http://w3id.org/isa/soapdenovo2/publication/1"/>
     </owl:NamedIndividual>
     
 

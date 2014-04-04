@@ -1,0 +1,20 @@
+PREFIX  isa:  <http://purl.org/isaterms/>
+PREFIX  obi:  <http://purl.obolibrary.org/obo/OBI_>
+PREFIX  iao:  <http://purl.obolibrary.org/obo/IAO_>
+
+SELECT DISTINCT ?workflow 
+WHERE
+{
+#?galaxy_workflow_iri rdf:type obi:planned_process
+?galaxy_workflow_iri rdf:type obi:0000011.
+
+?galaxy_workflow_iri isa:has_parameter_value ?parameter_iri.
+?parameter_iri rdfs:label ?parameter.
+
+?galaxy_workflow_iri isa:has_parameter_value ?workflow_iri.
+?workflow_iri rdfs:label ?workflow.
+
+
+FILTER(regex(str(?parameter),"Galaxy") )
+FILTER(regex(str(?workflow),"gigascience") )
+}
