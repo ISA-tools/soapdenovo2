@@ -1,0 +1,18 @@
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix nanopub1:  <http://w3id.org/isa/soapdenovo2/nanopub/1> 
+
+SELECT ?assertion ?orcid 
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/1/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/2/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/3/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/4/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/5/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/6/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/7/provenance>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/8/provenance>
+WHERE
+{
+    GRAPH ?src {
+     ?assertion prov:wasAttributedTo ?orcid.
+    }
+}

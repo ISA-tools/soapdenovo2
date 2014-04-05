@@ -1,0 +1,17 @@
+prefix dct: <http://purl.org/dc/terms/>
+
+SELECT ?nanopub ?orcid 
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/1/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/2/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/3/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/4/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/5/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/6/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/7/pubInfo>
+FROM NAMED <http://w3id.org/isa/soapdenovo2/nanopub/8/pubInfo>
+WHERE
+{
+    GRAPH ?src {
+     ?nanopub dct:creator ?orcid.
+    }
+}

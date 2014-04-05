@@ -1,0 +1,9 @@
+PREFIX  isa:  <http://purl.org/isaterms/>
+
+SELECT DISTINCT  ?study ?licence
+WHERE
+{
+?study rdf:type isa:study.
+?study rdfs:comment ?licence.
+FILTER( regex(str(?licence), "Licence"))
+}

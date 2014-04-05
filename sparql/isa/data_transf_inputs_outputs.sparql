@@ -1,0 +1,21 @@
+PREFIX iao: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX obi: <http://purl.obolibrary.org/obo/OBI_>
+PREFIX tax: <http://purl.obolibrary.org/obo/NCBITaxon_>
+PREFIX isa: <http://purl.org/isa-tools/ISA_>
+PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+
+SELECT DISTINCT
+?dt, ?inputfile, ?outputfile
+WHERE
+{
+    #?dt_iri rdf:type obi:data_transformation
+    ?dt_iri rdf:type obi:0200000.
+
+    ?dt_iri rdfs:label ?dt.
+    ?dt_iri obi:0000293 ?inputfile_iri.
+    ?dt_iri obi:0000299 ?outputfile_iri.
+    ?inputfile_iri rdfs:label ?inputfile. 
+    ?outputfile_iri rdfs:label ?outputfile.
+}
+
+
