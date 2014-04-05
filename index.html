@@ -153,7 +153,54 @@ ISA and RO both provide means to track experimental and computational workflows 
 <h3>
 <a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
 
-We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results.
+We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results. The following table summarises
+the tables
+
+<table>
+    <tr>
+        <th>Query</th>
+        <th>RO</th>
+        <th>ISA</th>
+        <th>Nanopub</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
 
     <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/contacts.sparql">contacts.sparql</a></p>
 <!-- contacts.sparql c522c6d030d2507111971b49a53879f704846385 -->
@@ -220,6 +267,49 @@ We provide a set of queries demonstrating how the data models can be used to ins
 </script>
 <p align="center">
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Ffactor+%3Ffactor_level%0D%0AWHERE%0D%0A++{+%3Fstudy_design+rdf%3Atype+isa%3Astudy_design+.%0D%0A++++%3Fstudy_design+isa%3Adeclares+%3Ffactor_iri+.%0D%0A++++%3Ffactor_iri+rdfs%3Alabel+%3Ffactor+.%0D%0A++++%3Ffactor_iri+isa%3Ahas_factor_level+%3Ffactor_level_iri+.%0D%0A++++%3Ffactor_level_iri+rdfs%3Alabel+%3Ffactor_level%0D%0A++}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>
+</p>
+
+
+<p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/galaxy_workflows.sparql">galaxy_workflows.sparql</a></p>
+<!-- sparql/isa/galaxy_workflows.sparql  045d75497b0b61ccd53edc2c2e2804412d0f4dd0-->
+<form><textarea id="code4" name="code4" rows="15" cols="100" ></textarea></form>
+<script>
+    $.getGithubFile("ISA-tools", "soapdenovo2", "045d75497b0b61ccd53edc2c2e2804412d0f4dd0", function(contents) {
+        console.log(contents);
+        $("textarea#code4").text(contents);
+
+        CodeMirror.fromTextArea(document.getElementById("code4"), {
+            mode: "application/x-sparql-query",
+            matchBrackets: true,
+            readOnly: true,
+            lineNumbers: true
+        });
+    });
+
+</script>
+<p align="center">
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fworkflow%0D%0AWHERE%0D%0A{%0D%0A%23%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3Aplanned_process%0D%0A%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3A0000011.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fparameter_iri.%0D%0A%3Fparameter_iri+rdfs%3Alabel+%3Fparameter.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fworkflow_iri.%0D%0A%3Fworkflow_iri+rdfs%3Alabel+%3Fworkflow.%0D%0A%0D%0A%0D%0AFILTER%28regex%28str%28%3Fparameter%29%2C%22Galaxy%22%29+%29%0D%0AFILTER%28regex%28str%28%3Fworkflow%29%2C%22gigascience%22%29+%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>
+</p>
+
+<p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/study_design_type.sparql">study_design_type.sparql</a></p>
+<!-- sparql/isa/study_design_type.sparql  9acf1909ab67135ffce0f94c5b1ae6c8b0975e86-->
+<form><textarea id="code5" name="code5" rows="15" cols="100" ></textarea></form>
+<script>
+    $.getGithubFile("ISA-tools", "soapdenovo2", "045d75497b0b61ccd53edc2c2e2804412d0f4dd0", function(contents) {
+        console.log(contents);
+        $("textarea#code5").text(contents);
+
+        CodeMirror.fromTextArea(document.getElementById("code5"), {
+            mode: "application/x-sparql-query",
+            matchBrackets: true,
+            readOnly: true,
+            lineNumbers: true
+        });
+    });
+
+</script>
+<p align="center">
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fdesign_type+%3Fdesign_type_label%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%0D%0A%23design_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fdesign_iri+iao%3A0000219+%3Fstudy.%0D%0A%0D%0A%23%3Fdesign_iri+rdf%3Atype+obi%3Astudy_design%0D%0A%3Fdesign_iri+rdf%3Atype+obi%3A0500000.%0D%0A%0D%0A%3Fdesign_iri+rdf%3Atype+%3Fdesign_type.%0D%0AOPTIONAL{%0D%0A%3Fdesign_type+rdfs%3Alabel+%3Fdesign_type_label.%0D%0A}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>
 </p>
 
 
