@@ -214,20 +214,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a id="contacts" href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/contacts.sparql">contacts.sparql</a></p>
 
     <form><textarea id="code1" name="code1" rows="24" cols="100" ></textarea></form>
-    <script>
-        $.getGithubFile("ISA-tools", "soapdenovo2", "c522c6d030d2507111971b49a53879f704846385", function(contents) {
-            console.log(contents);
-            $("textarea#code1").text(contents);
 
-            CodeMirror.fromTextArea(document.getElementById("code1"), {
-                mode: "application/x-sparql-query",
-                matchBrackets: true,
-                readOnly: true,
-                lineNumbers: true
-            });
-        });
-
-    </script>
     <p align="center">
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++owl%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX++xsd%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++bfo%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Fperson_name+%3Fperson_iri+%3Frole%0D%0AWHERE%0D%0A++{+%3Fperson_iri+rdf%3Atype+tax%3A9606+.%0D%0A++++%3Fperson_iri+rdfs%3Alabel+%3Fperson_name+.%0D%0A++++%3Fperson_iri+bfo%3A0000056+%3Fstudy+.%0D%0A++++%3Fstudy+rdf%3Atype+isa%3Astudy%0D%0A++++OPTIONAL%0D%0A++++++{+%3Frole_iri+rdf%3Atype+obi%3A0000202+.%0D%0A++++++++%3Fperson_iri+bfo%3A0000087+%3Frole_iri+.%0D%0A++++++++%3Frole_iri+rdfs%3Alabel+%3Frole%0D%0A++++++}%0D%0A++}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
     </p>
@@ -236,20 +223,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <h4>What are the inputs and outputs for all the data transformations in the study?</h4>
     <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/data_transf_inputs_outputs.sparql">data_transf_inputs_outputs.sparql</a></p>
     <form><textarea id="code2" name="code2" rows="21" cols="100" ></textarea></form>
-    <script>
-        $.getGithubFile("ISA-tools", "soapdenovo2", "a99a64d1aa99e17f73509925375f665f68a95a18", function(contents) {
-            console.log(contents);
-            $("textarea#code2").text(contents);
 
-            CodeMirror.fromTextArea(document.getElementById("code2"), {
-                mode: "application/x-sparql-query",
-                matchBrackets: true,
-                readOnly: true,
-                lineNumbers: true
-            });
-        });
-
-    </script>
     <p align="center">
         <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisa-tools%2FISA_%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fdt%2C+%3Finputfile%2C+%3Foutputfile%0D%0AWHERE%0D%0A{%0D%0A++++%23%3Fdt_iri+rdf%3Atype+obi%3Adata_transformation%0D%0A++++%3Fdt_iri+rdf%3Atype+obi%3A0200000.%0D%0A%0D%0A++++%3Fdt_iri+rdfs%3Alabel+%3Fdt.%0D%0A++++%3Fdt_iri+obi%3A0000293+%3Finputfile_iri.%0D%0A++++%3Fdt_iri+obi%3A0000299+%3Foutputfile_iri.%0D%0A++++%3Finputfile_iri+rdfs%3Alabel+%3Finputfile.+%0D%0A++++%3Foutputfile_iri+rdfs%3Alabel+%3Foutputfile.%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
     </p>
@@ -258,20 +232,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <h4>What are the study factors (or independent variables) and their levels?</h4>
 <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/factors_and_levels.sparql">factors_and_levels.sparql</a></p>
 <form><textarea id="code3" name="code3" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "2d05f6c62dbb24eb69ce53a7bdf978587d920ba0", function(contents) {
-        console.log(contents);
-        $("textarea#code3").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code3"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Ffactor+%3Ffactor_level%0D%0AWHERE%0D%0A++{+%3Fstudy_design+rdf%3Atype+isa%3Astudy_design+.%0D%0A++++%3Fstudy_design+isa%3Adeclares+%3Ffactor_iri+.%0D%0A++++%3Ffactor_iri+rdfs%3Alabel+%3Ffactor+.%0D%0A++++%3Ffactor_iri+isa%3Ahas_factor_level+%3Ffactor_level_iri+.%0D%0A++++%3Ffactor_level_iri+rdfs%3Alabel+%3Ffactor_level%0D%0A++}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -280,20 +241,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <h4>What are the Galaxy workflows related to the SOAPdenovo2 case study?</h4>
 <p align="center"><a href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/galaxy_workflows.sparql">galaxy_workflows.sparql</a></p>
 <form><textarea id="code4" name="code4" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "045d75497b0b61ccd53edc2c2e2804412d0f4dd0", function(contents) {
-        console.log(contents);
-        $("textarea#code4").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code4"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fworkflow+%0D%0AWHERE%0D%0A{%0D%0A%23%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3Aplanned_process%0D%0A%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3A0000011.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fparameter_iri.%0D%0A%3Fparameter_iri+rdfs%3Alabel+%3Fparameter.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fworkflow_iri.%0D%0A%3Fworkflow_iri+rdfs%3Alabel+%3Fworkflow.%0D%0A%0D%0A%0D%0AFILTER%28regex%28str%28%3Fparameter%29%2C%22Galaxy%22%29+%29%0D%0AFILTER%28regex%28str%28%3Fworkflow%29%2C%22gigascience%22%29+%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -303,20 +251,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/study_design_type.sparql">study_design_type.sparql</a></p>
 
 <form><textarea id="code5" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "9acf1909ab67135ffce0f94c5b1ae6c8b0975e86", function(contents) {
-        console.log(contents);
-        $("textarea#code5").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code5"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fdesign_type+%3Fdesign_type_label%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%0D%0A%23design_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fdesign_iri+iao%3A0000219+%3Fstudy.%0D%0A%0D%0A%23%3Fdesign_iri+rdf%3Atype+obi%3Astudy_design%0D%0A%3Fdesign_iri+rdf%3Atype+obi%3A0500000.%0D%0A%0D%0A%3Fdesign_iri+rdf%3Atype+%3Fdesign_type.%0D%0AOPTIONAL{%0D%0A%3Fdesign_type+rdfs%3Alabel+%3Fdesign_type_label.%0D%0A}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -326,20 +261,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_funding_agency.sparql">study_funding_agency.sparql</a></p>
 
 <form><textarea id="code6" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "60786c1ccf0e545bd48ecf4470ec598f2af46417", function(contents) {
-        console.log(contents);
-        $("textarea#code6").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code6"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -349,20 +271,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_count.sparql">study_group_count.sparql</a></p>
 
 <form><textarea id="code7" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function(contents) {
-        console.log(contents);
-        $("textarea#code7").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code7"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -371,20 +280,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_members.sparql">study_group_members.sparql</a></p>
 
 <form><textarea id="code8" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "9948b73626053e9db848079e4ca9fa22c680d492", function(contents) {
-        console.log(contents);
-        $("textarea#code8").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code8"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -394,20 +290,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups.sparql">study_groups.sparql</a></p>
 
 <form><textarea id="code9" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "e6ac6dfbf7e03b53e480af0043ddbca90ce8fdcb", function(contents) {
-        console.log(contents);
-        $("textarea#code9").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code9"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -417,20 +300,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups_sizes.sparql">study_groups_sizes.sparql</a></p>
 
 <form><textarea id="code10" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "caeb32b6441dd46c41c9a879a0d4d4fb4f897889", function(contents) {
-        console.log(contents);
-        $("textarea#code10").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code10"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -440,20 +310,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_metadata_licence.sparql">study_metadata_licence.sparql</a></p>
 
 <form><textarea id="code11" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "509d33e8a542767620eb577828d7679edff977e0", function(contents) {
-        console.log(contents);
-        $("textarea#code11").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code11"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -462,44 +319,17 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_publication_pubmedid.sparql">study_publication_pubmedid.sparql</a></p>
 
 <form><textarea id="code12" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "e5c8eeac690e68062566ccf0430d66f6a5a0871c", function(contents) {
-        console.log(contents);
-        $("textarea#code12").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code12"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
-
 
 
 <h5></h5>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/all_nanopubs.sparql">all_nanopubs.sparql</a></p>
 
 <form><textarea id="code13" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "5bfe7d807c7783ecbd6425803c6bbaffab18d060", function(contents) {
-        console.log(contents);
-        $("textarea#code13").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code13"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -509,20 +339,7 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/assertion_author.sparql">assertion_author.sparql</a></p>
 
 <form><textarea id="code14" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "19fa86a87474cd2819b05dfdc0c9a2753e0dad28", function(contents) {
-        console.log(contents);
-        $("textarea#code14").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code14"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
@@ -532,26 +349,10 @@ the queries and the model(s) used to answer them. The queries themselves and lin
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/nanopub_author.sparql">nanopub_author.sparql</a></p>
 
 <form><textarea id="code15" name="code5" rows="15" cols="100" ></textarea></form>
-<script>
-    $.getGithubFile("ISA-tools", "soapdenovo2", "783633748b9355062cd8e146aeee518eef2c7d13", function(contents) {
-        console.log(contents);
-        $("textarea#code15").text(contents);
 
-        CodeMirror.fromTextArea(document.getElementById("code15"), {
-            mode: "application/x-sparql-query",
-            matchBrackets: true,
-            readOnly: true,
-            lineNumbers: true
-        });
-    });
-
-</script>
 <p align="center">
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
-
-
-
 
 
 <h3><a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h3>
@@ -595,6 +396,202 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
     This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
     This page relies on the <a href="https://github.com/jamesward/github-files">github-files package</a> to show the SPARQL queries.
 </footer>
+        <script>
+        
+            $.getGithubFile("ISA-tools", "soapdenovo2", "c522c6d030d2507111971b49a53879f704846385", function(contents) {
+                console.log(contents);
+                $("textarea#code1").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code1"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "a99a64d1aa99e17f73509925375f665f68a95a18", function(contents) {
+                console.log(contents);
+                $("textarea#code2").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code2"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "2d05f6c62dbb24eb69ce53a7bdf978587d920ba0", function(contents) {
+                console.log(contents);
+                $("textarea#code3").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code3"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "045d75497b0b61ccd53edc2c2e2804412d0f4dd0", function(contents) {
+                console.log(contents);
+                $("textarea#code4").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code4"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "9acf1909ab67135ffce0f94c5b1ae6c8b0975e86", function(contents) {
+                console.log(contents);
+                $("textarea#code5").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code5"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "60786c1ccf0e545bd48ecf4470ec598f2af46417", function(contents) {
+                console.log(contents);
+                $("textarea#code6").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code6"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function(contents) {
+                console.log(contents);
+                $("textarea#code7").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code7"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "9948b73626053e9db848079e4ca9fa22c680d492", function(contents) {
+                console.log(contents);
+                $("textarea#code8").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code8"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "e6ac6dfbf7e03b53e480af0043ddbca90ce8fdcb", function(contents) {
+                console.log(contents);
+                $("textarea#code9").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code9"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "caeb32b6441dd46c41c9a879a0d4d4fb4f897889", function(contents) {
+                console.log(contents);
+                $("textarea#code10").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code10"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "509d33e8a542767620eb577828d7679edff977e0", function(contents) {
+                console.log(contents);
+                $("textarea#code11").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code11"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "e5c8eeac690e68062566ccf0430d66f6a5a0871c", function(contents) {
+                console.log(contents);
+                $("textarea#code12").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code12"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "5bfe7d807c7783ecbd6425803c6bbaffab18d060", function(contents) {
+                console.log(contents);
+                $("textarea#code13").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code13"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "19fa86a87474cd2819b05dfdc0c9a2753e0dad28", function(contents) {
+                console.log(contents);
+                $("textarea#code14").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code14"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            $.getGithubFile("ISA-tools", "soapdenovo2", "783633748b9355062cd8e146aeee518eef2c7d13", function(contents) {
+                console.log(contents);
+                $("textarea#code15").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code15"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+        </script>
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=9703913; 
