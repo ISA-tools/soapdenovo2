@@ -226,7 +226,7 @@ th {
 }
 
 td {
-  border: 1px solid #ebebeb;
+  border: 2px solid gray;
   text-align: center; 
   font-weight: 300;
 }

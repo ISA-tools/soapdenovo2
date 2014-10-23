@@ -54,11 +54,11 @@
 <h3>
 <a name="overviews" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h3>
 
-<p>The SOAPdenovo2 case study is a <b>reproducibility study</b> aimed at exploring how existing data models and workflow enactment engines can help assess, record and preserve scientific workflows and associated findings by reviewing a
+<p>The SOAPdenovo2 case study is a <strong>reproducibility study</strong> aimed at exploring how existing data models and workflow enactment engines can help assess, record and preserve scientific workflows and associated findings by reviewing a
 comparison between sequence assembly algorithm performance in the light of development of the <a href="http://www.gigasciencejournal.com/content/1/1/18">SOAPdenovo2 de novo genome assembler</a>. The case study was a joint effort by the <a href="http://www.gigasciencejournal.com">GigaScience journal</a>, the <a href="http://isacommons.org/">Investigation/Study/Assay</a> (ISA) infrastructure,
 <a href="http://nanopub.org/">Nanopublication</a> (Nanopub) and <a href="http://researchobject.org/">Research Object</a> (RO) communities and SOAPdenovo2 de novo genome assembler developers.</p>
 
-<p>The following presentation, delivered at the International Society for Molecular Biology (ISMB) 2014 workshop on "What bioinformaticians need to know about digital publishing beyond the PDF2" in Boston, USA, showcases the SOAPdenovo2 study and explores how principles derived from experimental design practice, data and computational models can greatly <b>enhance data quality, data generation, data reporting, data publication and data review</b>.</p>
+<p>The following presentation, delivered at the International Society for Molecular Biology (ISMB) 2014 workshop on "What bioinformaticians need to know about digital publishing beyond the PDF2" in Boston, USA, showcases the SOAPdenovo2 study and explores how principles derived from experimental design practice, data and computational models can greatly <strong>enhance data quality, data generation, data reporting, data publication and data review</strong>.</p>
 
 <div align="center">
 <iframe src="//www.slideshare.net/slideshow/embed_code/37052079" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/agbeltran/ismb-workshop-2014" title="ISMB Workshop 2014" target="_blank">ISMB Workshop 2014</a> </strong> from <strong><a href="http://www.slideshare.net/agbeltran" target="_blank">Alejandra Gonzalez-Beltran</a></strong> </div>
@@ -69,11 +69,12 @@ comparison between sequence assembly algorithm performance in the light of devel
 <h3>
 <a name="galaxy-workflows" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Galaxy Workflows</h3>
 
-The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. Table 2 from the original paper, can be found at the GigaGalaxy server, and these are the specific links:
+<p>The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. <a href="http://www.gigasciencejournal.com/content/1/1/18/table/T2">Table 2 from the original paper</a>, can be found at the GigaGalaxy server, and these are the specific links, classified by organism and genome assembler:</p>
 
-            <table>
+
+            <table border="1">
                 <tr>
-                    <td></td>
+                    <td>Organism / Assembler</td>
                     <td>SOAPdenovo2</td>
                     <td>SOAPdenovo1</td>
                     <td>AllPathsLG</td>
@@ -102,13 +103,15 @@ The Galaxy workflows and corresponding histories for reproducing part of the SOA
                 </tr>
             </table>
 
+
+<br>
+
 <h3>
 <a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Data Models: ISA, RO and Nanopublication</h3>
 
-The ISA model, with its focus on experimental design, insists on the declaration of study plans (e.g., experimental factors considered) and provides cues for reviewers to assess content and suitability of the plans. Furthermore, the underlying model ensures that inputs and outputs of processes, or workflows, are declared and identified, referring to existing database identifiers when relevant. Initially intended to draw the graph of sample processing through to coarse data processing, the ISA grammar is generic enough to cover computational processing while allowing referencing to more granular forms such as Galaxy files.
+<p>The ISA model, with its focus on experimental design, insists on the declaration of study plans (e.g., experimental factors considered) and provides cues for reviewers to assess content and suitability of the plans. Furthermore, the underlying model ensures that inputs and outputs of processes, or workflows, are declared and identified, referring to existing database identifiers when relevant. Initially intended to draw the graph of sample processing through to coarse data processing, the ISA grammar is generic enough to cover computational processing while allowing referencing to more granular forms such as Galaxy files.</p>
 
-ISA and RO both provide means to track experimental and computational workflows respectively, with some level of acknowledged overlap which is handled by deferring to the domain specific resources, with Research Object project recommending ISA for the biological domain.  Finally, since describing how data are acquired, generated and analyzed is only part of the story, the description of the findings requires attention. The Nanopublication model tackles what used to represent the blind side of data reporting: capturing experimental conclusion.
-
+<p>ISA and RO both provide means to track experimental and computational workflows respectively, with some level of acknowledged overlap which is handled by deferring to the domain specific resources, with Research Object project recommending ISA for the biological domain.  Finally, since describing how data are acquired, generated and analyzed is only part of the story, the description of the findings requires attention. The Nanopublication model tackles what used to represent the blind side of data reporting: capturing experimental conclusion.</p>
 
 <h4>Investigation-Study-Assay</h4>
 
@@ -158,8 +161,7 @@ ISA and RO both provide means to track experimental and computational workflows 
 
 <h3><a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
 
-We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results. The following table summarises
-the queries and the model(s) used to answer them. The queries themselves and links to execute them can be found through the table and below.
+<p>We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results. The following table summarises the queries and the model(s) used to answer them. The queries themselves and links to execute them can be found through the table and below.</p>
 
 
 <!--- table --->
