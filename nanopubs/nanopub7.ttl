@@ -1,0 +1,54 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix provenance: <http://w3id.org/isa/soapdenovo2/nanopub/7/provenance> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sio: <http://semanticscience.org/resource/SIO_> .
+@prefix isa: <http://purl.org/isaterms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix assertion: <http://w3id.org/isa/soapdenovo2/nanopub/7/assertion> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix pubInfo: <http://w3id.org/isa/soapdenovo2/nanopub/7/pubInfo> .
+@prefix this: <http://w3id.org/isa/soapdenovo2/nanopub/7/> .
+
+<http://w3id.org/isa/soapdenovo2/nanopub/7/> np:hasAssertion this:assertion ;
+	np:hasProvenance this:provenance ;
+	np:hasPublicationInfo this:pubInfo ;
+	a np:Nanopublication ;
+	rdfg:subGraphOf <http://w3id.org/isa/soapdenovo2/nanopubs> .
+
+this:genome_assembly1 obo:IAO_0000136 <http://w3id.org/isa/soapdenovo2/sample/3> ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> obo:SO_0000353 .
+
+this:genome_assembly2 obo:IAO_0000136 <http://w3id.org/isa/soapdenovo2/sample/3> ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> obo:SO_0000353 .
+
+this:scaffoldN50_fold_change obo:IAO_0000004 "3.17543859649123"@xsd:float ;
+	obo:STATO_0000101 this:scaffoldN50_v2 ;
+	obo:STATO_0000259 this:scaffoldN50_v1 ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> obo:STATO_0000169 .
+
+this:scaffoldN50_v1 obo:BFO_0000050 <http://w3id.org/isa/soapdenovo2/derived_data_file/3> , <http://w3id.org/isa/soapdenovo2/derived_data_file/5> ;
+	obo:IAO_0000004 "342"@xsd:float ;
+	obo:IAO_0000039 obo:UO_0000329 ;
+	obo:IAO_0000136 obo:SO_0000148 , this:genome_assembly1 ;
+	obo:OBI_0000312 <http://w3id.org/isa/soapdenovo2/assay_protocol_ref/13> ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> obo:OBI_0001945 .
+
+this:scaffoldN50_v2 obo:BFO_0000050 <http://w3id.org/isa/soapdenovo2/derived_data_file/4> , <http://w3id.org/isa/soapdenovo2/derived_data_file/5> ;
+	obo:IAO_0000004 "1086"@xsd:float ;
+	obo:IAO_0000039 obo:UO_0000329 ;
+	obo:IAO_0000136 obo:SO_0000148 , this:genome_assembly2 ;
+	obo:OBI_0000312 <http://w3id.org/isa/soapdenovo2/assay_protocol_ref/14> ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> obo:OBI_0001945 .
+
+this:assertion dct:bibliographicCitation <http://dx.doi.org/10.1186/2047-217X-1-18> ;
+	prov:generatedAtTime "\"2014-03-31T14:38:00Z\""@xsd:datetime ;
+	prov:wasAttributedTo <http://orcid.org/0000-0001-9711-6533> , <http://orcid.org/0000-0003-4676-8587> ;
+	prov:wasDerivedFrom <http://w3id.org/isa/soapdenovo2/study/1> .
+
+<http://w3id.org/isa/soapdenovo2/nanopub/7/> dct:bibliographicCitation <http://dx.doi.org/10.1186/2047-217X-1-18> ;
+	dct:created <http://w3id.org/isa/soapdenovo2/nanopub/7/<date\>> ;
+	dct:creator <http://orcid.org/0000-0001-9853-5668> , <http://orcid.org/0000-0003-3499-8262> ;
+	dct:hasVersion "1"@xsd:double ;
+	dct:rightsHolder <http://isa-tools.org> .

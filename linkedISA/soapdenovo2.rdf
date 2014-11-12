@@ -1712,9 +1712,9 @@
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/derived_data_file/3">
         <rdf:type rdf:resource="http://purl.org/isaterms/derived_data_file"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=ec465efd001e89e3&amp;to_ext=Tabular</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/2c85c3f15080065e/</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment[Derived Data File information]:http://www.gigasciencejournal.com/content/1/1/18/table/T2</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=ec465efd001e89e3&amp;to_ext=Tabular</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/2c85c3f15080065e/</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/derived_data_file/3</rdfs:comment>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/13"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/13"/>
@@ -1739,9 +1739,9 @@
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/derived_data_file/4">
         <rdf:type rdf:resource="http://purl.org/isaterms/derived_data_file"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=268aaedc0ed0e5e2&amp;to_ext=Tabular</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/be5093c3ebf7834a/</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment[Derived Data File information]:http://www.gigasciencejournal.com/content/1/1/18/table/T2</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=268aaedc0ed0e5e2&amp;to_ext=Tabular</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/be5093c3ebf7834a/</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/derived_data_file/4</rdfs:comment>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/14"/>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/14"/>
@@ -1766,9 +1766,9 @@
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/derived_data_file/5">
         <rdf:type rdf:resource="http://purl.org/isaterms/derived_data_file"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=61bff954c161abc1&amp;to_ext=Tabular</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/61bff954c161abc1/</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment[Derived Data File information]:http://www.gigasciencejournal.com/content/1/1/18/table/T2</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=61bff954c161abc1&amp;to_ext=Tabular</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/61bff954c161abc1/</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/derived_data_file/5</rdfs:comment>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/15"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/15"/>
@@ -1793,9 +1793,9 @@
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/derived_data_file/6">
         <rdf:type rdf:resource="http://purl.org/isaterms/derived_data_file"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=5583febb78070f6e&amp;to_ext=Tabular</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/e61166c8e9600bba/</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment[Derived Data File information]:http://www.gigasciencejournal.com/content/1/1/18/table/T2</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=5583febb78070f6e&amp;to_ext=Tabular</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/e61166c8e9600bba/</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/derived_data_file/6</rdfs:comment>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/16"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/16"/>
@@ -1820,9 +1820,9 @@
     <prov:Entity rdf:about="http://w3id.org/isa/soapdenovo2/derived_data_file/7">
         <rdf:type rdf:resource="http://purl.org/isaterms/derived_data_file"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=5fad0d8e49f64a13&amp;to_ext=Tabular</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/7ebdaed75d14007e/</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment[Derived Data File information]:http://www.gigasciencejournal.com/content/1/1/18/table/T2</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/dataset/display?dataset_id=5fad0d8e49f64a13&amp;to_ext=Tabular</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/d/7ebdaed75d14007e/</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/derived_data_file/7</rdfs:comment>
         <obo:OBI_0000312 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/17"/>
         <prov:wasGeneratedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/17"/>
@@ -3147,8 +3147,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ftp://climb.genomics.cn/pub/10.5524/100001_101000/100038/data/110112_I199_FC819BBABXX_L3_HUMiqvDBTDWAAPE_2.fq.gz</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ftp://climb.genomics.cn/pub/10.5524/100001_101000/100038/data/110112_I199_FC819BBABXX_L3_HUMiqvDBTDWAAPE_2.fq.gz</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/raw_data_file/4</rdfs:comment>
-        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
+        <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/10"/>
         <obo:OBI_0000295 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/11"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/11"/>
         <prov:wasUsedBy rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/12"/>
@@ -8350,5 +8350,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version [Not Released]) http://owlapi.sourceforge.net -->
 
