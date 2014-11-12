@@ -275,7 +275,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 <form><textarea id="code7" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+bfo%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0ASELECT+DISTINCT+%28COUNT%28*%29+AS+%3Fcount%29%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.+%23+could+be+replaced+by%3A+%3Fstudy+rdf%3Atype+obi%3A0000066.%0D%0A%23%3Fstudy_design+is+obi%3Astudy_design%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000.%0D%0A%23%3Fstudy_design+iao%3Adenotes+%3Fstudy_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population.%0D%0A%23+%3Fstudy_design+iao%3Adenotes+%3Fstudy_group_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
 <h4>Which are the members of the study groups?</h4>
@@ -284,7 +284,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 <form><textarea id="code8" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+%3Fstudy_group_iri+%3Fstudy_group+%3Fmember%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A}%0D%0AORDER+BY+DESC%28%3Fstudy_group_iri%29%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
 
@@ -294,7 +294,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 <form><textarea id="code9" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group_iri+%3Flabel%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Flabel%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
 
@@ -304,7 +304,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 <form><textarea id="code10" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group+%28count%28%3Fmember%29+AS+%3Fmember_count%29%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A{+SELECT+DISTINCT+%3Fstudy_group_iri%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy_group_iri%0D%0A}%0D%0A}%0D%0A}%0D%0AGROUP+BY+%3Fstudy_group&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
 
@@ -314,7 +314,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 <form><textarea id="code11" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Flicence%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%3Fstudy+rdfs%3Acomment+%3Flicence.%0D%0AFILTER%28+regex%28str%28%3Flicence%29%2C+%22Licence%22%29%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
 <h5>What is the PubMed identifier for the associated publications(s) for the study?</h5>
@@ -323,17 +323,17 @@ comparison between sequence assembly algorithm performance in the light of devel
 <form><textarea id="code12" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fpublication_iri+%3Fpubmedid%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%23publication_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fpublication_iri+iao%3A0000219+%3Fstudy.%0D%0A%23%3Fpublication_iri+rdf%3Atype+iao%3Apublication%0D%0A%3Fpublication_iri+rdf%3Atype+iao%3A0000311.%0D%0A%3Fpubmedid_iri+iao%3A0000219+%3Fpublication_iri.%0D%0A%3Fpubmedid_iri+rdf%3Atype+obi%3A0001617.%0D%0A%3Fpubmedid_iri+rdfs%3Alabel+%3Fpubmedid.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
 
 <h5></h5>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/all_nanopubs.sparql">all_nanopubs.sparql</a></p>
 
-<form><textarea id="code13" name="code5" rows="15" cols="100" ></textarea></form>
+<form><textarea id="code13" name="code5" rows="8" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=prefix+rdfg%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F03%2Ftrix%2Frdfg-1%2F%3E%0D%0A%0D%0ASELECT+%3Fg+%0D%0AWHERE%0D%0A{%0D%0A%3Fg+rdfg%3AsubGraphOf+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopubs%3E.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>.
 </p>
 
 
