@@ -173,6 +173,12 @@ comparison between sequence assembly algorithm performance in the light of devel
         <th>Nanopub</th>
     </tr>
     <tr>
+        <td align="left">Who were involved in the study?</td>
+        <td></td>
+        <td><a href="#contacts.sparql">See and execute query</a></td>
+        <td></td>
+    </tr>
+    <tr>
         <td align="left">What is the study design?</td>
         <td></td>
         <td>See and execute query</td>
@@ -212,6 +218,9 @@ comparison between sequence assembly algorithm performance in the light of devel
 <!--- end of table --->
 
 
+<p>Next, we list the different queries and provide links to the results of executing them in <a href="http://newt.oerc.ox.ac.uk:8890/sparql">an SPARQL endpoint</a>.</p>
+
+<a name="contacts.sparql"></a>
 <h4>Who where the people involved in creating the ISA-Tab representation and what were their roles?</h4>
 <p align="center"><a id="contacts" href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/contacts.sparql">contacts.sparql</a></p>
 
@@ -222,6 +231,7 @@ comparison between sequence assembly algorithm performance in the light of devel
     </p>
 
 
+<a name="data_transf_inputs_outputs.sparql"></a>
 <h4>What are the inputs and outputs for all the data transformations in the study?</h4>
     <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/data_transf_inputs_outputs.sparql">data_transf_inputs_outputs.sparql</a></p>
     <form><textarea id="code2" name="code2" rows="21" cols="100" ></textarea></form>
@@ -231,6 +241,7 @@ comparison between sequence assembly algorithm performance in the light of devel
     </p>
 
 
+<a name="factors_and_levels.sparql"></a>
 <h4>What are the study factors (or independent variables) and their levels?</h4>
 <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/factors_and_levels.sparql">factors_and_levels.sparql</a></p>
 <form><textarea id="code3" name="code3" rows="15" cols="100" ></textarea></form>
@@ -239,7 +250,7 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Ffactor+%3Ffactor_level%0D%0AWHERE%0D%0A++{+%3Fstudy_design+rdf%3Atype+isa%3Astudy_design+.%0D%0A++++%3Fstudy_design+isa%3Adeclares+%3Ffactor_iri+.%0D%0A++++%3Ffactor_iri+rdfs%3Alabel+%3Ffactor+.%0D%0A++++%3Ffactor_iri+isa%3Ahas_factor_level+%3Ffactor_level_iri+.%0D%0A++++%3Ffactor_level_iri+rdfs%3Alabel+%3Ffactor_level%0D%0A++}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
-
+<a name="galaxy_workflows.sparql"></a>
 <h4>What are the Galaxy workflows related to the SOAPdenovo2 case study?</h4>
 <p align="center"><a href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/galaxy_workflows.sparql">galaxy_workflows.sparql</a></p>
 <form><textarea id="code4" name="code4" rows="15" cols="100" ></textarea></form>
@@ -249,6 +260,7 @@ comparison between sequence assembly algorithm performance in the light of devel
 </p>
 
 
+<a name="study_design_type.sparql"></a>
 <h4>What was the study design?</h4>
 <p align="center"><a href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/study_design_type.sparql">study_design_type.sparql</a></p>
 
@@ -258,7 +270,7 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fdesign_type+%3Fdesign_type_label%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%0D%0A%23design_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fdesign_iri+iao%3A0000219+%3Fstudy.%0D%0A%0D%0A%23%3Fdesign_iri+rdf%3Atype+obi%3Astudy_design%0D%0A%3Fdesign_iri+rdf%3Atype+obi%3A0500000.%0D%0A%0D%0A%3Fdesign_iri+rdf%3Atype+%3Fdesign_type.%0D%0AOPTIONAL{%0D%0A%3Fdesign_type+rdfs%3Alabel+%3Fdesign_type_label.%0D%0A}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
-
+<a name="study_funding_agency.sparql"></a>
 <h4>What was funding agency of the study?</h4>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_funding_agency.sparql">study_funding_agency.sparql</a></p>
 
@@ -268,7 +280,8 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
-
+<!---------------------------------------------------------------------------------------------->
+<a name="study_group_count.sparql"></a>
 <h4>How many study groups are there?</h4>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_count.sparql">study_group_count.sparql</a></p>
 
@@ -278,6 +291,8 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+bfo%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0ASELECT+DISTINCT+%28COUNT%28*%29+AS+%3Fcount%29%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.+%23+could+be+replaced+by%3A+%3Fstudy+rdf%3Atype+obi%3A0000066.%0D%0A%23%3Fstudy_design+is+obi%3Astudy_design%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000.%0D%0A%23%3Fstudy_design+iao%3Adenotes+%3Fstudy_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population.%0D%0A%23+%3Fstudy_design+iao%3Adenotes+%3Fstudy_group_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
+<!---------------------------------------------------------------------------------------------->
+<a name="study_group_members.sparql"></a>
 <h4>Which are the members of the study groups?</h4>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_members.sparql">study_group_members.sparql</a></p>
 
@@ -287,7 +302,8 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+%3Fstudy_group_iri+%3Fstudy_group+%3Fmember%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A}%0D%0AORDER+BY+DESC%28%3Fstudy_group_iri%29%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
-
+<!---------------------------------------------------------------------------------------------->
+<a name="study_groups.sparql"></a>
 <h4>Which are the study groups?</h4>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups.sparql">study_groups.sparql</a></p>
 
@@ -297,7 +313,8 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group_iri+%3Flabel%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Flabel%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
-
+<!---------------------------------------------------------------------------------------------->
+<a name="study_groups_sizes.sparql"></a>
 <h4>What are the sizes of the study groups?</h4>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups_sizes.sparql">study_groups_sizes.sparql</a></p>
 
@@ -306,8 +323,8 @@ comparison between sequence assembly algorithm performance in the light of devel
 <p align="center">
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group+%28count%28%3Fmember%29+AS+%3Fmember_count%29%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A{+SELECT+DISTINCT+%3Fstudy_group_iri%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy_group_iri%0D%0A}%0D%0A}%0D%0A}%0D%0AGROUP+BY+%3Fstudy_group&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
-
-
+<!---------------------------------------------------------------------------------------------->
+<a name="study_metadata_licence.sparql"></a>
 <h4>What is the licence for the metadata?</h4>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_metadata_licence.sparql">study_metadata_licence.sparql</a></p>
 
@@ -317,6 +334,8 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Flicence%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%3Fstudy+rdfs%3Acomment+%3Flicence.%0D%0AFILTER%28+regex%28str%28%3Flicence%29%2C+%22Licence%22%29%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
+<!---------------------------------------------------------------------------------------------->
+<a name="study_publication_pubmedid.sparql"></a>
 <h5>What is the PubMed identifier for the associated publications(s) for the study?</h5>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_publication_pubmedid.sparql">study_publication_pubmedid.sparql</a></p>
 
@@ -326,8 +345,9 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fpublication_iri+%3Fpubmedid%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%23publication_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fpublication_iri+iao%3A0000219+%3Fstudy.%0D%0A%23%3Fpublication_iri+rdf%3Atype+iao%3Apublication%0D%0A%3Fpublication_iri+rdf%3Atype+iao%3A0000311.%0D%0A%3Fpubmedid_iri+iao%3A0000219+%3Fpublication_iri.%0D%0A%3Fpubmedid_iri+rdf%3Atype+obi%3A0001617.%0D%0A%3Fpubmedid_iri+rdfs%3Alabel+%3Fpubmedid.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
-
-<h5></h5>
+<!---------------------------------------------------------------------------------------------->
+<a name="all_nanopubs.sparql"></a>
+<h5>Find all the nanopublications related to the study</h5>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/all_nanopubs.sparql">all_nanopubs.sparql</a></p>
 
 <form><textarea id="code13" name="code5" rows="8" cols="100" ></textarea></form>
@@ -336,26 +356,32 @@ comparison between sequence assembly algorithm performance in the light of devel
     <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=prefix+rdfg%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F03%2Ftrix%2Frdfg-1%2F%3E%0D%0A%0D%0ASELECT+%3Fg+%0D%0AWHERE%0D%0A{%0D%0A%3Fg+rdfg%3AsubGraphOf+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopubs%3E.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>.
 </p>
 
-
-<h5></h5>
+<!---------------------------------------------------------------------------------------------->
+<a name="assertion_author.sparql"></a>
+<h5>Find the authors for each assertion in the nanopublications</h5>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/assertion_author.sparql">assertion_author.sparql</a></p>
 
 <form><textarea id="code14" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=prefix+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0D%0Aprefix+nanopub1%3A++%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%3E+%0D%0A%0D%0ASELECT+%3Fassertion+%3Forcid+%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F2%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F3%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F4%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F5%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F6%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F7%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F8%2Fprovenance%3E%0D%0AWHERE%0D%0A{%0D%0A++++GRAPH+%3Fsrc+{%0D%0A+++++%3Fassertion+prov%3AwasAttributedTo+%3Forcid.%0D%0A++++}%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
+<!---------------------------------------------------------------------------------------------->
+<a name="nanopub_author.sparql"></a>
 
-<h5></h5>
+<h5>Find the nanopublications and their associated authors</h5>
 <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/nanopub_author.sparql">nanopub_author.sparql</a></p>
 
 <form><textarea id="code15" name="code5" rows="15" cols="100" ></textarea></form>
 
 <p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=prefix+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0ASELECT+%3Fnanopub+%3Forcid+%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F2%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F3%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F4%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F5%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F6%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F7%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F8%2FpubInfo%3E%0D%0AWHERE%0D%0A{%0D%0A++++GRAPH+%3Fsrc+{%0D%0A+++++%3Fnanopub+dct%3Acreator+%3Forcid.%0D%0A++++}%0D%0A}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
 </p>
 
+
+
+<!---------------------------------------------------------------------------------------------->
 
 <h3><a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h3>
 
