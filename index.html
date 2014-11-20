@@ -262,7 +262,6 @@ comparison between sequence assembly algorithm performance in the light of devel
         <td></td>
         <td><a href="#nanopub_author.sparql">See and execute query</a></td>
     </tr>
-
 </table>
 <!--- end of table --->
 
@@ -675,6 +674,118 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
                     lineNumbers: true
                 });
             });
+
+
+            /*hybrid_inputs_isa_provenance.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "a6ac74cad4e7a4883433491acc2dc7ab74e3df7f", function(contents) {
+                console.log(contents);
+                $("textarea#code16").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code16"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            /*hybrid_ro_nanopub.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "4069dc072b47da6b8410c9bc0fd7a739ad4d44b2", function(contents) {
+                console.log(contents);
+                $("textarea#code17").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code17"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            /*	hybrid_workflow_isa_study.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "be60c3f4d2037993ffdf666dff0ac404f49c1242", function(contents) {
+                console.log(contents);
+                $("textarea#code18").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code18"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+            /*	inputs_derived_gage_output.sparql */
+            $.getGithubFile("ISA-tools", "soapdenovo2", "972641cb5dc76600d6e4f37f49df61a72dd7b971", function(contents) {
+                console.log(contents);
+                $("textarea#code19").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code19"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+            /*inputs_role.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "80f14a3bd6390d7fa65540a07d2156822de1e8ed", function(contents) {
+                console.log(contents);
+                $("textarea#code20").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code20"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            /*workflow_generated_gage_results.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "39e206566b5461bd6afe46586ba883844d421aea", function(contents) {
+                console.log(contents);
+                $("textarea#code21").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code21"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            /*workflow_in_the_ro.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "5452563d0164e9d6ef688878a4324f147a0555c1", function(contents) {
+                console.log(contents);
+                $("textarea#code22").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code22"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
+            /*workflow_inputs.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "5e1eaa9c4c650e36e89e55f754d27643c37f6acb", function(contents) {
+                console.log(contents);
+                $("textarea#code23").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code23"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
+
+
 
         </script>
 <!-- Start of StatCounter Code for Default Guide -->
