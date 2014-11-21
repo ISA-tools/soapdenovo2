@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
@@ -9,67 +9,94 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
 
-
     <![endif]-->
-      <script src=" https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src=" https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-     <script src="javascripts/codemirror/codemirror.js"></script>
-     <script src="javascripts/codemirror/addon/edit/matchbrackets.js"></script>
-     <script src="javascripts/codemirror/mode/sparql/sparql.js"></script>
-     <link rel="stylesheet" href="stylesheets/codemirror/codemirror.css">
-      <link rel="stylesheet" href="stylesheets/codemirror/docs.css">
-      <script src="javascripts/github-files/github-files.js"></script>
+    <script src="javascripts/codemirror/codemirror.js"></script>
+    <script src="javascripts/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="javascripts/codemirror/mode/sparql/sparql.js"></script>
+    <link rel="stylesheet" href="stylesheets/codemirror/codemirror.css">
+    <link rel="stylesheet" href="stylesheets/codemirror/docs.css">
+    <script src="javascripts/github-files/github-files.js"></script>
 
-      <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-      <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-      <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"/>
 
 
-      <title>SOAPdenovo2 Case Study</title>
-  </head>
+    <title>SOAPdenovo2 Case Study</title>
+</head>
 
 <body>
-    <div id="container">
-      <div class="inner">
+<div id="container">
+    <div class="inner">
 
         <header>
-          <h1>SOAPdenovo2 Case Study</h1>
-          <h2></h2>
+            <h1>SOAPdenovo2 Case Study</h1>
+
+            <h2></h2>
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/ISA-tools/soapdenovo2/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/ISA-tools/soapdenovo2/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/ISA-tools/soapdenovo2" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            <a href="https://github.com/ISA-tools/soapdenovo2/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+            <a href="https://github.com/ISA-tools/soapdenovo2/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+            <a href="https://github.com/ISA-tools/soapdenovo2" id="view-on-github"
+               class="button"><span>View on GitHub</span></a>
         </section>
 
         <hr>
 
-<p align="center">
-<a href="#overview">Overview</a> |  <a href="#galaxy-workflows">Galaxy Workflows</a> |  <a href="#data-models">Data Models</a> | <a href="#queries">Queries</a> | <a href="#contributors">Contributors</a>
-</p>
-<p></p>
+        <p align="center">
+            <a href="#overview">Overview</a> | <a href="#galaxy-workflows">Galaxy Workflows</a> | <a
+                href="#data-models">Data Models</a> | <a href="#queries">Queries</a> | <a href="#contributors">Contributors</a>
+        </p>
+
+        <p></p>
         <section id="main_content">
 
-<h3>
-<a name="overviews" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h3>
+            <h3>
+                <a name="overviews" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview
+            </h3>
 
-<p>The SOAPdenovo2 case study is a <strong>reproducibility study</strong> aimed at exploring how existing data models and workflow enactment engines can help assess, record and preserve scientific workflows and associated findings by reviewing a
-comparison between sequence assembly algorithm performance in the light of development of the <a href="http://www.gigasciencejournal.com/content/1/1/18">SOAPdenovo2 de novo genome assembler</a>. The case study was a joint effort by the <a href="http://www.gigasciencejournal.com">GigaScience journal</a>, the <a href="http://isacommons.org/">Investigation/Study/Assay</a> (ISA) infrastructure,
-<a href="http://nanopub.org/">Nanopublication</a> (Nanopub) and <a href="http://researchobject.org/">Research Object</a> (RO) communities and SOAPdenovo2 de novo genome assembler developers.</p>
+            <p>The SOAPdenovo2 case study is a <strong>reproducibility study</strong> aimed at exploring how existing
+                data models and workflow enactment engines can help assess, record and preserve scientific workflows and
+                associated findings by reviewing a
+                comparison between sequence assembly algorithm performance in the light of development of the <a
+                        href="http://www.gigasciencejournal.com/content/1/1/18">SOAPdenovo2 de novo genome assembler</a>.
+                The case study was a joint effort by the <a href="http://www.gigasciencejournal.com">GigaScience
+                    journal</a>, the <a href="http://isacommons.org/">Investigation/Study/Assay</a> (ISA)
+                infrastructure,
+                <a href="http://nanopub.org/">Nanopublication</a> (Nanopub) and <a href="http://researchobject.org/">Research
+                    Object</a> (RO) communities and SOAPdenovo2 de novo genome assembler developers.</p>
 
-<p>The following presentation, delivered at the International Society for Molecular Biology (ISMB) 2014 workshop on "What bioinformaticians need to know about digital publishing beyond the PDF2" in Boston, USA, showcases the SOAPdenovo2 study and explores how principles derived from experimental design practice, data and computational models can greatly <strong>enhance data quality, data generation, data reporting, data publication and data review</strong>.</p>
+            <p>The following presentation, delivered at the International Society for Molecular Biology (ISMB) 2014
+                workshop on "What bioinformaticians need to know about digital publishing beyond the PDF2" in Boston,
+                USA, showcases the SOAPdenovo2 study and explores how principles derived from experimental design
+                practice, data and computational models can greatly <strong>enhance data quality, data generation, data
+                    reporting, data publication and data review</strong>.</p>
 
-<div align="center">
-<iframe src="//www.slideshare.net/slideshow/embed_code/37052079" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/agbeltran/ismb-workshop-2014" title="ISMB Workshop 2014" target="_blank">ISMB Workshop 2014</a> </strong> from <strong><a href="http://www.slideshare.net/agbeltran" target="_blank">Alejandra Gonzalez-Beltran</a></strong> </div>
-</div>
+            <div align="center">
+                <iframe src="//www.slideshare.net/slideshow/embed_code/37052079" width="427" height="356"
+                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+                        style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+                        allowfullscreen></iframe>
+                <div style="margin-bottom:5px"><strong> <a
+                        href="https://www.slideshare.net/agbeltran/ismb-workshop-2014" title="ISMB Workshop 2014"
+                        target="_blank">ISMB Workshop 2014</a> </strong> from <strong><a
+                        href="http://www.slideshare.net/agbeltran" target="_blank">Alejandra
+                    Gonzalez-Beltran</a></strong></div>
+            </div>
 
-<br>
+            <br>
 
-<h3>
-<a name="galaxy-workflows" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Galaxy Workflows</h3>
+            <h3>
+                <a name="galaxy-workflows" class="anchor" href="#designer-templates"><span
+                        class="octicon octicon-link"></span></a>Galaxy Workflows</h3>
 
-<p>The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. <a href="http://www.gigasciencejournal.com/content/1/1/18/table/T2">Table 2 from the original paper</a>, can be found at the GigaGalaxy server, and these are the specific links, classified by organism and genome assembler:</p>
+            <p>The Galaxy workflows and corresponding histories for reproducing part of the SOAPdenovo2 study, i.e. <a
+                    href="http://www.gigasciencejournal.com/content/1/1/18/table/T2">Table 2 from the original paper</a>,
+                can be found at the GigaGalaxy server, and these are the specific links, classified by organism and
+                genome assembler:</p>
 
 
             <table border="1">
@@ -81,382 +108,519 @@ comparison between sequence assembly algorithm performance in the light of devel
                 </tr>
                 <tr>
                     <td rowspan="2">S. Aureus</td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-3-soapdenovo1-saureus">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-5-allpaths-lg-saureus">Workflow</a></td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus">Workflow</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-3-soapdenovo1-saureus">Workflow</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-5-allpaths-lg-saureus">Workflow</a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-1-soapdenovo2-saureus">History</a></td>
-                    <td><a href=" http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-3-soapdenovo1-saureus">History</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-5-allpaths-lg-saureus">History</a></td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-1-soapdenovo2-saureus">History</a>
+                    </td>
+                    <td>
+                        <a href=" http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-3-soapdenovo1-saureus">History</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-5-allpaths-lg-saureus">History</a>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="2">R. Sphaeroides</td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-2-soapdenovo2-rsphaeroides">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-4-soapdenovo1-rsphaeroides">Workflow</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-6-allpaths-lg-rsphaeroides">Workflow</a></td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-2-soapdenovo2-rsphaeroides">Workflow</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-4-soapdenovo1-rsphaeroides">Workflow</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-6-allpaths-lg-rsphaeroides">Workflow</a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-2-soapdenovo2-rsphaeroides">History</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-4-soapdenovo1-rsphaeroides">History</a></td>
-                    <td><a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-6-allpaths-lg-rsphaeroides">History</a></td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-2-soapdenovo2-rsphaeroides">History</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-4-soapdenovo1-rsphaeroides">History</a>
+                    </td>
+                    <td>
+                        <a href="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/h/rluo2012-example-6-allpaths-lg-rsphaeroides">History</a>
+                    </td>
                 </tr>
             </table>
 
 
-<br>
-
-<h3>
-<a name="data-models" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Data Models: ISA, RO and Nanopublication</h3>
-
-<p>The ISA model, with its focus on experimental design, insists on the declaration of study plans (e.g., experimental factors considered) and provides cues for reviewers to assess content and suitability of the plans. Furthermore, the underlying model ensures that inputs and outputs of processes, or workflows, are declared and identified, referring to existing database identifiers when relevant. Initially intended to draw the graph of sample processing through to coarse data processing, the ISA grammar is generic enough to cover computational processing while allowing referencing to more granular forms such as Galaxy files.</p>
-
-<p>ISA and RO both provide means to track experimental and computational workflows respectively, with some level of acknowledged overlap which is handled by deferring to the domain specific resources, with Research Object project recommending ISA for the biological domain.  Finally, since describing how data are acquired, generated and analyzed is only part of the story, the description of the findings requires attention. The Nanopublication model tackles what used to represent the blind side of data reporting: capturing experimental conclusion.</p>
-
-<h4>Investigation-Study-Assay</h4>
-
-<dl>
-<dt>Scope:</dt>
-<dd>Experimental Design, Variable, Material Processing, Data Processing workflows.</dd>
-<dt>Outcomes:</dt>
-<dd>
-    <ul>
-    <li>an <a href="https://github.com/agbeltran/soapdenovo2/tree/master/isa-tab">tab-delimited archive</a> presenting an overview of the SOAPdenovo2 experiment following the ISA-TAB specification: it includes a description of the experimental design (e.g. independent and response variables), the genomes and data used in SOAPdenovo2 together with stable identifiers, a description of the experimental and computational workflows for evaluation of SOAPdenovo2 with its predecessors SOAPdenovo1 and ALLPATHSLG, including their inputs and outputs, provenance and attribution information</li>
-    <li>an <a href="https://github.com/agbeltran/soapdenovo2/tree/master/isa-owl">explicit OWL/RDF semantic representation</a> generated using ISA2OWL software component and relying on mappings between the ISA syntax and ontological resources such as the Ontology for Biomedical Investigations (OBI) and the Provenance ontology (PROV-O).</li>
-    </ul>
-</dd>
-</dl>
-
-
-<h4>Nanopublication</h4>
-
-<dl>
-    <dt>Scope:</dt>
-    <dd>Key findings, supporting evidence</dd>
-    <dt>Outcome:</dt>
-    <dd>
-    <ul>
-    <li>NanoMaton template: an OntoMaton Google spreadsheet Nanopublication Template, where <a href="http://bioinformatics.oxfordjournals.org/content/29/4/525">OntoMaton</a> is a Google Spreadsheets widget relying on services for ontology lookup and annotation from <a href="http://data.bioontology.org/documentation">NCBO Bioportal</a> and <a href="http://lov.okfn.org/">Linked Open Vocabularies</a> .</li>
-    <li><a href="https://docs.google.com/spreadsheet/ccc?key=0AmtKthYRS0f5dHFldVQ5cVRHT3lxU3FWUUlhNEZ5YkE&usp=drive_web#gid=7">a completed NanoMaton template</a> holding all nanopublication as structured tables</li>
-    <li><a href="https://github.com/ISA-tools/NanoMaton">the NanoMaton code</a> to convert from the Google Spreadsheet template to RDF serializations of the nanopublications, relying on the <a href="">NanoPub-Java library</a></li>
-    <li><a href="https://github.com/agbeltran/soapdenovo2/tree/master/nanopubs">RDF serializations</a> according to the <a href="http://www.nanopub.org/2013/WD-guidelines-20131215/">Nanopub guidelines</a></li>
-    </ul>
-    </dd>
-</dl>
-
-
-<h4>Research Object</h4>
-
-<dl>
-    <dt>Scope:</dt>
-    <dd>Scientific workflow artifacts</dd>
-    <dt>Outcome:</dt>
-    <ul>
-    <li><a href="https://github.com/ISA-tools/soapdenovo2/tree/master/ro">a scientific workflow specific RO preservation of one application of SOAP2denovo2  to the S. Aureus genome assembly</a></li>
-    <li><a href="https://github.com/ISA-tools/soapdenovo2/tree/master/ro-description">an aggregator document encapsulating the ISA-TAB, ISA-RDF and Nanopublications</a></li>
-    </ul>
-</dl>
-
-
-
-<h3><a name="queries" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Queries</h3>
-
-<p>We provide a set of queries demonstrating how the data models can be used to inspect the information about the SOAPdenovo2 study and its results. The following table summarises the queries and the model(s) used to answer them. The queries themselves and links to execute them can be found through the table and below.</p>
-
-
-<!--- table --->
-<table>
-    <tr>
-        <th>Query Case</th>
-        <th>RO</th>
-        <th>ISA</th>
-        <th>Nanopub</th>
-    </tr>
-    <tr>
-        <td align="left">Who were involved in the study?</td>
-        <td></td>
-        <td><a href="#contacts.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What are the inputs and outputs for all the data transformations in the study?</td>
-        <td></td>
-        <td><a href="#data_transf_inputs_outputs.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What are the Galaxy workflows related to the SOAPdenovo2 case study?</td>
-        <td></td>
-        <td><a href="#galaxy_workflows.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What was the study design?</td>
-        <td></td>
-        <td><a href="#study_design_type.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What are the study factors (or independent variables) and their levels (or values they assumed)?</td>
-        <td></td>
-        <td><a name="#factors_and_levels.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">How many study groups are there?</td>
-        <td></td>
-        <td><a href="#study_group_count.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">Which are the study groups?</td>
-        <td></td>
-        <td><a name="#study_groups.sparql">See and execute query</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">Which are the members of the study groups?</td>
-        <td></td>
-        <td><a name="#study_group_members.sparql">See and execute query</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What are the sizes of the study groups?</td>
-        <td></td>
-        <td><a name="#study_groups_sizes.sparql">See and execute query</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What was funding agency of the study?</td>
-        <td></td>
-        <td><a href="#study_funding_agency.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What is the licence for the metadata?</td>
-        <td></td>
-        <td><a href="#study_metadata_licence.sparql">See and execut query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">What is the PubMed identifier for the associated publications(s) for the study?</td>
-        <td></td>
-        <td><a href="#study_publication_pubmedid.sparql">See and execute query</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td align="left">Find all the nanopublications related to the study</td>
-        <td></td>
-        <td></td>
-        <td><a href="#all_nanopubs.sparql">See and execute query</a></td>
-    </tr>
-    <tr>
-        <td align="left">Find the authors for each assertion in the nanopublications</td>
-        <td></td>
-        <td></td>
-        <td><a href="#assertion_author.sparql">See and execute query</a></td>
-    </tr>
-    <tr>
-        <td align="left">Find the nanopublications and their associated authors</td>
-        <td></td>
-        <td></td>
-        <td><a href="#nanopub_author.sparql">See and execute query</a></td>
-    </tr>
-</table>
-<!--- end of table --->
-
-
-<p>Next, we list the different queries and provide links to the results of executing them in <a href="http://newt.oerc.ox.ac.uk:8890/sparql">an SPARQL endpoint</a>.</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="contacts.sparql"></a>
-<h4>Who where the people involved in creating the ISA-Tab representation and what were their roles?</h4>
-<p align="center"><a id="contacts" href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/contacts.sparql">contacts.sparql</a></p>
-
-    <form><textarea id="code1" name="code1" rows="24" cols="100" ></textarea></form>
-
-    <p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++owl%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX++xsd%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++bfo%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Fperson_name+%3Fperson_iri+%3Frole%0D%0AWHERE%0D%0A++{+%3Fperson_iri+rdf%3Atype+tax%3A9606+.%0D%0A++++%3Fperson_iri+rdfs%3Alabel+%3Fperson_name+.%0D%0A++++%3Fperson_iri+bfo%3A0000056+%3Fstudy+.%0D%0A++++%3Fstudy+rdf%3Atype+isa%3Astudy%0D%0A++++OPTIONAL%0D%0A++++++{+%3Frole_iri+rdf%3Atype+obi%3A0000202+.%0D%0A++++++++%3Fperson_iri+bfo%3A0000087+%3Frole_iri+.%0D%0A++++++++%3Frole_iri+rdfs%3Alabel+%3Frole%0D%0A++++++}%0D%0A++}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-    </p>
-
-
-<!---------------------------------------------------------------------------------------------->
-<a name="data_transf_inputs_outputs.sparql"></a>
-<h4>What are the inputs and outputs for all the data transformations in the study?</h4>
-    <p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/data_transf_inputs_outputs.sparql">data_transf_inputs_outputs.sparql</a></p>
-    <form><textarea id="code2" name="code2" rows="21" cols="100" ></textarea></form>
-
-    <p align="center">
-        <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisa-tools%2FISA_%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fdt%2C+%3Finputfile%2C+%3Foutputfile%0D%0AWHERE%0D%0A{%0D%0A++++%23%3Fdt_iri+rdf%3Atype+obi%3Adata_transformation%0D%0A++++%3Fdt_iri+rdf%3Atype+obi%3A0200000.%0D%0A%0D%0A++++%3Fdt_iri+rdfs%3Alabel+%3Fdt.%0D%0A++++%3Fdt_iri+obi%3A0000293+%3Finputfile_iri.%0D%0A++++%3Fdt_iri+obi%3A0000299+%3Foutputfile_iri.%0D%0A++++%3Finputfile_iri+rdfs%3Alabel+%3Finputfile.+%0D%0A++++%3Foutputfile_iri+rdfs%3Alabel+%3Foutputfile.%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-    </p>
-
-
-<!---------------------------------------------------------------------------------------------->
-<a name="galaxy_workflows.sparql"></a>
-<h4>What are the Galaxy workflows related to the SOAPdenovo2 case study?</h4>
-<p align="center"><a href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/galaxy_workflows.sparql">galaxy_workflows.sparql</a></p>
-<form><textarea id="code4" name="code4" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fworkflow+%0D%0AWHERE%0D%0A{%0D%0A%23%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3Aplanned_process%0D%0A%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3A0000011.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fparameter_iri.%0D%0A%3Fparameter_iri+rdfs%3Alabel+%3Fparameter.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fworkflow_iri.%0D%0A%3Fworkflow_iri+rdfs%3Alabel+%3Fworkflow.%0D%0A%0D%0A%0D%0AFILTER%28regex%28str%28%3Fparameter%29%2C%22Galaxy%22%29+%29%0D%0AFILTER%28regex%28str%28%3Fworkflow%29%2C%22gigascience%22%29+%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_design_type.sparql"></a>
-<h4>What was the study design?</h4>
-<p align="center"><a href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/study_design_type.sparql">study_design_type.sparql</a></p>
-
-<form><textarea id="code5" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fdesign_type+%3Fdesign_type_label%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%0D%0A%23design_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fdesign_iri+iao%3A0000219+%3Fstudy.%0D%0A%0D%0A%23%3Fdesign_iri+rdf%3Atype+obi%3Astudy_design%0D%0A%3Fdesign_iri+rdf%3Atype+obi%3A0500000.%0D%0A%0D%0A%3Fdesign_iri+rdf%3Atype+%3Fdesign_type.%0D%0AOPTIONAL{%0D%0A%3Fdesign_type+rdfs%3Alabel+%3Fdesign_type_label.%0D%0A}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="factors_and_levels.sparql"></a>
-<h4>What are the study factors (or independent variables) and their levels?</h4>
-<p align="center"><a href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/factors_and_levels.sparql">factors_and_levels.sparql</a></p>
-<form><textarea id="code3" name="code3" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-<a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Ffactor+%3Ffactor_level%0D%0AWHERE%0D%0A++{+%3Fstudy_design+rdf%3Atype+isa%3Astudy_design+.%0D%0A++++%3Fstudy_design+isa%3Adeclares+%3Ffactor_iri+.%0D%0A++++%3Ffactor_iri+rdfs%3Alabel+%3Ffactor+.%0D%0A++++%3Ffactor_iri+isa%3Ahas_factor_level+%3Ffactor_level_iri+.%0D%0A++++%3Ffactor_level_iri+rdfs%3Alabel+%3Ffactor_level%0D%0A++}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-<!---------------------------------------------------------------------------------------------->
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_group_count.sparql"></a>
-<h4>How many study groups are there?</h4>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_count.sparql">study_group_count.sparql</a></p>
-
-<form><textarea id="code7" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-<a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+bfo%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0ASELECT+DISTINCT+%28COUNT%28*%29+AS+%3Fcount%29%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.+%23+could+be+replaced+by%3A+%3Fstudy+rdf%3Atype+obi%3A0000066.%0D%0A%23%3Fstudy_design+is+obi%3Astudy_design%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000.%0D%0A%23%3Fstudy_design+iao%3Adenotes+%3Fstudy_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population.%0D%0A%23+%3Fstudy_design+iao%3Adenotes+%3Fstudy_group_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_groups.sparql"></a>
-<h4>Which are the study groups?</h4>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups.sparql">study_groups.sparql</a></p>
-
-<form><textarea id="code9" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-<a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group_iri+%3Flabel%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Flabel%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_group_members.sparql"></a>
-<h4>Which are the members of the study groups?</h4>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_members.sparql">study_group_members.sparql</a></p>
-
-<form><textarea id="code8" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-<a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+%3Fstudy_group_iri+%3Fstudy_group+%3Fmember%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A}%0D%0AORDER+BY+DESC%28%3Fstudy_group_iri%29%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_groups_sizes.sparql"></a>
-<h4>What are the sizes of the study groups?</h4>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups_sizes.sparql">study_groups_sizes.sparql</a></p>
-
-<form><textarea id="code10" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-<a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group+%28count%28%3Fmember%29+AS+%3Fmember_count%29%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A{+SELECT+DISTINCT+%3Fstudy_group_iri%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy_group_iri%0D%0A}%0D%0A}%0D%0A}%0D%0AGROUP+BY+%3Fstudy_group&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_funding_agency.sparql"></a>
-<h4>What was funding agency of the study?</h4>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_funding_agency.sparql">study_funding_agency.sparql</a></p>
-
-<form><textarea id="code6" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_metadata_licence.sparql"></a>
-<h4>What is the licence for the metadata?</h4>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_metadata_licence.sparql">study_metadata_licence.sparql</a></p>
-
-<form><textarea id="code11" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Flicence%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%3Fstudy+rdfs%3Acomment+%3Flicence.%0D%0AFILTER%28+regex%28str%28%3Flicence%29%2C+%22Licence%22%29%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="study_publication_pubmedid.sparql"></a>
-<h5>What is the PubMed identifier for the associated publications(s) for the study?</h5>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_publication_pubmedid.sparql">study_publication_pubmedid.sparql</a></p>
-
-<form><textarea id="code12" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fpublication_iri+%3Fpubmedid%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%23publication_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fpublication_iri+iao%3A0000219+%3Fstudy.%0D%0A%23%3Fpublication_iri+rdf%3Atype+iao%3Apublication%0D%0A%3Fpublication_iri+rdf%3Atype+iao%3A0000311.%0D%0A%3Fpubmedid_iri+iao%3A0000219+%3Fpublication_iri.%0D%0A%3Fpubmedid_iri+rdf%3Atype+obi%3A0001617.%0D%0A%3Fpubmedid_iri+rdfs%3Alabel+%3Fpubmedid.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="all_nanopubs.sparql"></a>
-<h5>Find all the nanopublications related to the study</h5>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/all_nanopubs.sparql">all_nanopubs.sparql</a></p>
-
-<form><textarea id="code13" name="code5" rows="8" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=prefix+rdfg%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F03%2Ftrix%2Frdfg-1%2F%3E%0D%0A%0D%0ASELECT+%3Fg+%0D%0AWHERE%0D%0A{%0D%0A%3Fg+rdfg%3AsubGraphOf+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopubs%3E.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a>.
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="assertion_author.sparql"></a>
-<h5>Find the authors for each assertion in the nanopublications</h5>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/assertion_author.sparql">assertion_author.sparql</a></p>
-
-<form><textarea id="code14" name="code5" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=prefix+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0D%0Aprefix+nanopub1%3A++%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%3E+%0D%0A%0D%0ASELECT+%3Fassertion+%3Forcid+%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F2%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F3%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F4%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F5%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F6%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F7%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F8%2Fprovenance%3E%0D%0AWHERE%0D%0A{%0D%0A++++GRAPH+%3Fsrc+{%0D%0A+++++%3Fassertion+prov%3AwasAttributedTo+%3Forcid.%0D%0A++++}%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-<!---------------------------------------------------------------------------------------------->
-<a name="nanopub_author.sparql"></a>
-
-<h5>Find the nanopublications and their associated authors</h5>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/nanopub_author.sparql">nanopub_author.sparql</a></p>
-
-<form><textarea id="code15" name="code15" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-    <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=prefix+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0ASELECT+%3Fnanopub+%3Forcid+%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F2%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F3%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F4%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F5%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F6%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F7%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F8%2FpubInfo%3E%0D%0AWHERE%0D%0A{%0D%0A++++GRAPH+%3Fsrc+{%0D%0A+++++%3Fnanopub+dct%3Acreator+%3Forcid.%0D%0A++++}%0D%0A}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
-</p>
-
-
-<!---------------------------------------------------------------------------------------------->
-
-<a name="hybrid_inputs_isa_provenance.sparql"></a>
-
-<h5></h5>
-<p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/hybrid_inputs_isa_provenance.sparql">hybrid_inputs_isa_provenance.sparql</a></p>
-
-<form><textarea id="code16" name="code16" rows="15" cols="100" ></textarea></form>
-
-<p align="center">
-
-</p>
+            <br>
+
+            <h3>
+                <a name="data-models" class="anchor" href="#designer-templates"><span
+                        class="octicon octicon-link"></span></a>Data Models: ISA, RO and Nanopublication</h3>
+
+            <p>The ISA model, with its focus on experimental design, insists on the declaration of study plans (e.g.,
+                experimental factors considered) and provides cues for reviewers to assess content and suitability of
+                the plans. Furthermore, the underlying model ensures that inputs and outputs of processes, or workflows,
+                are declared and identified, referring to existing database identifiers when relevant. Initially
+                intended to draw the graph of sample processing through to coarse data processing, the ISA grammar is
+                generic enough to cover computational processing while allowing referencing to more granular forms such
+                as Galaxy files.</p>
+
+            <p>ISA and RO both provide means to track experimental and computational workflows respectively, with some
+                level of acknowledged overlap which is handled by deferring to the domain specific resources, with
+                Research Object project recommending ISA for the biological domain. Finally, since describing how data
+                are acquired, generated and analyzed is only part of the story, the description of the findings requires
+                attention. The Nanopublication model tackles what used to represent the blind side of data reporting:
+                capturing experimental conclusion.</p>
+
+            <h4>Investigation-Study-Assay</h4>
+
+            <dl>
+                <dt>Scope:</dt>
+                <dd>Experimental Design, Variable, Material Processing, Data Processing workflows.</dd>
+                <dt>Outcomes:</dt>
+                <dd>
+                    <ul>
+                        <li>an <a href="https://github.com/agbeltran/soapdenovo2/tree/master/isa-tab">tab-delimited
+                            archive</a> presenting an overview of the SOAPdenovo2 experiment following the ISA-TAB
+                            specification: it includes a description of the experimental design (e.g. independent and
+                            response variables), the genomes and data used in SOAPdenovo2 together with stable
+                            identifiers, a description of the experimental and computational workflows for evaluation of
+                            SOAPdenovo2 with its predecessors SOAPdenovo1 and ALLPATHSLG, including their inputs and
+                            outputs, provenance and attribution information
+                        </li>
+                        <li>an <a href="https://github.com/agbeltran/soapdenovo2/tree/master/isa-owl">explicit OWL/RDF
+                            semantic representation</a> generated using ISA2OWL software component and relying on
+                            mappings between the ISA syntax and ontological resources such as the Ontology for
+                            Biomedical Investigations (OBI) and the Provenance ontology (PROV-O).
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+
+            <h4>Nanopublication</h4>
+
+            <dl>
+                <dt>Scope:</dt>
+                <dd>Key findings, supporting evidence</dd>
+                <dt>Outcome:</dt>
+                <dd>
+                    <ul>
+                        <li>NanoMaton template: an OntoMaton Google spreadsheet Nanopublication Template, where <a
+                                href="http://bioinformatics.oxfordjournals.org/content/29/4/525">OntoMaton</a> is a
+                            Google Spreadsheets widget relying on services for ontology lookup and annotation from <a
+                                    href="http://data.bioontology.org/documentation">NCBO Bioportal</a> and <a
+                                    href="http://lov.okfn.org/">Linked Open Vocabularies</a> .
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/spreadsheet/ccc?key=0AmtKthYRS0f5dHFldVQ5cVRHT3lxU3FWUUlhNEZ5YkE&usp=drive_web#gid=7">a
+                                completed NanoMaton template</a> holding all nanopublication as structured tables
+                        </li>
+                        <li><a href="https://github.com/ISA-tools/NanoMaton">the NanoMaton code</a> to convert from the
+                            Google Spreadsheet template to RDF serializations of the nanopublications, relying on the <a
+                                    href="">NanoPub-Java library</a></li>
+                        <li><a href="https://github.com/agbeltran/soapdenovo2/tree/master/nanopubs">RDF
+                            serializations</a> according to the <a
+                                href="http://www.nanopub.org/2013/WD-guidelines-20131215/">Nanopub guidelines</a></li>
+                    </ul>
+                </dd>
+            </dl>
+
+
+            <h4>Research Object</h4>
+
+            <dl>
+                <dt>Scope:</dt>
+                <dd>Scientific workflow artifacts</dd>
+                <dt>Outcome:</dt>
+                <ul>
+                    <li><a href="https://github.com/ISA-tools/soapdenovo2/tree/master/ro">a scientific workflow specific
+                        RO preservation of one application of SOAP2denovo2 to the S. Aureus genome assembly</a></li>
+                    <li><a href="https://github.com/ISA-tools/soapdenovo2/tree/master/ro-description">an aggregator
+                        document encapsulating the ISA-TAB, ISA-RDF and Nanopublications</a></li>
+                </ul>
+            </dl>
+
+
+            <h3><a name="queries" class="anchor" href="#designer-templates"><span
+                    class="octicon octicon-link"></span></a>Queries</h3>
+
+            <p>We provide a set of queries demonstrating how the data models can be used to inspect the information
+                about the SOAPdenovo2 study and its results. The following table summarises the queries and the model(s)
+                used to answer them. The queries themselves and links to execute them can be found through the table and
+                below.</p>
+
+
+            <!--- table --->
+            <table>
+                <tr>
+                    <th>Query Case</th>
+                    <th>RO</th>
+                    <th>ISA</th>
+                    <th>Nanopub</th>
+                </tr>
+                <tr>
+                    <td align="left">Who were involved in the study?</td>
+                    <td></td>
+                    <td><a href="#contacts.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What are the inputs and outputs for all the data transformations in the study?</td>
+                    <td></td>
+                    <td><a href="#data_transf_inputs_outputs.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What are the Galaxy workflows related to the SOAPdenovo2 case study?</td>
+                    <td></td>
+                    <td><a href="#galaxy_workflows.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What was the study design?</td>
+                    <td></td>
+                    <td><a href="#study_design_type.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What are the study factors (or independent variables) and their levels (or values
+                        they assumed)?
+                    </td>
+                    <td></td>
+                    <td><a name="#factors_and_levels.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">How many study groups are there?</td>
+                    <td></td>
+                    <td><a href="#study_group_count.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">Which are the study groups?</td>
+                    <td></td>
+                    <td><a name="#study_groups.sparql">See and execute query</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">Which are the members of the study groups?</td>
+                    <td></td>
+                    <td><a name="#study_group_members.sparql">See and execute query</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What are the sizes of the study groups?</td>
+                    <td></td>
+                    <td><a name="#study_groups_sizes.sparql">See and execute query</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What was funding agency of the study?</td>
+                    <td></td>
+                    <td><a href="#study_funding_agency.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What is the licence for the metadata?</td>
+                    <td></td>
+                    <td><a href="#study_metadata_licence.sparql">See and execut query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">What is the PubMed identifier for the associated publications(s) for the study?
+                    </td>
+                    <td></td>
+                    <td><a href="#study_publication_pubmedid.sparql">See and execute query</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">Find all the nanopublications related to the study</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#all_nanopubs.sparql">See and execute query</a></td>
+                </tr>
+                <tr>
+                    <td align="left">Find the authors for each assertion in the nanopublications</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#assertion_author.sparql">See and execute query</a></td>
+                </tr>
+                <tr>
+                    <td align="left">Find the nanopublications and their associated authors</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="#nanopub_author.sparql">See and execute query</a></td>
+                </tr>
+            </table>
+            <!--- end of table --->
+
+
+            <p>Next, we list the different queries and provide links to the results of executing them in <a
+                    href="http://newt.oerc.ox.ac.uk:8890/sparql">an SPARQL endpoint</a>.</p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="contacts.sparql"></a>
+            <h4>Who where the people involved in creating the ISA-Tab representation and what were their roles?</h4>
+
+            <p align="center"><a id="contacts"
+                                 href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/contacts.sparql">contacts.sparql</a>
+            </p>
+
+            <form><textarea id="code1" name="code1" rows="24" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++owl%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX++xsd%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++bfo%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Fperson_name+%3Fperson_iri+%3Frole%0D%0AWHERE%0D%0A++{+%3Fperson_iri+rdf%3Atype+tax%3A9606+.%0D%0A++++%3Fperson_iri+rdfs%3Alabel+%3Fperson_name+.%0D%0A++++%3Fperson_iri+bfo%3A0000056+%3Fstudy+.%0D%0A++++%3Fstudy+rdf%3Atype+isa%3Astudy%0D%0A++++OPTIONAL%0D%0A++++++{+%3Frole_iri+rdf%3Atype+obi%3A0000202+.%0D%0A++++++++%3Fperson_iri+bfo%3A0000087+%3Frole_iri+.%0D%0A++++++++%3Frole_iri+rdfs%3Alabel+%3Frole%0D%0A++++++}%0D%0A++}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="data_transf_inputs_outputs.sparql"></a>
+            <h4>What are the inputs and outputs for all the data transformations in the study?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/data_transf_inputs_outputs.sparql">data_transf_inputs_outputs.sparql</a>
+            </p>
+
+            <form><textarea id="code2" name="code2" rows="21" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisa-tools%2FISA_%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fdt%2C+%3Finputfile%2C+%3Foutputfile%0D%0AWHERE%0D%0A{%0D%0A++++%23%3Fdt_iri+rdf%3Atype+obi%3Adata_transformation%0D%0A++++%3Fdt_iri+rdf%3Atype+obi%3A0200000.%0D%0A%0D%0A++++%3Fdt_iri+rdfs%3Alabel+%3Fdt.%0D%0A++++%3Fdt_iri+obi%3A0000293+%3Finputfile_iri.%0D%0A++++%3Fdt_iri+obi%3A0000299+%3Foutputfile_iri.%0D%0A++++%3Finputfile_iri+rdfs%3Alabel+%3Finputfile.+%0D%0A++++%3Foutputfile_iri+rdfs%3Alabel+%3Foutputfile.%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="galaxy_workflows.sparql"></a>
+            <h4>What are the Galaxy workflows related to the SOAPdenovo2 case study?</h4>
+
+            <p align="center"><a
+                    href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/galaxy_workflows.sparql">galaxy_workflows.sparql</a>
+            </p>
+
+            <form><textarea id="code4" name="code4" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fworkflow+%0D%0AWHERE%0D%0A{%0D%0A%23%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3Aplanned_process%0D%0A%3Fgalaxy_workflow_iri+rdf%3Atype+obi%3A0000011.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fparameter_iri.%0D%0A%3Fparameter_iri+rdfs%3Alabel+%3Fparameter.%0D%0A%0D%0A%3Fgalaxy_workflow_iri+isa%3Ahas_parameter_value+%3Fworkflow_iri.%0D%0A%3Fworkflow_iri+rdfs%3Alabel+%3Fworkflow.%0D%0A%0D%0A%0D%0AFILTER%28regex%28str%28%3Fparameter%29%2C%22Galaxy%22%29+%29%0D%0AFILTER%28regex%28str%28%3Fworkflow%29%2C%22gigascience%22%29+%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_design_type.sparql"></a>
+            <h4>What was the study design?</h4>
+
+            <p align="center"><a
+                    href="https://raw.githubusercontent.com/ISA-tools/soapdenovo2/master/sparql/isa/study_design_type.sparql">study_design_type.sparql</a>
+            </p>
+
+            <form><textarea id="code5" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fdesign_type+%3Fdesign_type_label%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%0D%0A%23design_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fdesign_iri+iao%3A0000219+%3Fstudy.%0D%0A%0D%0A%23%3Fdesign_iri+rdf%3Atype+obi%3Astudy_design%0D%0A%3Fdesign_iri+rdf%3Atype+obi%3A0500000.%0D%0A%0D%0A%3Fdesign_iri+rdf%3Atype+%3Fdesign_type.%0D%0AOPTIONAL{%0D%0A%3Fdesign_type+rdfs%3Alabel+%3Fdesign_type_label.%0D%0A}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="factors_and_levels.sparql"></a>
+            <h4>What are the study factors (or independent variables) and their levels?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/agbeltran/soapdenovo2/blob/master/sparql/isa/factors_and_levels.sparql">factors_and_levels.sparql</a>
+            </p>
+
+            <form><textarea id="code3" name="code3" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX++rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX++ro%3A+++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0APREFIX++tax%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX++iao%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX++isa%3A++%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX++rdf%3A++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX++obi%3A++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0A%0D%0ASELECT+DISTINCT++%3Ffactor+%3Ffactor_level%0D%0AWHERE%0D%0A++{+%3Fstudy_design+rdf%3Atype+isa%3Astudy_design+.%0D%0A++++%3Fstudy_design+isa%3Adeclares+%3Ffactor_iri+.%0D%0A++++%3Ffactor_iri+rdfs%3Alabel+%3Ffactor+.%0D%0A++++%3Ffactor_iri+isa%3Ahas_factor_level+%3Ffactor_level_iri+.%0D%0A++++%3Ffactor_level_iri+rdfs%3Alabel+%3Ffactor_level%0D%0A++}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+            <!---------------------------------------------------------------------------------------------->
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_group_count.sparql"></a>
+            <h4>How many study groups are there?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_count.sparql">study_group_count.sparql</a>
+            </p>
+
+            <form><textarea id="code7" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+bfo%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0ASELECT+DISTINCT+%28COUNT%28*%29+AS+%3Fcount%29%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.+%23+could+be+replaced+by%3A+%3Fstudy+rdf%3Atype+obi%3A0000066.%0D%0A%23%3Fstudy_design+is+obi%3Astudy_design%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000.%0D%0A%23%3Fstudy_design+iao%3Adenotes+%3Fstudy_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population.%0D%0A%23+%3Fstudy_design+iao%3Adenotes+%3Fstudy_group_iri%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_groups.sparql"></a>
+            <h4>Which are the study groups?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups.sparql">study_groups.sparql</a>
+            </p>
+
+            <form><textarea id="code9" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group_iri+%3Flabel%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design+iao%3A0000219+%3Fstudy_group_iri+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Flabel%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_group_members.sparql"></a>
+            <h4>Which are the members of the study groups?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_group_members.sparql">study_group_members.sparql</a>
+            </p>
+
+            <form><textarea id="code8" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+%3Fstudy_group_iri+%3Fstudy_group+%3Fmember%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A}%0D%0AORDER+BY+DESC%28%3Fstudy_group_iri%29%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_groups_sizes.sparql"></a>
+            <h4>What are the sizes of the study groups?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_groups_sizes.sparql">study_groups_sizes.sparql</a>
+            </p>
+
+            <form><textarea id="code10" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0ASELECT+DISTINCT+%3Fstudy_group+%28count%28%3Fmember%29+AS+%3Fmember_count%29%0D%0AWHERE%0D%0A{+%3Fstudy_group_iri+isa%3Ahas_member+%3Fmember_iri+.%0D%0A%3Fmember_iri+rdfs%3Alabel+%3Fmember+.%0D%0A%3Fstudy_group_iri+rdfs%3Alabel+%3Fstudy_group%0D%0A{+SELECT+DISTINCT+%3Fstudy_group_iri%0D%0AWHERE%0D%0A{+%3Fstudy+rdf%3Atype+obi%3A0000066+.%0D%0A%3Fstudy_design_iri+rdf%3Atype+obi%3A0500000+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy+.%0D%0A%3Fstudy_group_iri+rdf%3Atype+isa%3Astudy_group_population+.%0D%0A%3Fstudy_design_iri+iao%3A0000219+%3Fstudy_group_iri%0D%0A}%0D%0A}%0D%0A}%0D%0AGROUP+BY+%3Fstudy_group&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_funding_agency.sparql"></a>
+            <h4>What was funding agency of the study?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_funding_agency.sparql">study_funding_agency.sparql</a>
+            </p>
+
+            <form><textarea id="code6" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="">Execute this SPARQL query</a> over the SOAPdenovo2 named graph
+                (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_metadata_licence.sparql"></a>
+            <h4>What is the licence for the metadata?</h4>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_metadata_licence.sparql">study_metadata_licence.sparql</a>
+            </p>
+
+            <form><textarea id="code11" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Flicence%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%3Fstudy+rdfs%3Acomment+%3Flicence.%0D%0AFILTER%28+regex%28str%28%3Flicence%29%2C+%22Licence%22%29%29%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="study_publication_pubmedid.sparql"></a>
+            <h5>What is the PubMed identifier for the associated publications(s) for the study?</h5>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_publication_pubmedid.sparql">study_publication_pubmedid.sparql</a>
+            </p>
+
+            <form><textarea id="code12" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fpublication_iri+%3Fpubmedid%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%23publication_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fpublication_iri+iao%3A0000219+%3Fstudy.%0D%0A%23%3Fpublication_iri+rdf%3Atype+iao%3Apublication%0D%0A%3Fpublication_iri+rdf%3Atype+iao%3A0000311.%0D%0A%3Fpubmedid_iri+iao%3A0000219+%3Fpublication_iri.%0D%0A%3Fpubmedid_iri+rdf%3Atype+obi%3A0001617.%0D%0A%3Fpubmedid_iri+rdfs%3Alabel+%3Fpubmedid.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="all_nanopubs.sparql"></a>
+            <h5>Find all the nanopublications related to the study</h5>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/all_nanopubs.sparql">all_nanopubs.sparql</a>
+            </p>
+
+            <form><textarea id="code13" name="code5" rows="8" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=&query=prefix+rdfg%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F03%2Ftrix%2Frdfg-1%2F%3E%0D%0A%0D%0ASELECT+%3Fg+%0D%0AWHERE%0D%0A{%0D%0A%3Fg+rdfg%3AsubGraphOf+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopubs%3E.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a>.
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="assertion_author.sparql"></a>
+            <h5>Find the authors for each assertion in the nanopublications</h5>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/assertion_author.sparql">assertion_author.sparql</a>
+            </p>
+
+            <form><textarea id="code14" name="code5" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=prefix+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0D%0Aprefix+nanopub1%3A++%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%3E+%0D%0A%0D%0ASELECT+%3Fassertion+%3Forcid+%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F2%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F3%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F4%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F5%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F6%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F7%2Fprovenance%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F8%2Fprovenance%3E%0D%0AWHERE%0D%0A{%0D%0A++++GRAPH+%3Fsrc+{%0D%0A+++++%3Fassertion+prov%3AwasAttributedTo+%3Forcid.%0D%0A++++}%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="nanopub_author.sparql"></a>
+
+            <h5>Find the nanopublications and their associated authors</h5>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/nanopubs/nanopub_author.sparql">nanopub_author.sparql</a>
+            </p>
+
+            <form><textarea id="code15" name="code15" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=prefix+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0ASELECT+%3Fnanopub+%3Forcid+%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F1%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F2%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F3%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F4%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F5%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F6%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F7%2FpubInfo%3E%0D%0AFROM+NAMED+%3Chttp%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2%2Fnanopub%2F8%2FpubInfo%3E%0D%0AWHERE%0D%0A{%0D%0A++++GRAPH+%3Fsrc+{%0D%0A+++++%3Fnanopub+dct%3Acreator+%3Forcid.%0D%0A++++}%0D%0A}%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute
+                    this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
+
+            <!---------------------------------------------------------------------------------------------->
+
+            <a name="hybrid_inputs_isa_provenance.sparql"></a>
+
+            <h5></h5>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/hybrid_inputs_isa_provenance.sparql">hybrid_inputs_isa_provenance.sparql</a>
+            </p>
+
+            <form><textarea id="code16" name="code16" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+
+            </p>
 
             <!---------------------------------------------------------------------------------------------->
 
             <a name="hybrid_ro_nanopub.sparql"></a>
 
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/hybrid_ro_nanopub.sparql">hybrid_ro_nanopub.sparql</a></p>
 
-            <form><textarea id="code17" name="code17" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/hybrid_ro_nanopub.sparql">hybrid_ro_nanopub.sparql</a>
+            </p>
+
+            <form><textarea id="code17" name="code17" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
@@ -467,9 +631,12 @@ comparison between sequence assembly algorithm performance in the light of devel
             <a name="hybrid_workflow_isa_study.sparql"></a>
 
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/hybrid_workflow_isa_study.sparql">hybrid_workflow_isa_study.sparql</a></p>
 
-            <form><textarea id="code18" name="code18" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/hybrid_workflow_isa_study.sparql">hybrid_workflow_isa_study.sparql</a>
+            </p>
+
+            <form><textarea id="code18" name="code18" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
@@ -480,9 +647,12 @@ comparison between sequence assembly algorithm performance in the light of devel
             <a name="inputs_derived_gage_output.sparql"></a>
 
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/inputs_derived_gage_output.sparql">inputs_derived_gage_output.sparql</a></p>
 
-            <form><textarea id="code19" name="code19" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/inputs_derived_gage_output.sparql">inputs_derived_gage_output.sparql</a>
+            </p>
+
+            <form><textarea id="code19" name="code19" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
@@ -493,9 +663,12 @@ comparison between sequence assembly algorithm performance in the light of devel
             <a name="inputs_role.sparql"></a>
 
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/inputs_role.sparql">inputs_role.sparql</a></p>
 
-            <form><textarea id="code20" name="code20" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/inputs_role.sparql">inputs_role.sparql</a>
+            </p>
+
+            <form><textarea id="code20" name="code20" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
@@ -506,9 +679,12 @@ comparison between sequence assembly algorithm performance in the light of devel
             <a name="workflow_generated_gage_results.sparql"></a>
 
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/workflow_generated_gage_results.sparql">workflow_generated_gage_results.sparql</a></p>
 
-            <form><textarea id="code21" name="code21" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/workflow_generated_gage_results.sparql">workflow_generated_gage_results.sparql</a>
+            </p>
+
+            <form><textarea id="code21" name="code21" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
@@ -519,9 +695,12 @@ comparison between sequence assembly algorithm performance in the light of devel
             <a name="workflow_in_the_ro.sparql"></a>
 
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/workflow_in_the_ro.sparql">workflow_in_the_ro.sparql</a></p>
 
-            <form><textarea id="code22" name="code22" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/workflow_in_the_ro.sparql">workflow_in_the_ro.sparql</a>
+            </p>
+
+            <form><textarea id="code22" name="code22" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
@@ -530,60 +709,101 @@ comparison between sequence assembly algorithm performance in the light of devel
 
             <a name="workflow_in_the_ro.sparql"></a>
             <h5></h5>
-            <p align="center"><a href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/workflow_inputs.sparql">workflow_in_the_ro.sparql</a></p>
 
-            <form><textarea id="code23" name="code23" rows="15" cols="100" ></textarea></form>
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/ro/workflow_inputs.sparql">workflow_in_the_ro.sparql</a>
+            </p>
+
+            <form><textarea id="code23" name="code23" rows="15" cols="100"></textarea></form>
 
             <p align="center">
 
             </p>
 
 
-<!---------------------------------------------------------------------------------------------->
-            <h3><a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h3>
+            <!---------------------------------------------------------------------------------------------->
+            <h3><a name="contributors" class="anchor" href="#contributors"><span
+                    class="octicon octicon-link"></span></a>Contributors</h3>
 
 
-<ul>
-<li><a href="http://www.oerc.ox.ac.uk/people/alejandra">Alejandra Gonzalez-Beltran</a> (<a href="https://github.com/agbeltran" class="user-mention">@agbeltran</a>), Oxford e-Research Centre, University of Oxford, UK</li>
-<li>Peter Li (<a href="https://github.com/pli888" class="user-mention">@pli888</a>), GigaScience, BGI HK Research Institute, Hong Kong.</li>
-<li><a href="http://www.lancaster.ac.uk/people/zhaoj4/">Jun Zhao</a>, InfoLab21, Lancaster University</li>
-<li><a href="http://biosemantics.org/index.php?page=Mark-Thompson">Mark Thompson</a>, Department of Human Genetics, Leiden University Medical Center, The Netherlands</li>
-<li><a href="https://www.linkedin.com/pub/maria-susana-avila-garcia/21/1a4/182">Maria Susana Avila-Garcia</a>, Nuffield Department of Medicine, Experimental Medicine Division, John Radcliffe Hospital,, Oxford, UK .</li>
-<li><a href="http://www.linkedin.com/pub/ruibang-luo/23/a92/7a8">Ruibang Luo</a>, HKU-BGI Bioinformatics Algorithms and Core Technology Research Laboratory & Department of Computer Science, University of Hong Kong, Pokfulam, Hong Kong.</li>
-<li><a href="http://i.cs.hku.hk/~twlam/">Tak-Wah Lam</a>, HKU-BGI Bioinformatics Algorithms and Core Technology Research Laboratory & Department of Computer Science, University of Hong Kong, Pokfulam, Hong Kong.</li>
-<li><a href="http://www.sbs.cuhk.edu.hk/TeachingStaffDetails.asp?TE_NAME=LEE%20Tin%20Lap">Tin-Lap Lee</a>,  School of Biomedical Sciences and CUHK-BGI Innovation Institute of Trans-omics, The Chinese University of Hong Kong, Shatin, Hong Kong.</li>
-<li><a href="http://biosemantics.org/index.php?page=Marco-Roos">Marco Roos</a>, Department of Human Genetics, Leiden University Medical Center, The Netherlands</li>
-<li><a href="http://www.linkedin.com/pub/scott-edmunds/21/b56/679">Scott Edmunds</a>, GigaScience, BGI HK Research Institute, Hong Kong.</li>
-<li><a href="http://oerc.ox.ac.uk/people/susanna-assunta-sansone">Susanna-Assunta Sansone</a>, Oxford e-Research Centre, University of Oxford</li>
-<li><a href="http://oerc.ox.ac.uk/people/philippe-rocca-serra">Philippe Rocca-Serra</a>, Oxford e-Research Centre, University of Oxford</li>
-</ul>
+            <ul>
+                <li><a href="http://www.oerc.ox.ac.uk/people/alejandra">Alejandra Gonzalez-Beltran</a> (<a
+                        href="https://github.com/agbeltran" class="user-mention">@agbeltran</a>), Oxford e-Research
+                    Centre, University of Oxford, UK
+                </li>
+                <li>Peter Li (<a href="https://github.com/pli888" class="user-mention">@pli888</a>), GigaScience, BGI HK
+                    Research Institute, Hong Kong.
+                </li>
+                <li><a href="http://www.lancaster.ac.uk/people/zhaoj4/">Jun Zhao</a>, InfoLab21, Lancaster University
+                </li>
+                <li><a href="http://biosemantics.org/index.php?page=Mark-Thompson">Mark Thompson</a>, Department of
+                    Human Genetics, Leiden University Medical Center, The Netherlands
+                </li>
+                <li><a href="https://www.linkedin.com/pub/maria-susana-avila-garcia/21/1a4/182">Maria Susana
+                    Avila-Garcia</a>, Nuffield Department of Medicine, Experimental Medicine Division, John Radcliffe
+                    Hospital,, Oxford, UK .
+                </li>
+                <li><a href="http://www.linkedin.com/pub/ruibang-luo/23/a92/7a8">Ruibang Luo</a>, HKU-BGI Bioinformatics
+                    Algorithms and Core Technology Research Laboratory & Department of Computer Science, University of
+                    Hong Kong, Pokfulam, Hong Kong.
+                </li>
+                <li><a href="http://i.cs.hku.hk/~twlam/">Tak-Wah Lam</a>, HKU-BGI Bioinformatics Algorithms and Core
+                    Technology Research Laboratory & Department of Computer Science, University of Hong Kong, Pokfulam,
+                    Hong Kong.
+                </li>
+                <li><a href="http://www.sbs.cuhk.edu.hk/TeachingStaffDetails.asp?TE_NAME=LEE%20Tin%20Lap">Tin-Lap
+                    Lee</a>, School of Biomedical Sciences and CUHK-BGI Innovation Institute of Trans-omics, The Chinese
+                    University of Hong Kong, Shatin, Hong Kong.
+                </li>
+                <li><a href="http://biosemantics.org/index.php?page=Marco-Roos">Marco Roos</a>, Department of Human
+                    Genetics, Leiden University Medical Center, The Netherlands
+                </li>
+                <li><a href="http://www.linkedin.com/pub/scott-edmunds/21/b56/679">Scott Edmunds</a>, GigaScience, BGI
+                    HK Research Institute, Hong Kong.
+                </li>
+                <li><a href="http://oerc.ox.ac.uk/people/susanna-assunta-sansone">Susanna-Assunta Sansone</a>, Oxford
+                    e-Research Centre, University of Oxford
+                </li>
+                <li><a href="http://oerc.ox.ac.uk/people/philippe-rocca-serra">Philippe Rocca-Serra</a>, Oxford
+                    e-Research Centre, University of Oxford
+                </li>
+            </ul>
 
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact">
-<span class="octicon octicon-link"></span></a>Support or Contact</h3>
+            <h3>
+                <a name="support-or-contact" class="anchor" href="#support-or-contact">
+                    <span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>For discussions about the SOAPdenovo2 case study, please contact <a href="mailto:alejandra.gonzalezbeltrannotspam@oerc.ox.ac.uk?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove the text 'notspam' from the address before sending your email.">Alejandra</a>, <a href="mailto:peternotspam@gigasciencejournal.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove the text 'notspam' from the address before sending your email.">Peter</a> and <a href="mailto:philippe.rocca-serranotspam@oerc.ox.ac.uk?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove the text 'notspam' from the address before sending your email.">Philippe</a>. </p>
-<p>The issue tracker is available at: <a href="https://github.com/ISA-tools/soapdenovo2/issues">SOAPdenovo2 case study GitHub site</a>. Please, feel free to report issues or feature requests.</p>
+            <p>For discussions about the SOAPdenovo2 case study, please contact <a
+                    href="mailto:alejandra.gonzalezbeltrannotspam@oerc.ox.ac.uk?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove the text 'notspam' from the address before sending your email.">Alejandra</a>,
+                <a href="mailto:peternotspam@gigasciencejournal.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove the text 'notspam' from the address before sending your email.">Peter</a>
+                and
+                <a href="mailto:philippe.rocca-serranotspam@oerc.ox.ac.uk?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove the text 'notspam' from the address before sending your email.">Philippe</a>.
+            </p>
+
+            <p>The issue tracker is available at: <a href="https://github.com/ISA-tools/soapdenovo2/issues">SOAPdenovo2
+                case study GitHub site</a>. Please, feel free to report issues or feature requests.</p>
 
 
-<!--
-<p>Having trouble with Pages? Check out the documentation at 
-<a href="http://help.github.com/pages">http://help.github.com/pages</a> or 
-contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
--->
+            <!--
+            <p>Having trouble with Pages? Check out the documentation at
+            <a href="http://help.github.com/pages">http://help.github.com/pages</a> or
+            contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+            -->
 
-  
-</section>
 
-<footer>
-    SOAPdenovo2 is maintained by <a href="https://github.com/ISA-tools">ISA-tools</a><br>
-    This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-    This page relies on the <a href="https://github.com/jamesward/github-files">github-files package</a> to show the SPARQL queries.
-</footer>
+        </section>
+
+        <footer>
+            SOAPdenovo2 is maintained by <a href="https://github.com/ISA-tools">ISA-tools</a><br>
+            This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a
+                href="https://twitter.com/jasonlong">Jason Long</a>.
+            This page relies on the <a href="https://github.com/jamesward/github-files">github-files package</a> to show
+            the SPARQL queries.
+        </footer>
         <script>
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "c522c6d030d2507111971b49a53879f704846385", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "c522c6d030d2507111971b49a53879f704846385", function (contents) {
                 console.log(contents);
                 $("textarea#code1").text(contents);
 
@@ -596,7 +816,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "a99a64d1aa99e17f73509925375f665f68a95a18", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "a99a64d1aa99e17f73509925375f665f68a95a18", function (contents) {
                 console.log(contents);
                 $("textarea#code2").text(contents);
 
@@ -609,7 +829,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "2d05f6c62dbb24eb69ce53a7bdf978587d920ba0", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "2d05f6c62dbb24eb69ce53a7bdf978587d920ba0", function (contents) {
                 console.log(contents);
                 $("textarea#code3").text(contents);
 
@@ -622,7 +842,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "045d75497b0b61ccd53edc2c2e2804412d0f4dd0", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "045d75497b0b61ccd53edc2c2e2804412d0f4dd0", function (contents) {
                 console.log(contents);
                 $("textarea#code4").text(contents);
 
@@ -635,7 +855,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "9acf1909ab67135ffce0f94c5b1ae6c8b0975e86", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "9acf1909ab67135ffce0f94c5b1ae6c8b0975e86", function (contents) {
                 console.log(contents);
                 $("textarea#code5").text(contents);
 
@@ -648,7 +868,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "60786c1ccf0e545bd48ecf4470ec598f2af46417", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "60786c1ccf0e545bd48ecf4470ec598f2af46417", function (contents) {
                 console.log(contents);
                 $("textarea#code6").text(contents);
 
@@ -661,7 +881,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "f5ccb3a06c4135f709d06472bda1dcd5e62577b1", function (contents) {
                 console.log(contents);
                 $("textarea#code7").text(contents);
 
@@ -674,7 +894,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "9948b73626053e9db848079e4ca9fa22c680d492", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "9948b73626053e9db848079e4ca9fa22c680d492", function (contents) {
                 console.log(contents);
                 $("textarea#code8").text(contents);
 
@@ -687,7 +907,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "e6ac6dfbf7e03b53e480af0043ddbca90ce8fdcb", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "e6ac6dfbf7e03b53e480af0043ddbca90ce8fdcb", function (contents) {
                 console.log(contents);
                 $("textarea#code9").text(contents);
 
@@ -700,8 +920,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-
-            $.getGithubFile("ISA-tools", "soapdenovo2", "caeb32b6441dd46c41c9a879a0d4d4fb4f897889", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "caeb32b6441dd46c41c9a879a0d4d4fb4f897889", function (contents) {
                 console.log(contents);
                 $("textarea#code10").text(contents);
 
@@ -714,8 +933,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-
-            $.getGithubFile("ISA-tools", "soapdenovo2", "509d33e8a542767620eb577828d7679edff977e0", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "509d33e8a542767620eb577828d7679edff977e0", function (contents) {
                 console.log(contents);
                 $("textarea#code11").text(contents);
 
@@ -727,7 +945,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
                 });
             });
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "e5c8eeac690e68062566ccf0430d66f6a5a0871c", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "e5c8eeac690e68062566ccf0430d66f6a5a0871c", function (contents) {
                 console.log(contents);
                 $("textarea#code12").text(contents);
 
@@ -739,7 +957,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
                 });
             });
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "5bfe7d807c7783ecbd6425803c6bbaffab18d060", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "5bfe7d807c7783ecbd6425803c6bbaffab18d060", function (contents) {
                 console.log(contents);
                 $("textarea#code13").text(contents);
 
@@ -751,7 +969,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
                 });
             });
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "19fa86a87474cd2819b05dfdc0c9a2753e0dad28", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "19fa86a87474cd2819b05dfdc0c9a2753e0dad28", function (contents) {
                 console.log(contents);
                 $("textarea#code14").text(contents);
 
@@ -764,7 +982,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-            $.getGithubFile("ISA-tools", "soapdenovo2", "783633748b9355062cd8e146aeee518eef2c7d13", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "783633748b9355062cd8e146aeee518eef2c7d13", function (contents) {
                 console.log(contents);
                 $("textarea#code15").text(contents);
 
@@ -778,7 +996,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
 
 
             /*hybrid_inputs_isa_provenance.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "a6ac74cad4e7a4883433491acc2dc7ab74e3df7f", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "a6ac74cad4e7a4883433491acc2dc7ab74e3df7f", function (contents) {
                 console.log(contents);
                 $("textarea#code16").text(contents);
 
@@ -792,7 +1010,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
 
 
             /*hybrid_ro_nanopub.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "4069dc072b47da6b8410c9bc0fd7a739ad4d44b2", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "4069dc072b47da6b8410c9bc0fd7a739ad4d44b2", function (contents) {
                 console.log(contents);
                 $("textarea#code17").text(contents);
 
@@ -806,7 +1024,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
 
 
             /*	hybrid_workflow_isa_study.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "be60c3f4d2037993ffdf666dff0ac404f49c1242", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "be60c3f4d2037993ffdf666dff0ac404f49c1242", function (contents) {
                 console.log(contents);
                 $("textarea#code18").text(contents);
 
@@ -819,7 +1037,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
             /*	inputs_derived_gage_output.sparql */
-            $.getGithubFile("ISA-tools", "soapdenovo2", "972641cb5dc76600d6e4f37f49df61a72dd7b971", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "972641cb5dc76600d6e4f37f49df61a72dd7b971", function (contents) {
                 console.log(contents);
                 $("textarea#code19").text(contents);
 
@@ -832,7 +1050,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
             /*inputs_role.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "80f14a3bd6390d7fa65540a07d2156822de1e8ed", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "80f14a3bd6390d7fa65540a07d2156822de1e8ed", function (contents) {
                 console.log(contents);
                 $("textarea#code20").text(contents);
 
@@ -846,7 +1064,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
 
 
             /*workflow_generated_gage_results.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "39e206566b5461bd6afe46586ba883844d421aea", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "39e206566b5461bd6afe46586ba883844d421aea", function (contents) {
                 console.log(contents);
                 $("textarea#code21").text(contents);
 
@@ -860,7 +1078,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
 
 
             /*workflow_in_the_ro.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "5452563d0164e9d6ef688878a4324f147a0555c1", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "5452563d0164e9d6ef688878a4324f147a0555c1", function (contents) {
                 console.log(contents);
                 $("textarea#code22").text(contents);
 
@@ -874,7 +1092,7 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
 
 
             /*workflow_inputs.sparql*/
-            $.getGithubFile("ISA-tools", "soapdenovo2", "5e1eaa9c4c650e36e89e55f754d27643c37f6acb", function(contents) {
+            $.getGithubFile("ISA-tools", "soapdenovo2", "5e1eaa9c4c650e36e89e55f754d27643c37f6acb", function (contents) {
                 console.log(contents);
                 $("textarea#code23").text(contents);
 
@@ -887,27 +1105,28 @@ contact <a href="mailto:support@github.com">support@github.com</a> and we’ll h
             });
 
 
-
         </script>
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=9703913; 
-var sc_invisible=1; 
-var sc_security="79926300"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/9703913/0/79926300/1/"
-alt="web stats"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-        
-      </div>
+        <!-- Start of StatCounter Code for Default Guide -->
+        <script type="text/javascript">
+            var sc_project = 9703913;
+            var sc_invisible = 1;
+            var sc_security = "79926300";
+            var scJsHost = (("https:" == document.location.protocol) ?
+                    "https://secure." : "http://www.");
+            document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+        </script>
+        <noscript>
+            <div class="statcounter"><a title="web stats"
+                                        href="http://statcounter.com/" target="_blank"><img
+                    class="statcounter"
+                    src="http://c.statcounter.com/9703913/0/79926300/1/"
+                    alt="web stats"></a></div>
+        </noscript>
+        <!-- End of StatCounter Code for Default Guide -->
+
     </div>
-  </body>
+</div>
+</body>
 </html>
