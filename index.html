@@ -270,7 +270,7 @@
                 </tr>
                 <tr>
                     <td align="left">What are the inputs and outputs for all the data transformations in the study?</td>
-                    <td></td>
+                    <td>(for inputs) <a href="#workflow_inputs.sparql">See query</a></td>
                     <td><a href="#data_transf_inputs_outputs.sparql">See and execute query</a></td>
                     <td></td>
                 </tr>
@@ -339,8 +339,8 @@
                 </tr>
                 <tr>
                     <td align="left">Find all the nanopublications related to the study</td>
-                    <td></td>
-                    <td></td>
+                    <td><a href="#hybrid_ro_nanopub.sparql">See query</a></td>
+                    <td><a href="#isa_nanopubs.sparql">See and execute query</a></td>
                     <td><a href="#all_nanopubs.sparql">See and execute query</a></td>
                 </tr>
                 <tr>
@@ -541,12 +541,27 @@
                     href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/study_publication_pubmedid.sparql">study_publication_pubmedid.sparql</a>
             </p>
 
-            <form><textarea id="code12" name="code5" rows="15" cols="100"></textarea></form>
+            <form><textarea id="code12" name="code12" rows="15" cols="100"></textarea></form>
 
             <p align="center">
                 <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisaterms%2F%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0ASELECT+DISTINCT+%3Fstudy+%3Fpublication_iri+%3Fpubmedid%0D%0AWHERE%0D%0A{%0D%0A%3Fstudy+rdf%3Atype+isa%3Astudy.%0D%0A%23publication_iri+iao%3Adenotes+%3Fstudy.%0D%0A%3Fpublication_iri+iao%3A0000219+%3Fstudy.%0D%0A%23%3Fpublication_iri+rdf%3Atype+iao%3Apublication%0D%0A%3Fpublication_iri+rdf%3Atype+iao%3A0000311.%0D%0A%3Fpubmedid_iri+iao%3A0000219+%3Fpublication_iri.%0D%0A%3Fpubmedid_iri+rdf%3Atype+obi%3A0001617.%0D%0A%3Fpubmedid_iri+rdfs%3Alabel+%3Fpubmedid.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on">Execute
                     this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
             </p>
+
+            <!---------------------------------------------------------------------------------------------->
+            <a name="isa_nanopubs.sparql"></a>
+            <h5>What are the nanopublications genereated for the study?</h5>
+
+            <p align="center"><a
+                    href="https://github.com/ISA-tools/soapdenovo2/blob/master/sparql/isa/isa_nanopubs.sparql">isa_nanopubs.sparql</a>
+            </p>
+
+            <form><textarea id="code24" name="code24" rows="15" cols="100"></textarea></form>
+
+            <p align="center">
+                <a href="http://newt.oerc.ox.ac.uk:8890/sparql?default-graph-uri=http%3A%2F%2Fw3id.org%2Fisa%2Fsoapdenovo2&query=PREFIX+iao%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_%3E%0D%0APREFIX+obi%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_%3E%0D%0APREFIX+tax%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCBITaxon_%3E%0D%0APREFIX+isa%3A+%3Chttp%3A%2F%2Fpurl.org%2Fisa-tools%2FISA_%3E%0D%0APREFIX+ro%3A+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_%3E%0D%0A%0D%0ASELECT+DISTINCT%0D%0A%3Fnanopubs+%3Fnanopub_dt+%3Finputfile+%0D%0AWHERE%0D%0A{%0D%0A%23%3Fnanopub_dt+rdf%3Atype+obi%3Adata_transformation%0D%0A%3Fnanopub_dt+rdf%3Atype+obi%3A0200000.%0D%0A%3Fnanopub_dt+rdfs%3Alabel+%22Nanopub%22^^%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string%3E.%0D%0A%3Fnanopub_dt+obi%3A0000293+%3Finputfile_iri.%0D%0A%3Fnanopub_dt+obi%3A0000299+%3Foutputfile_iri.%0D%0A%3Finputfile_iri+rdfs%3Alabel+%3Finputfile.%0D%0A%3Foutputfile_iri+rdfs%3Alabel+%3Fnanopubs.%0D%0A}%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Execute this SPARQL query</a> over the SOAPdenovo2 named graph (http://w3id.org/isa/soapdenovo2).
+            </p>
+
 
 
             <h4>Queries over the Nanopublication research model</h4>
@@ -1109,6 +1124,18 @@
                 });
             });
 
+            /*isa_nanopubs.sparql*/
+            $.getGithubFile("ISA-tools", "soapdenovo2", "6b63ffeef9bb8555b691fdae1c5c002a1773cb81", function (contents) {
+                console.log(contents);
+                $("textarea#code24").text(contents);
+
+                CodeMirror.fromTextArea(document.getElementById("code24"), {
+                    mode: "application/x-sparql-query",
+                    matchBrackets: true,
+                    readOnly: true,
+                    lineNumbers: true
+                });
+            });
 
         </script>
         <!-- Start of StatCounter Code for Default Guide -->
