@@ -1,0 +1,19 @@
+PREFIX iao: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX obi: <http://purl.obolibrary.org/obo/OBI_>
+PREFIX tax: <http://purl.obolibrary.org/obo/NCBITaxon_>
+PREFIX isa: <http://purl.org/isa-tools/ISA_>
+PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+
+SELECT DISTINCT
+?nanopubs ?nanopub_dt, ?inputfile, 
+WHERE
+{
+  #?nanopub_dt rdf:type obi:data_transformation
+  ?nanopub_dt rdf:type obi:0200000.
+  ?nanopub_dt rdfs:label "Nanopub"^^<http://www.w3.org/2001/XMLSchema#string>.
+  ?nanopub_dt obi:0000293 ?inputfile_iri.
+  ?nanopub_dt obi:0000299 ?outputfile_iri.
+  ?inputfile_iri rdfs:label ?inputfile.
+  ?outputfile_iri rdfs:label ?nanopubs.
+}
+
