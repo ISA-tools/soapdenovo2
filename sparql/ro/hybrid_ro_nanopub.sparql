@@ -1,5 +1,16 @@
-### TODO update RO URI
-### TODO: to be tested
+### Query 7 (Demonstrate querying across the models): Find out the nanopublication statements aggregated in the RO
+
+### Expected results
+
+# http://w3id.org/isa/soapdenovo2/nanopub/1/
+# http://w3id.org/isa/soapdenovo2/nanopub/9/
+# http://w3id.org/isa/soapdenovo2/nanopub/2/
+# http://w3id.org/isa/soapdenovo2/nanopub/3/
+# http://w3id.org/isa/soapdenovo2/nanopub/4/
+# http://w3id.org/isa/soapdenovo2/nanopub/5/
+# http://w3id.org/isa/soapdenovo2/nanopub/6/
+# http://w3id.org/isa/soapdenovo2/nanopub/7/
+# http://w3id.org/isa/soapdenovo2/nanopub/8/
 
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
 PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>

@@ -1,4 +1,6 @@
-##TODO: update the RO URI
+## Query 2: Find out the workflow(s) aggregated in the RO
+
+### Expected results: http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga
 
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
 PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>

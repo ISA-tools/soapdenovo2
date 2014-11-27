@@ -1,4 +1,6 @@
-## The query is final
+## Query1: Find out the workflow used to generate the GAGE result
+
+### Expected results: http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX prov: <http://www.w3.org/ns/prov#>

@@ -1,5 +1,9 @@
 ### This query is final
 
+### Query 5: Find out the exact role of the inputs <http://w3id.org/isa/soapdenovo2/raw_data_file/17> in the execution of the Galaxy workflow
+
+### Expected result: "GAGE/Reference genome file in FASTA format"
+
 PREFIX roterms: <http://purl.org/wf4ever/roterms#>
 PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

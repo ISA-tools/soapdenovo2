@@ -55,7 +55,16 @@ ro annotate . dcterms:descriptions "RO that aggregates the ISA documents, the na
 ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/isatab_distribution/1
 ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/isaowl_distribution/1
 ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/study/1
-ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopubs
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/1/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/2/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/3/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/4/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/5/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/6/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/7/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/8/
+ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/nanopub/9/
+
 
 
 ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/derived_data_file/3
@@ -90,7 +99,7 @@ ro annotations
 
 # publish an RO
 
-ro push -d . -r "http://sandbox.wf4ever-project.org/rodl/ROs/" -t "73975122-9503-4000-ba52-d2c2d2bfccbb"
+#ro push -d . -r "http://sandbox.wf4ever-project.org/rodl/ROs/" -t "73975122-9503-4000-ba52-d2c2d2bfccbb"
 
 # End.
 
