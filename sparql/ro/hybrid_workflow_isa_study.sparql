@@ -1,8 +1,15 @@
-TODO: update RO URI
+### Query 8 (Demonstrate querying across the models): Find out the study that the workflow in the RO is part of
 
-PREFIX roterms: <http://purl.org/wf4ever/roterms#>
-PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
+### Expected results:
+# http://w3id.org/isa/soapdenovo2/study/1	"SOAPdenovo2"
+
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
+PREFIX roterms: <http://purl.org/wf4ever/roterms#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 select distinct ?study ?studyname
 where { 
       <http://sandbox.wf4ever-project.org/rodl/ROs/soapdenovo-v1-5/> ore:aggregates ?workflow .

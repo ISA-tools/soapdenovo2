@@ -1,10 +1,23 @@
-### TODO: update RO URI
+### Query 6 (Demonstrate querying across the models): Find out more provenance information about the inputs used to generate the results
+
+### Expected results
+
+# input	     sourceData	sourceActivities
+# http://w3id.org/isa/soapdenovo2/raw_data_file/21	http://w3id.org/isa/soapdenovo2/extract/6	http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5
+# http://w3id.org/isa/soapdenovo2/raw_data_file/17	http://w3id.org/isa/soapdenovo2/extract/4	http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5
+# http://w3id.org/isa/soapdenovo2/raw_data_file/19	http://w3id.org/isa/soapdenovo2/extract/5	http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5
+# http://w3id.org/isa/soapdenovo2/raw_data_file/18	http://w3id.org/isa/soapdenovo2/extract/5	http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5
+# http://w3id.org/isa/soapdenovo2/raw_data_file/20	http://w3id.org/isa/soapdenovo2/extract/6	http://w3id.org/isa/soapdenovo2/assay_protocol_ref/5
 
 
 
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX roterms: <http://purl.org/wf4ever/roterms#>
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
 PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 
 select ?input ?sourceData ?sourceActivities
 where { 

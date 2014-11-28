@@ -1,5 +1,9 @@
 ### TODO: update RO URI
 
+### Query 4: Find out the original inputs data used to derive the outputs that are aggregated in this RO
+
+### Expected results: http://w3id.org/isa/soapdenovo2/raw_data_file/17, http://w3id.org/isa/soapdenovo2/raw_data_file/18, http://w3id.org/isa/soapdenovo2/raw_data_file/19, http://w3id.org/isa/soapdenovo2/raw_data_file/20, http://w3id.org/isa/soapdenovo2/raw_data_file/21
+
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
 PREFIX wfdesc: <http://purl.org/wf4ever/wfdesc#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
