@@ -78,7 +78,7 @@ ro link . ore:aggregates http://w3id.org/isa/soapdenovo2/raw_data_file/21
 
 # Add workflow description (wfdesc)
 
-# http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus
+# http://gigagalaxy.net/u/peterli/w/assembling-the-s-aureus-genome-using-soapdenovo2 
 
 ro annotate Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga -g Galaxy-wfdesc.rdf
 

@@ -59,7 +59,7 @@
 
 
   <wfdesc:Workflow rdf:about="Workflows/Galaxy-Workflow-Workflow_constructed_from_history__reproduce_s.aureus_pipeline_.ga">
-    <rdfs:seeAlso rdf:resource="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus" />
+    <rdfs:seeAlso rdf:resource="http://gigagalaxy.net/u/peterli/w/workflow-constructed-from-history-s-aureus-genome-assembly-using-soapdenovo1" />
     <rdfs:seeAlso rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/14" />
     <rdfs:label>Galaxy workflow for reproducing Table 2 of SOAPdenovo paper</rdfs:label>
     <dcterms:title>Galaxy workflow for reproducing Table 2 of SOAPdenovo paper</dcterms:title>
@@ -68,7 +68,7 @@
       Galaxy workflow for reproducing Table 2 of SOAPdenovo paper
     </dcterms:description>
     <wfdesc:hasWorkflowDefinition rdf:resource="http://www.myexperiment.org/workflows/4078.html" />
-    <wfdesc:hasWorkflowDefinition rdf:resource="http://galaxy.cbiit.cuhk.edu.hk/u/gigascience/w/rluo2012-example-1-soapdenovo2-saureus"/>
+    <wfdesc:hasWorkflowDefinition rdf:resource="http://gigagalaxy.net/u/peterli/w/assembling-the-s-aureus-genome-using-soapdenovo2"/>
 
 
     <wfdesc:hasInput>
