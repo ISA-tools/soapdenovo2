@@ -1,0 +1,142 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Assembling the S. aureus genome using ALLPATHS", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "S. aureus reference genome sequence"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 200
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"S. aureus reference genome sequence\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "64a9dba1-127e-4d9d-9476-3543630750a1"
+        }, 
+        "1": {
+            "annotation": "", 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "ALLPATHS-LG", 
+            "outputs": [
+                {
+                    "name": "contigs", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "scaffolds", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "in_groups", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "in_libs", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 200, 
+                "top": 285
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/allpaths/allpaths/0.1", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"select_data_source\": \"{\\\"data_source\\\": \\\"aureus\\\", \\\"__current_case__\\\": 1}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "a6085002-c8ae-4d65-bff6-aa71bedf2455"
+        }, 
+        "2": {
+            "annotation": "", 
+            "id": 2, 
+            "input_connections": {
+                "contig_fasta": {
+                    "id": 1, 
+                    "output_name": "contigs"
+                }, 
+                "ref_fasta": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "scaffold_fasta": {
+                    "id": 1, 
+                    "output_name": "scaffolds"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "GAGE analysis", 
+            "outputs": [
+                {
+                    "name": "outfile", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 430, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/gage_analysis/gage_analysis_wrapper/0.2", 
+            "tool_state": "{\"__page__\": 0, \"ref_fasta\": \"null\", \"contig_fasta\": \"null\", \"scaffold_fasta\": \"null\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "0.2", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "0437bfba-b888-49d8-8843-8b507d0f0766"
+        }, 
+        "3": {
+            "annotation": "", 
+            "id": 3, 
+            "input_connections": {
+                "input": {
+                    "id": 2, 
+                    "output_name": "outfile"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "stat", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 756, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/stat/stat_wrapper/1.0.0", 
+            "tool_state": "{\"input\": \"null\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__page__\": 0}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "7a016865-c92d-4d97-b68c-512e66117bcf"
+        }
+    }, 
+    "uuid": "34b95feb-d79f-40d4-b5b8-5770d51235d9"
+}

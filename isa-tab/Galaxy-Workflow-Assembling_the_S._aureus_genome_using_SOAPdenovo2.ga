@@ -1,0 +1,443 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Assembling the S. aureus genome using SOAPdenovo2", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "KmerFreq AR forward fastq input file"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 200
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"KmerFreq AR forward fastq input file\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "02dbfbae-8cf3-4750-bf2a-514c9e369f72"
+        }, 
+        "1": {
+            "annotation": "", 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Reference genome input file"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 285
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Reference genome input file\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "ea2f3fc7-4309-4514-b7bd-69d37e219604"
+        }, 
+        "2": {
+            "annotation": "", 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "KmerFreq AR reverse fastq input file"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 370
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"KmerFreq AR reverse fastq input file\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "2a21dae0-0847-4d8d-94b4-f4e54479933c"
+        }, 
+        "3": {
+            "annotation": "", 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "SOAPdenovo2 libraries 2 forward fast input file"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 455
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"SOAPdenovo2 libraries 2 forward fast input file\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "bacaa918-52f2-480d-994a-fd4844142316"
+        }, 
+        "4": {
+            "annotation": "", 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "SOAPdenovo2 libraries 2 reverse fast input file"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 200, 
+                "top": 540
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"SOAPdenovo2 libraries 2 reverse fast input file\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": [], 
+            "uuid": "3258c506-b128-4df7-b7c5-5b2efd401fb7"
+        }, 
+        "5": {
+            "annotation": "", 
+            "id": 5, 
+            "input_connections": {
+                "data_format|libraries_0|input1": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "data_format|libraries_0|input2": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "KmerFreq AR", 
+            "outputs": [
+                {
+                    "name": "filelist", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "stat", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "cz_len", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "cz", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "genome_estimate", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_stat", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_cz_len", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_cz", 
+                    "type": "Tabular"
+                }, 
+                {
+                    "name": "space_genome_estimate", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 430, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/kmerfreq_ar_2/kmerfreq_ar_2_wrapper/0.1", 
+            "tool_state": "{\"space_consecutive_settings\": \"{\\\"min_precision_kmer_rate\\\": \\\"-1\\\", \\\"ascii_shift\\\": \\\"33\\\", \\\"__current_case__\\\": 0, \\\"space_consecutive_settings_type\\\": \\\"consecutive\\\", \\\"use_num_bases\\\": \\\"\\\", \\\"kmer_size\\\": \\\"17\\\", \\\"output_depth\\\": \\\"1\\\"}\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"data_format\": \"{\\\"libraries\\\": [{\\\"input2\\\": null, \\\"__index__\\\": 0, \\\"input1\\\": null}], \\\"fastq_fasta\\\": \\\"fastq\\\", \\\"__current_case__\\\": 0}\", \"__page__\": 0}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "72244998-ac7e-406a-ac6c-2d624b81a795"
+        }, 
+        "6": {
+            "annotation": "", 
+            "id": 6, 
+            "input_connections": {
+                "space_consecutive_settings|filelist": {
+                    "id": 5, 
+                    "output_name": "filelist"
+                }, 
+                "space_consecutive_settings|freq_cz": {
+                    "id": 5, 
+                    "output_name": "cz"
+                }, 
+                "space_consecutive_settings|freq_cz_len": {
+                    "id": 5, 
+                    "output_name": "cz_len"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Corrector AR", 
+            "outputs": [
+                {
+                    "name": "html_file", 
+                    "type": "html"
+                }, 
+                {
+                    "name": "corrected_forward", 
+                    "type": "fa.gz"
+                }, 
+                {
+                    "name": "corrected_reverse", 
+                    "type": "fa.gz"
+                }, 
+                {
+                    "name": "corrected_single", 
+                    "type": "fa.gz"
+                }
+            ], 
+            "position": {
+                "left": 743, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/corrector_ar_2/corrector_ar_2_wrapper/0.1", 
+            "tool_state": "{\"space_consecutive_settings\": \"{\\\"freq_cz_len\\\": null, \\\"__current_case__\\\": 0, \\\"ascii_shift_quality_value\\\": \\\"33\\\", \\\"consec_low_freq_cutoff\\\": \\\"3\\\", \\\"filelist\\\": null, \\\"space_consecutive_settings_type\\\": \\\"consecutive\\\", \\\"kmer_size\\\": \\\"17\\\", \\\"freq_cz\\\": null}\", \"default_full_settings\": \"{\\\"max_node_num\\\": \\\"15000000\\\", \\\"min_length_high_freq_region\\\": \\\"10\\\", \\\"min_length_trimmed_read\\\": \\\"50\\\", \\\"length_trim_low_qual_ends\\\": \\\"8\\\", \\\"trim_error_bases_Q\\\": \\\"0\\\", \\\"qual_threshold_error_bases\\\": \\\"30\\\", \\\"settings_type\\\": \\\"full\\\", \\\"convert_reads_into_paired_end_file\\\": \\\"1\\\", \\\"remove_suspicious_data\\\": \\\"0\\\", \\\"__current_case__\\\": 1, \\\"trim_suspicious_end_regions_Q\\\": \\\"1\\\", \\\"output_format\\\": \\\"1\\\", \\\"max_read_change\\\": \\\"2\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "0561c547-b8f7-434a-96ce-cab8dca55128"
+        }, 
+        "7": {
+            "annotation": "", 
+            "id": 7, 
+            "input_connections": {
+                "config_source|libraries_0|files_0|data_type|data_format|input1": {
+                    "id": 6, 
+                    "output_name": "corrected_forward"
+                }, 
+                "config_source|libraries_0|files_0|data_type|data_format|input2": {
+                    "id": 6, 
+                    "output_name": "corrected_reverse"
+                }, 
+                "config_source|libraries_1|files_0|data_type|data_format|input1": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "config_source|libraries_1|files_0|data_type|data_format|input2": {
+                    "id": 4, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "SOAPdenovo2", 
+            "outputs": [
+                {
+                    "name": "contig", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "scafseq", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "config", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1071, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/soapdenovo2/soapdenovo2_wrapper/0.1", 
+            "tool_state": "{\"__page__\": 0, \"kmer_freq_cutoff\": \"\\\"1\\\"\", \"fill_gaps\": \"\\\"YES\\\"\", \"default_full_settings\": \"{\\\"__current_case__\\\": 0, \\\"settings_type\\\": \\\"default\\\"}\", \"config_source\": \"{\\\"libraries\\\": [{\\\"files\\\": [{\\\"__index__\\\": 0, \\\"data_type\\\": {\\\"single_paired\\\": \\\"paired\\\", \\\"data_format\\\": {\\\"input2\\\": null, \\\"input1\\\": null, \\\"fastq_fasta\\\": \\\"fastq_gzipped\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 0}}], \\\"rd_len_cutoff\\\": \\\"\\\", \\\"avg_ins\\\": \\\"180\\\", \\\"rank\\\": \\\"1\\\", \\\"asm_flags\\\": \\\"3\\\", \\\"map_len\\\": \\\"\\\", \\\"pair_num_cutoff\\\": \\\"\\\", \\\"__index__\\\": 0, \\\"reverse_seq\\\": \\\"0\\\"}, {\\\"files\\\": [{\\\"__index__\\\": 0, \\\"data_type\\\": {\\\"single_paired\\\": \\\"paired\\\", \\\"data_format\\\": {\\\"input2\\\": null, \\\"input1\\\": null, \\\"fastq_fasta\\\": \\\"fastq\\\", \\\"__current_case__\\\": 0}, \\\"__current_case__\\\": 0}}], \\\"rd_len_cutoff\\\": \\\"\\\", \\\"avg_ins\\\": \\\"3500\\\", \\\"rank\\\": \\\"2\\\", \\\"asm_flags\\\": \\\"2\\\", \\\"map_len\\\": \\\"31\\\", \\\"pair_num_cutoff\\\": \\\"11\\\", \\\"__index__\\\": 1, \\\"reverse_seq\\\": \\\"1\\\"}], \\\"max_read_length\\\": \\\"100\\\", \\\"config_source_select\\\": \\\"create\\\", \\\"__current_case__\\\": 1}\", \"kmer_size\": \"\\\"31\\\"\", \"resolve_repeats\": \"\\\"YES\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "b7c1d08a-5e58-4b6b-ad66-525b38714ef4"
+        }, 
+        "8": {
+            "annotation": "", 
+            "id": 8, 
+            "input_connections": {
+                "config_source|own_file": {
+                    "id": 7, 
+                    "output_name": "config"
+                }, 
+                "scaff_in": {
+                    "id": 7, 
+                    "output_name": "scafseq"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "GapCloser 1.12", 
+            "outputs": [
+                {
+                    "name": "scaff", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "fill_info", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 1399, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/gapcloser_1_12/gapcloser_1_12_wrapper/0.1", 
+            "tool_state": "{\"__page__\": 0, \"scaff_in\": \"null\", \"default_full_settings\": \"{\\\"overlap_param\\\": \\\"31\\\", \\\"max_read_length\\\": \\\"70\\\", \\\"__current_case__\\\": 1, \\\"settings_type\\\": \\\"full\\\"}\", \"config_source\": \"{\\\"own_file\\\": null, \\\"config_source_select\\\": \\\"history\\\", \\\"__current_case__\\\": 0}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "6c4f306f-2c87-498c-b77b-84143be214ac"
+        }, 
+        "9": {
+            "annotation": "", 
+            "id": 9, 
+            "input_connections": {
+                "scafseq_gc_fa": {
+                    "id": 8, 
+                    "output_name": "scaff"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Extract ACGT", 
+            "outputs": [
+                {
+                    "name": "scafseq_gc_ctg_fa", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1710, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/extract_acgt/extract_acgt/0.1", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"scafseq_gc_fa\": \"null\"}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "6d72ee6a-d043-4868-a79a-c8ded987766f"
+        }, 
+        "10": {
+            "annotation": "", 
+            "id": 10, 
+            "input_connections": {
+                "contig_fasta": {
+                    "id": 9, 
+                    "output_name": "scafseq_gc_ctg_fa"
+                }, 
+                "ref_fasta": {
+                    "id": 1, 
+                    "output_name": "output"
+                }, 
+                "scaffold_fasta": {
+                    "id": 8, 
+                    "output_name": "scaff"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "GAGE analysis", 
+            "outputs": [
+                {
+                    "name": "outfile", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 1957, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/gage_analysis/gage_analysis_wrapper/0.2", 
+            "tool_state": "{\"__page__\": 0, \"ref_fasta\": \"null\", \"contig_fasta\": \"null\", \"scaffold_fasta\": \"null\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "0.2", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "e04ff2c8-f96f-4ace-800e-7ea4c90188d2"
+        }, 
+        "11": {
+            "annotation": "", 
+            "id": 11, 
+            "input_connections": {
+                "input": {
+                    "id": 10, 
+                    "output_name": "outfile"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "stat", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "Tabular"
+                }
+            ], 
+            "position": {
+                "left": 2283, 
+                "top": 200
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "gigatoolshed.net/repos/peterli/stat/stat_wrapper/1.0.0", 
+            "tool_state": "{\"input\": \"null\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__page__\": 0}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "user_outputs": [], 
+            "uuid": "f46adb6b-2120-4be6-abfc-f40dd1a35ff6"
+        }
+    }, 
+    "uuid": "483b348a-581f-4373-8b47-80b364cad956"
+}
