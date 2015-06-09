@@ -943,6 +943,8 @@
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/10"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/11"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/13"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/14"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/15"/>
         <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/27"/>
     </owl:NamedIndividual>
     
@@ -959,7 +961,9 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/assay_protocol_ref/24</rdfs:comment>
         <owl:sameAs rdf:resource="http://w3id.org/isa/soapdenovo2/data_transformation/10"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/10"/>
-        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/14"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/16"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/17"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/18"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/9"/>
         <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/28"/>
     </owl:NamedIndividual>
@@ -978,7 +982,9 @@
         <owl:sameAs rdf:resource="http://w3id.org/isa/soapdenovo2/data_transformation/11"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/10"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/12"/>
-        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/15"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/19"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/20"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/21"/>
         <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/29"/>
     </owl:NamedIndividual>
     
@@ -996,7 +1002,9 @@
         <owl:sameAs rdf:resource="http://w3id.org/isa/soapdenovo2/data_transformation/12"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/10"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/11"/>
-        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/16"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/22"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/23"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/24"/>
         <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/30"/>
     </owl:NamedIndividual>
     
@@ -1013,7 +1021,9 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/assay_protocol_ref/27</rdfs:comment>
         <owl:sameAs rdf:resource="http://w3id.org/isa/soapdenovo2/data_transformation/13"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/10"/>
-        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/17"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/25"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/26"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/27"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/9"/>
         <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/31"/>
     </owl:NamedIndividual>
@@ -1032,7 +1042,9 @@
         <owl:sameAs rdf:resource="http://w3id.org/isa/soapdenovo2/data_transformation/14"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/10"/>
         <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/12"/>
-        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/18"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/28"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/29"/>
+        <isaterms:has_parameter_value rdf:resource="http://w3id.org/isa/soapdenovo2/parameter_value/30"/>
         <isaterms:executes rdf:resource="http://w3id.org/isa/soapdenovo2/study_protocol/32"/>
     </owl:NamedIndividual>
     
@@ -2390,9 +2402,9 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/14">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/assembling-the-s-aureus-genome-using-soapdenovo2</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/s-aureus-genome-assembly-using-soapdenovo1</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/14</rdfs:comment>
-        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/24"/>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/23"/>
     </owl:NamedIndividual>
     
 
@@ -2402,9 +2414,9 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/15">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/s-aureus-genome-assembly-using-allpaths</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy-Workflow-Assembling_the_S._aureus_genome_using_SOAPdenovo1.ga</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/15</rdfs:comment>
-        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/25"/>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/23"/>
     </owl:NamedIndividual>
     
 
@@ -2414,9 +2426,9 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/16">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/workflow-constructed-from-history-r-sphaeroides-genome-assembly-using-soapdenovo1</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/assembling-the-s-aureus-genome-using-soapdenovo2</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/16</rdfs:comment>
-        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/26"/>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/24"/>
     </owl:NamedIndividual>
     
 
@@ -2426,9 +2438,9 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/17">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/r-sphaeroides-genome-assembly-using-soapdenovo2</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/s-aureus-genome-assembly-using-soapdenovo2</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/17</rdfs:comment>
-        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/27"/>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/24"/>
     </owl:NamedIndividual>
     
 
@@ -2438,8 +2450,152 @@
     <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/18">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/r-sphaeroides-genome-assembly-using-allpaths</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy-Workflow-Assembling_the_S._aureus_genome_using_SOAPdenovo2.ga</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/18</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/24"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/19 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/19">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/workflow-constructed-from-history-s-aureus-genome-assembly-using-allpaths</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/19</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/20 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/20">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/s-aureus-genome-assembly-using-allpaths</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/20</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/21 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/21">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy-Workflow-Assembling_the_S._aureus_genome_using_ALLPATHS.ga</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/21</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/22 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/22">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/workflow-constructed-from-history-r-sphaeroides-genome-assembly-using-soapdenovo1</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/22</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/23 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/23">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/r-sphaeroides-genome-assembly-using-soapdenovo1</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/23</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/24 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/24">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy-Workflow-Assembling_the_R._sphaeroides_genome_using_SOAPdenovo1.ga</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/24</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/25 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/25">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/assembling-the-r-sphaeroides-genome-using-soapdenovo2</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/25</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/26 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/26">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/r-sphaeroides-genome-assembly-using-soapdenovo2</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/26</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/27 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/27">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy-Workflow-Assembling_the_R._sphaeroides_genome_using_SOAPdenovo2.ga</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/27</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/28 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/28">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/w/assembling-the-r-sphaeroides-genome-using-allpaths</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/28</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/28"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/29 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/29">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://gigagalaxy.net/u/peterli/h/r-sphaeroides-genome-assembly-using-allpaths</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/29</rdfs:comment>
+        <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/28"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/isa/soapdenovo2/parameter_value/30 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/isa/soapdenovo2/parameter_value/30">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.org/isaterms/parameter_value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galaxy-Workflow-Assembling_the_R._sphaeroides_genome_using_ALLPATHS.ga</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://w3id.org/isa/soapdenovo2/parameter_value/30</rdfs:comment>
         <obo:BFO_0000056 rdf:resource="http://w3id.org/isa/soapdenovo2/assay_protocol_ref/28"/>
     </owl:NamedIndividual>
     
